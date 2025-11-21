@@ -1,7 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -14,33 +13,25 @@ import testRoutes from "./routes/testRoutes.js";
 import studentTestRoutes from "./routes/studentTestRoutes.js";
 import promoteStudentRoutes from "./routes/promoteStudent.js";
 
-dotenv.config();
-
+// -------------------------------
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 const app = express();
 const PROJECT_NAME = "DevLy";
 
-// ✅ ENV
-const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI;
+// -------------------------------
+// HARD-CODED CONFIG
+// -------------------------------
+const PORT = 5000; // or process.env.PORT if you prefer dynamic
+const MONGO_URI = "your-mongodb-atlas-uri-here";
 
-// ✅ CORS (Local + DevLy Domains supported automatically)
+// Allowed frontend domains
 const allowedOrigins = [
-  "http://localhost:3000",
-  "http://localhost:3001",
-
-  // 🔴 DEVLY PRODUCTION DOMAINS
-  "https://devly.onrender.com",
-  "https://devly.vercel.app",
-  "https://devly-admin.vercel.app",
-  "https://devly-frontend.onrender.com",
-  "https://devly-admin.onrender.com",
-
-  process.env.FRONTEND_URL,
-  process.env.ADMIN_URL
-].filter(Boolean);
+  "http://localhost:3000",                 // User local
+  "http://localhost:3001",                 // Admin local
+  "https://devly-frontend.onrender.com",   // User prod
+  "https://devly-admin.onrender.com",      // Admin prod
+];
 
 app.use(
   cors({
@@ -60,7 +51,9 @@ app.use(
 
 app.use(express.json());
 
-// ✅ MongoDB
+// -------------------------------
+// MONGO CONNECTION
+// -------------------------------
 mongoose
   .connect(MONGO_URI)
   .then(() => console.log(`✅ ${PROJECT_NAME} – MongoDB Connected`))
@@ -69,7 +62,9 @@ mongoose
     process.exit(1);
   });
 
-// ✅ ROUTES
+// -------------------------------
+// ROUTES
+// -------------------------------
 app.use("/api/auth", authRoutes);
 app.use("/api/tutorials", tutorialRoutes);
 app.use("/api/admin", adminRoutes);
@@ -80,7 +75,9 @@ app.use("/api/student-tests", studentTestRoutes);
 app.use("/api/admin/users", promoteStudentRoutes);
 app.use("/uploads", express.static("uploads"));
 
-// ✅ Health check
+// -------------------------------
+// HEALTH CHECK
+// -------------------------------
 app.get("/health", (req, res) => {
   res.json({
     project: PROJECT_NAME,
@@ -90,22 +87,27 @@ app.get("/health", (req, res) => {
   });
 });
 
-// ✅ If you later build frontend inside backend
+// -------------------------------
+// FRONTEND SERVE (OPTIONAL)
+// -------------------------------
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "client/build")));
-
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client/build/index.html"));
   });
 }
 
-// ✅ Error handler
+// -------------------------------
+// GLOBAL ERROR HANDLER
+// -------------------------------
 app.use((err, req, res, next) => {
   console.error(`❌ ${PROJECT_NAME} – ERROR:`, err);
   res.status(500).json({ message: `${PROJECT_NAME} - Internal Server Error` });
 });
 
-// ✅ Start server
+// -------------------------------
+// START SERVER
+// -------------------------------
 app.listen(PORT, () => {
   console.log(`🚀 ${PROJECT_NAME} running at http://localhost:${PORT}`);
 });
