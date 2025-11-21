@@ -50,6 +50,7 @@ const Auth = () => {
     }
 
     setLoading(true);
+
     try {
       const res = await axios.post("/api/auth/login", { email, password, role });
       const { token, role: userRole, user, professor } = res.data;
@@ -59,9 +60,8 @@ const Auth = () => {
       if (userRole === "admin") {
         localStorage.setItem("role", "admin");
         localStorage.setItem("email", email);
-        Swal.fire("Success", "Admin login successful", "success").then(() => {
-            
-        });
+        // Redirect admin to dashboard
+        window.location.href = `/dashboard?token=${token}`; 
       } else if (userRole === "professor") {
         localStorage.setItem("role", "professor");
         localStorage.setItem("email", professor.email);
@@ -190,7 +190,12 @@ const Auth = () => {
                 onClick={() => setShowLoginPassword(!showLoginPassword)}
               />
             </div>
-            <input type="submit" value={loading ? "Logging in..." : "Login"} className="btn solid" disabled={loading} />
+            <input
+              type="submit"
+              value={loading ? "Logging in..." : "Login"}
+              className="btn solid"
+              disabled={loading}
+            />
           </form>
 
           {/* SIGNUP FORM */}
@@ -264,7 +269,12 @@ const Auth = () => {
                 onClick={() => setShowSignupConfirmPassword(!showSignupConfirmPassword)}
               />
             </div>
-            <input type="submit" value={loading ? "Signing up..." : "Sign up"} className="btn solid" disabled={loading} />
+            <input
+              type="submit"
+              value={loading ? "Signing up..." : "Sign up"}
+              className="btn solid"
+              disabled={loading}
+            />
           </form>
         </div>
       </div>
