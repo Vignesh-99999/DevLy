@@ -61,7 +61,7 @@ const Auth = () => {
         localStorage.setItem("role", "admin");
         localStorage.setItem("email", email);
         // Redirect admin to dashboard
-        window.location.href = `https://devly-frontend.onrender.com/dashboard?token=${token}`;
+        window.location.href = `https://devly-admin.onrender.com/dashboard?token=${token}`;
       } else if (userRole === "professor") {
         localStorage.setItem("role", "professor");
         localStorage.setItem("email", professor.email);
