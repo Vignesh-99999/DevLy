@@ -4,6 +4,9 @@ import Swal from "sweetalert2";
 import axios from "axios";
 import "./VerifyOtp.css";
 
+
+axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
+
 /* ------------------------- CONFIG ------------------------- */
 /* SAFE FALLBACK IF .env IS MISSING */
 const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";

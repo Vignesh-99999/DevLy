@@ -4,6 +4,9 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import "./EditProfile.css";
 
+axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
+
+
 export default function EditProfileModal({ show, onClose, onProfileUpdate }) {
   const [formData, setFormData] = useState({
     name: "",

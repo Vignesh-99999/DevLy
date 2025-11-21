@@ -4,6 +4,9 @@ import Swal from "sweetalert2";
 import axios from "axios";
 import "./VerifyOtp.css";
 
+axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
+
+
 const useQuery = () => new URLSearchParams(useLocation().search);
 
 export default function VerifyOtp() {

@@ -7,6 +7,10 @@ import { FiClock, FiCheck, FiArrowLeft } from "react-icons/fi";
 import BackgroundBeamsCollision from "../ui/background-beams-with-collision";
 import "../../Home.css";
 
+
+axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
+
+
 // Updated TakeTest component
 // - Handles multiple backend answer shapes (correctAnswer / answer)
 // - Safe null checks (no test.result access)

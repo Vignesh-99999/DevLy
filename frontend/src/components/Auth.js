@@ -5,6 +5,9 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import "../auth.css";
 
+axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
+
+
 const Auth = () => {
   const navigate = useNavigate();
   const location = useLocation();

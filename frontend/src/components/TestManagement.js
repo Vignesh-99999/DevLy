@@ -4,6 +4,9 @@ import { FiEdit2, FiTrash2, FiPlus } from "react-icons/fi";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
 
+
+axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
+
 const API_BASE =
   process.env.REACT_APP_API_BASE || "http://localhost:5000/api/tests";
 

@@ -17,6 +17,10 @@ import axios from "axios";
 import BackgroundBeamsCollision from "./ui/background-beams-with-collision";
 import "../Home.css";
 
+
+axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
+
+
 export default function ProfessorDashboard() {
   const [theme, setTheme] = useState("dark");
   const [showEditModal, setShowEditModal] = useState(false);

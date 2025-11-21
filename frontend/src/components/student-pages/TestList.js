@@ -7,6 +7,10 @@ import { FiBook, FiCalendar, FiClock, FiCheckCircle, FiArrowLeft, FiPlay, FiSear
 import BackgroundBeamsCollision from "../ui/background-beams-with-collision";
 import "../../Home.css";
 
+
+axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
+
+
 export default function TestList() {
   const [theme, setTheme] = useState("dark");
   const [tests, setTests] = useState([]);
