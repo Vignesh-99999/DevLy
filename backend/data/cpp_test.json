@@ -1,0 +1,2202 @@
+[
+  {
+    "question": "Who developed C++ and where?",
+    "options": {
+      "a": "Dennis Ritchie at Bell Labs",
+      "b": "Bjarne Stroustrup at AT&T Bell Laboratories",
+      "c": "James Gosling at Sun Microsystems",
+      "d": "Guido van Rossum at CWI"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Why was C++ originally called 'C with Classes'?",
+    "options": {
+      "a": "Because it added procedural programming to C",
+      "b": "Because it extended C by adding object-oriented features",
+      "c": "Because it only supported class-based functions",
+      "d": "Because it was a simplified version of C"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is NOT a feature of C++?",
+    "options": {
+      "a": "Object-oriented programming support",
+      "b": "Standard Template Library (STL)",
+      "c": "Dynamic memory management with new/delete",
+      "d": "Automatic garbage collection"
+    },
+    "answer": "d",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the purpose of the 'using namespace std;' directive in a C++ program?",
+    "options": {
+      "a": "To include the standard library headers",
+      "b": "To avoid naming conflicts by defining a scope",
+      "c": "To allow access to the standard library without prefixing 'std::'",
+      "d": "To import all functions from external libraries"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "What does the compiler do during the compilation process?",
+    "options": {
+      "a": "Converts source code into assembly code and checks syntax",
+      "b": "Executes the program line-by-line",
+      "c": "Links different object files to create an executable",
+      "d": "Runs the preprocessor to expand macros"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following best describes the Standard Template Library (STL) in C++?",
+    "options": {
+      "a": "A collection of header files for graphical user interface development",
+      "b": "A library for low-level 3ware programming",
+      "c": "A collection of pre-built classes and functions for data structures and algorithms",
+      "d": "A tool to manage memory automatically"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "What does the 'return 0;' statement in main() signify?",
+    "options": {
+      "a": "The program encountered an error",
+      "b": "The program executed successfully",
+      "c": "The program will continue running",
+      "d": "The program is paused"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which statement correctly describes C++ as a compiled language?",
+    "options": {
+      "a": "Code is executed line-by-line by an interpreter",
+      "b": "Source code is converted into machine code before execution",
+      "c": "No compilation is needed to run C++ programs",
+      "d": "Compilation happens after program execution"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does syntax in C++ define?",
+    "options": {
+      "a": "The structure and rules for writing code",
+      "b": "The execution speed of the program",
+      "c": "The 3ware configuration",
+      "d": "The output format of the program"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is NOT a token in C++?",
+    "options": {
+      "a": "Keyword",
+      "b": "Operator",
+      "c": "Function",
+      "d": "Punctuator"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of these is a keyword in C++?",
+    "options": {
+      "a": "number",
+      "b": "float",
+      "c": "main",
+      "d": "variable"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which is a valid identifier in C++?",
+    "options": {
+      "a": "2ndNumber",
+      "b": "_value",
+      "c": "int",
+      "d": "float"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the size of a 'char' data type in C++?",
+    "options": {
+      "a": "1 byte",
+      "b": "2 bytes",
+      "c": "4 bytes",
+      "d": "8 bytes"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which data type would you use to store true/false values in C++?",
+    "options": {
+      "a": "char",
+      "b": "bool",
+      "c": "int",
+      "d": "float"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of these is a user-defined data type in C++?",
+    "options": {
+      "a": "int",
+      "b": "float",
+      "c": "class",
+      "d": "double"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which keyword is used to declare a constant in C++?",
+    "options": {
+      "a": "static",
+      "b": "constant",
+      "c": "final",
+      "d": "const"
+    },
+    "answer": "d",
+    "difficulty": "1"
+  },
+  {
+    "question": "What will happen if you try to change the value of a constant variable?",
+    "options": {
+      "a": "The program will compile successfully",
+      "b": "The compiler will throw an error",
+      "c": "The value will change at runtime",
+      "d": "It will change only for the current function"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is NOT a valid variable name in C++?",
+    "options": {
+      "a": "totalMarks",
+      "b": "student_percentage",
+      "c": "3rdScore",
+      "d": "_value"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is true about identifiers in C++?",
+    "options": {
+      "a": "They can start with digits",
+      "b": "They are case-insensitive",
+      "c": "They cannot be keywords",
+      "d": "They can contain spaces"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the purpose of the namespace 'std' in C++?",
+    "options": {
+      "a": "To organize code and avoid name conflicts",
+      "b": "To declare variables",
+      "c": "To define functions",
+      "d": "To create classes"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which of the following correctly declares an integer variable named 'age'?",
+    "options": {
+      "a": "int age;",
+      "b": "integer age;",
+      "c": "float age;",
+      "d": "char age;"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of these is NOT a primitive data type in C++?",
+    "options": {
+      "a": "char",
+      "b": "int",
+      "c": "array",
+      "d": "bool"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does the 'typedef' keyword do in C++?",
+    "options": {
+      "a": "Defines a new variable",
+      "b": "Creates an alias for an existing data type",
+      "c": "Declares a constant",
+      "d": "Defines a function"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of these statements about variables in C++ is FALSE?",
+    "options": {
+      "a": "Variables must start with a letter or underscore",
+      "b": "Variables can include digits anywhere except the first character",
+      "c": "Variable names can be the same as keywords",
+      "d": "Variable names are case-sensitive"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which symbol is used to terminate a statement in C++?",
+    "options": {
+      "a": ":",
+      "b": ".",
+      "c": ";",
+      "d": ","
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is NOT a C++ punctuator?",
+    "options": {
+      "a": ";",
+      "b": "{",
+      "c": "$",
+      "d": ","
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What happens if C++ syntax rules are not followed?",
+    "options": {
+      "a": "Program runs slower",
+      "b": "The compiler will generate errors",
+      "c": "Program output will be incorrect but compiles",
+      "d": "The program will skip the faulty code"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following data types requires 8 bytes in memory?",
+    "options": {
+      "a": "float",
+      "b": "int",
+      "c": "char",
+      "d": "double"
+    },
+    "answer": "d",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which library must be included to use cin and cout in C++?",
+    "options": {
+      "a": "<stdio.h>",
+      "b": "<iostream>",
+      "c": "<conio.h>",
+      "d": "<iomanip>"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What operator is used with 'cin' for input in C++?",
+    "options": {
+      "a": "<<",
+      "b": ">>",
+      "c": "=",
+      "d": "=="
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does 'endl' do in C++ output?",
+    "options": {
+      "a": "Inserts a space",
+      "b": "Ends the program",
+      "c": "Inserts a newline character",
+      "d": "Clears the screen"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is an example of explicit type casting?",
+    "options": {
+      "a": "int a = 10; float b = a;",
+      "b": "float b = (float)a / 3;",
+      "c": "int a = 10;",
+      "d": "float b = 10.5;"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of these is an implicit type cast done by the compiler?",
+    "options": {
+      "a": "char to int",
+      "b": "int to double",
+      "c": "float to int",
+      "d": "double to int"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the output of this code snippet?\nint a = 8, b = 3;\ncout << a / b;",
+    "options": {
+      "a": "2.6667",
+      "b": "2",
+      "c": "3",
+      "d": "Error"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which operator is used to get the remainder in division?",
+    "options": {
+      "a": "/",
+      "b": "%",
+      "c": "*",
+      "d": "++"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does '++a' do in C++?",
+    "options": {
+      "a": "Decreases the value of a by 1",
+      "b": "Increases the value of a by 1 before using it",
+      "c": "Increases the value of a by 1 after using it",
+      "d": "Assigns a new value to a"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which operator is the logical AND in C++?",
+    "options": {
+      "a": "||",
+      "b": "&&",
+      "c": "!",
+      "d": "&"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which operator is the ternary operator in C++?",
+    "options": {
+      "a": "? :",
+      "b": "&&",
+      "c": "||",
+      "d": "=="
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the purpose of control structures in C++?",
+    "options": {
+      "a": "To store data",
+      "b": "To define flow of program execution",
+      "c": "To create variables",
+      "d": "To comment the code"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of the following is NOT a control structure?",
+    "options": {
+      "a": "if",
+      "b": "while",
+      "c": "switch",
+      "d": "main"
+    },
+    "answer": "d",
+    "difficulty": "2"
+  },
+  {
+    "question": "What does the 'if' statement do in C++?",
+    "options": {
+      "a": "Loops through code multiple times",
+      "b": "Executes code only if condition is true",
+      "c": "Defines a function",
+      "d": "Declares a variable"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What will this code print?\nint age = 16;\nif (age >= 18)\n cout << \"Adult\";\nelse\n cout << \"Minor\";",
+    "options": {
+      "a": "Adult",
+      "b": "Minor",
+      "c": "Error",
+      "d": "Nothing"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is a nested if statement?",
+    "options": {
+      "a": "An if statement inside another if",
+      "b": "An if statement with else",
+      "c": "An if statement with multiple conditions",
+      "d": "An if statement with no condition"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "In a switch statement, what does the 'break' keyword do?",
+    "options": {
+      "a": "Starts the switch block",
+      "b": "Exits the switch to prevent fall-through",
+      "c": "Restarts the switch statement",
+      "d": "Skips the current case"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which data types can be used in a switch case value?",
+    "options": {
+      "a": "int or char",
+      "b": "float",
+      "c": "double",
+      "d": "string"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What will this code output?\nchar x = 'A';\nswitch (x) {\n case 'A': cout << \"A\"; break;\n case 'B': cout << \"B\"; break;\n default: cout << \"Other\"; break;\n}",
+    "options": {
+      "a": "B",
+      "b": "A",
+      "c": "Other",
+      "d": "Error"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which operator is used to insert output into cout?",
+    "options": {
+      "a": ">>",
+      "b": "<<",
+      "c": "==",
+      "d": "="
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the result of implicit type casting from int to double?",
+    "options": {
+      "a": "Data loss",
+      "b": "No data loss, automatic promotion",
+      "c": "Compilation error",
+      "d": "Runtime error"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which type of loop executes the body at least once regardless of the condition?",
+    "options": {
+      "a": "for loop",
+      "b": "while loop",
+      "c": "do-while loop",
+      "d": "None of the above"
+    },
+    "answer": "c",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is the output of this code?\nfor (int i = 1; i <= 5; i++) { cout << i << \" \"; }",
+    "options": {
+      "a": "0 1 2 3 4",
+      "b": "1 2 3 4 5",
+      "c": "5 4 3 2 1",
+      "d": "Error"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which loop checks the condition before executing the loop body?",
+    "options": {
+      "a": "do-while loop",
+      "b": "while loop",
+      "c": "for loop",
+      "d": "Both b and c"
+    },
+    "answer": "d",
+    "difficulty": "2"
+  },
+  {
+    "question": "What does the 'break' statement do inside a loop?",
+    "options": {
+      "a": "Skips current iteration",
+      "b": "Ends the loop immediately",
+      "c": "Restarts the loop",
+      "d": "None of the above"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What happens when 'continue' is encountered inside a loop?",
+    "options": {
+      "a": "Loop terminates",
+      "b": "Current iteration is skipped",
+      "c": "Loop restarts from beginning",
+      "d": "An error occurs"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What does the 'goto' statement do?",
+    "options": {
+      "a": "Exits the function",
+      "b": "Jumps to a labeled statement",
+      "c": "Breaks out of a loop",
+      "d": "Skips current iteration"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of these is NOT a recommended use in modern C++ programming?",
+    "options": {
+      "a": "break",
+      "b": "continue",
+      "c": "goto",
+      "d": "for loop"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is a function in C++?",
+    "options": {
+      "a": "A variable that stores values",
+      "b": "A block of code performing a specific task",
+      "c": "A type of loop",
+      "d": "An input/output operation"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of the following correctly declares a function named 'add' that takes two integers and returns an integer?",
+    "options": {
+      "a": "int add(int a, int b);",
+      "b": "void add(int a, int b);",
+      "c": "int add();",
+      "d": "add(int a, int b);"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "What keyword is used to define a function inline?",
+    "options": {
+      "a": "inline",
+      "b": "fast",
+      "c": "static",
+      "d": "auto"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which is true about inline functions?",
+    "options": {
+      "a": "They always reduce code size",
+      "b": "They reduce function call overhead",
+      "c": "They can only be used with void functions",
+      "d": "They cannot be recursive"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is function overloading?",
+    "options": {
+      "a": "Defining multiple functions with the same name but different parameters",
+      "b": "Calling a function inside another function",
+      "c": "Writing a function inside a loop",
+      "d": "Using functions without parameters"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "Can functions be overloaded by changing only the return type?",
+    "options": {
+      "a": "Yes",
+      "b": "No",
+      "c": "Sometimes",
+      "d": "Depends on compiler"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What will be the output of this function call?\nvoid display(int a, int b = 10) { cout << a << \", \" << b; }\ndisplay(5);",
+    "options": {
+      "a": "5, 10",
+      "b": "5, 5",
+      "c": "Error",
+      "d": "10, 5"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "How are arguments passed in pass-by-value?",
+    "options": {
+      "a": "Original variable is modified",
+      "b": "A copy of the variable is passed",
+      "c": "Reference to the variable is passed",
+      "d": "Pointer to variable is passed"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is true about recursion?",
+    "options": {
+      "a": "A function calling itself",
+      "b": "A function calling another function",
+      "c": "A function defined inside another function",
+      "d": "None of the above"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is essential for a recursive function to avoid infinite recursion?",
+    "options": {
+      "a": "Base case",
+      "b": "Loop",
+      "c": "Global variable",
+      "d": "Inline function"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is the output of factorial(5) where factorial is recursively defined?",
+    "options": {
+      "a": "120",
+      "b": "24",
+      "c": "5",
+      "d": "Error"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following loops is exit-controlled?",
+    "options": {
+      "a": "for loop",
+      "b": "while loop",
+      "c": "do-while loop",
+      "d": "None of the above"
+    },
+    "answer": "c",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which statement correctly skips the current iteration in a loop?",
+    "options": {
+      "a": "break;",
+      "b": "continue;",
+      "c": "goto;",
+      "d": "return;"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which storage class is the default for local variables in C++?",
+    "options": {
+      "a": "static",
+      "b": "auto",
+      "c": "register",
+      "d": "extern"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which storage class requests the compiler to store a variable in CPU register?",
+    "options": {
+      "a": "auto",
+      "b": "register",
+      "c": "static",
+      "d": "mutable"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which storage class preserves the value of a variable across function calls?",
+    "options": {
+      "a": "register",
+      "b": "extern",
+      "c": "static",
+      "d": "auto"
+    },
+    "answer": "c",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which storage class allows modification of a class member even in a const object?",
+    "options": {
+      "a": "register",
+      "b": "mutable",
+      "c": "static",
+      "d": "extern"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What does the 'extern' keyword signify?",
+    "options": {
+      "a": "Defines a local variable",
+      "b": "Declares a global variable defined elsewhere",
+      "c": "Preserves variable value",
+      "d": "Stores variable in register"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the index of the first element in a C++ array?",
+    "options": {
+      "a": "1",
+      "b": "-1",
+      "c": "0",
+      "d": "Depends on compiler"
+    },
+    "answer": "c",
+    "difficulty": "2"
+  },
+  {
+    "question": "How are elements stored in a single-dimensional array?",
+    "options": {
+      "a": "Randomly",
+      "b": "Contiguous memory locations",
+      "c": "Using pointers only",
+      "d": "None of the above"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is the output of this code?\nint arr[3] = {1, 2, 3};\ncout << arr[1];",
+    "options": {
+      "a": "1",
+      "b": "2",
+      "c": "3",
+      "d": "Error"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What will happen if you try to access an array element beyond its size?",
+    "options": {
+      "a": "Compile-time error",
+      "b": "Run-time error",
+      "c": "Undefined behavior",
+      "d": "Automatic resizing"
+    },
+    "answer": "c",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which C++ class is preferred for handling strings in modern programming?",
+    "options": {
+      "a": "char array",
+      "b": "std::string",
+      "c": "string.h",
+      "d": "C-style strings"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which function returns the length of a std::string?",
+    "options": {
+      "a": "size()",
+      "b": "count()",
+      "c": "length()",
+      "d": "Both a and c"
+    },
+    "answer": "d",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is a pointer in C++?",
+    "options": {
+      "a": "A variable that stores data",
+      "b": "A variable that stores an address",
+      "c": "A constant",
+      "d": "A function"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which operator is used to get the address of a variable?",
+    "options": {
+      "a": "*",
+      "b": "&",
+      "c": "->",
+      "d": "%"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which operator is used to access the value pointed to by a pointer?",
+    "options": {
+      "a": "*",
+      "b": "&",
+      "c": "->",
+      "d": "%"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "What does a NULL pointer represent?",
+    "options": {
+      "a": "Points to variable",
+      "b": "Points to address 0",
+      "c": "Points to no valid location",
+      "d": "Points to a function"
+    },
+    "answer": "c",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which keyword is used to define a structure in C++?",
+    "options": {
+      "a": "class",
+      "b": "struct",
+      "c": "union",
+      "d": "enum"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "How do you access members of a structure variable 's'?",
+    "options": {
+      "a": "s->member",
+      "b": "s.member",
+      "c": "&s.member",
+      "d": "*s.member"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following can a structure contain?",
+    "options": {
+      "a": "Only variables of same type",
+      "b": "Only functions",
+      "c": "Variables of different data types",
+      "d": "Only pointers"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What will be the output of the following code?\nenum Colors {Red, Green, Blue};\ncout << Green;",
+    "options": {
+      "a": "0 Green",
+      "b": "1 Green",
+      "c": "2 Green",
+      "d": "Error"
+    },
+    "answer": "1",
+    "difficulty": "1"
+  },
+  {
+    "question": "Can you assign explicit values to enum constants?",
+    "options": {
+      "a": "Yes",
+      "b": "No",
+      "c": "Only first element",
+      "d": "Only last element"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does 'typedef' do in C++?",
+    "options": {
+      "a": "Defines a new data type",
+      "b": "Creates an alias for an existing data type",
+      "c": "Declares a pointer",
+      "d": "Allocates memory"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is a valid typedef statement?",
+    "options": {
+      "a": "typedef int number;",
+      "b": "typedef number int;",
+      "c": "typedef int;",
+      "d": "typedef number;"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the size of the array int arr[10]?",
+    "options": {
+      "a": "Depends on the system",
+      "b": "10",
+      "c": "Size of int",
+      "d": "Cannot be determined"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is NOT true about arrays?",
+    "options": {
+      "a": "Arrays have fixed size",
+      "b": "Array elements must be of the same type",
+      "c": "Array indices start from 1",
+      "d": "Arrays store elements in contiguous memory"
+    },
+    "answer": "c",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which operator is used to access members of a structure through a pointer?",
+    "options": {
+      "a": ".",
+      "b": "->",
+      "c": "&",
+      "d": "*"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of the following storage classes can be used for global variables?",
+    "options": {
+      "a": "auto",
+      "b": "register",
+      "c": "extern",
+      "d": "mutable"
+    },
+    "answer": "c",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is the purpose of the 'auto' storage class specifier?",
+    "options": {
+      "a": "Store variable in CPU register",
+      "b": "Default local variable storage",
+      "c": "Make variable global",
+      "d": "Preserve value between calls"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is a multi-dimensional array?",
+    "options": {
+      "a": "An array of arrays",
+      "b": "An array with a single row",
+      "c": "A pointer",
+      "d": "A structure"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of the following is used to get the length of a C-style string?",
+    "options": {
+      "a": "strlen()",
+      "b": "length()",
+      "c": "size()",
+      "d": "count()"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is the correct way to declare a pointer to an int?",
+    "options": {
+      "a": "int p;",
+      "b": "int *p;",
+      "c": "pointer p;",
+      "d": "int &p;"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is a reference in C++?",
+    "options": {
+      "a": "A copy of a variable",
+      "b": "An alias for another variable",
+      "c": "A pointer to a variable",
+      "d": "A constant variable"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "When must a reference be initialized?",
+    "options": {
+      "a": "At declaration time",
+      "b": "Before use",
+      "c": "Never",
+      "d": "After first use"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "Can a reference be reassigned to refer to another variable after initialization?",
+    "options": {
+      "a": "Yes",
+      "b": "No",
+      "c": "Only with pointers",
+      "d": "Only in classes"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of the following is NOT a core concept of Object-Oriented Programming (OOP)?",
+    "options": {
+      "a": "Inheritance",
+      "b": "Encapsulation",
+      "c": "Recursion",
+      "d": "Polymorphism"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does a class represent in C++?",
+    "options": {
+      "a": "A blueprint for creating objects",
+      "b": "A single object",
+      "c": "A function",
+      "d": "A variable"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which keyword is used to define a class in C++?",
+    "options": {
+      "a": "struct",
+      "b": "class",
+      "c": "object",
+      "d": "namespace"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is an object in C++?",
+    "options": {
+      "a": "An instance of a class",
+      "b": "A data type",
+      "c": "A pointer",
+      "d": "A function"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is a constructor in C++?",
+    "options": {
+      "a": "A special function to destroy objects",
+      "b": "A special function to initialize objects",
+      "c": "A function to copy objects",
+      "d": "A function to print objects"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of the following is true about constructors?",
+    "options": {
+      "a": "Constructor has a return type",
+      "b": "Constructor has the same name as the class",
+      "c": "Constructor is called manually",
+      "d": "Constructor cannot have parameters"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What type of constructor is shown here?\nclass Student { public: Student() {} };",
+    "options": {
+      "a": "Default constructor",
+      "b": "Parameterized constructor",
+      "c": "Copy constructor",
+      "d": "Destructor"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is a destructor in C++?",
+    "options": {
+      "a": "A function to create an object",
+      "b": "A function to initialize an object",
+      "c": "A function to release resources before object destruction",
+      "d": "A function to copy an object"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is the correct syntax of a destructor for class Test?",
+    "options": {
+      "a": "~Test()",
+      "b": "Test()",
+      "c": "void ~Test()",
+      "d": "delete Test()"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "When is a destructor called?",
+    "options": {
+      "a": "When an object is created",
+      "b": "When an object goes out of scope",
+      "c": "When a function is called",
+      "d": "When a program starts"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is encapsulation in C++?",
+    "options": {
+      "a": "Using inheritance",
+      "b": "Bundling data and functions into one unit",
+      "c": "Using pointers",
+      "d": "Writing global functions"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "How does encapsulation improve security?",
+    "options": {
+      "a": "By hiding data using private members",
+      "b": "By using global variables",
+      "c": "By making all data public",
+      "d": "By avoiding functions"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "In the context of encapsulation, which access specifier is used to hide data members?",
+    "options": {
+      "a": "public",
+      "b": "protected",
+      "c": "private",
+      "d": "static"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which method is used to set the value of a private data member in a class?",
+    "options": {
+      "a": "Getter method",
+      "b": "Setter method",
+      "c": "Destructor",
+      "d": "Constructor"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is true about references in C++?",
+    "options": {
+      "a": "They can be null",
+      "b": "They must be initialized when declared",
+      "c": "They can be reseated to another variable",
+      "d": "They occupy more memory than pointers"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of these concepts is NOT part of Object-Oriented Programming?",
+    "options": {
+      "a": "Abstraction",
+      "b": "Polymorphism",
+      "c": "Recursion",
+      "d": "Inheritance"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What happens if you don\u2019t define a constructor in a C++ class?",
+    "options": {
+      "a": "Compilation error",
+      "b": "Default constructor is generated automatically",
+      "c": "Destructor is called",
+      "d": "Object cannot be created"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of the following is NOT true about destructors?",
+    "options": {
+      "a": "Destructor name starts with ~",
+      "b": "Destructor can have parameters",
+      "c": "Destructor has no return type",
+      "d": "Destructor is called automatically"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is a correct way to create an object of class Student?",
+    "options": {
+      "a": "Student s1;",
+      "b": "class Student s1;",
+      "c": "object Student s1;",
+      "d": "new Student s1;"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which access specifier allows members of a class to be accessed from anywhere?",
+    "options": {
+      "a": "private",
+      "b": "protected",
+      "c": "public",
+      "d": "static"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the output of the following code?\nint a = 10;\nint &ref = a;\nref = 20;\ncout << a;",
+    "options": {
+      "a": "10",
+      "b": "20",
+      "c": "Compiler error",
+      "d": "Undefined"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is inheritance in C++?",
+    "options": {
+      "a": "A class acquiring properties and behaviors of another class",
+      "b": "Hiding implementation details",
+      "c": "Overloading operators",
+      "d": "Creating an alias for a variable"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "In the code snippet `class Child : public Parent { };`, what type of inheritance is shown?",
+    "options": {
+      "a": "Multiple inheritance",
+      "b": "Single inheritance",
+      "c": "Multilevel inheritance",
+      "d": "Hierarchical inheritance"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which class is the base class in inheritance?",
+    "options": {
+      "a": "Derived class",
+      "b": "Child class",
+      "c": "Parent class",
+      "d": "Friend class"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which of the following is NOT a type of inheritance in C++?",
+    "options": {
+      "a": "Single",
+      "b": "Multiple",
+      "c": "Functional",
+      "d": "Multilevel"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "What is polymorphism?",
+    "options": {
+      "a": "Function behaves differently based on context",
+      "b": "Hiding data members",
+      "c": "Creating an alias",
+      "d": "Encapsulating data"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which keyword is used to achieve runtime polymorphism?",
+    "options": {
+      "a": "virtual",
+      "b": "friend",
+      "c": "static",
+      "d": "inline"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does a virtual function do?",
+    "options": {
+      "a": "Allows function overloading",
+      "b": "Calls the derived class version at runtime",
+      "c": "Prevents function overriding",
+      "d": "Is called only in the base class"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What type of polymorphism is function overloading?",
+    "options": {
+      "a": "Runtime polymorphism",
+      "b": "Compile-time polymorphism",
+      "c": "Dynamic polymorphism",
+      "d": "None"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is abstraction in C++?",
+    "options": {
+      "a": "Grouping data and methods",
+      "b": "Hiding implementation details",
+      "c": "Function overloading",
+      "d": "Using pointers"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "How is abstraction implemented in C++?",
+    "options": {
+      "a": "Using virtual functions",
+      "b": "Using abstract classes and pure virtual functions",
+      "c": "Using friend functions",
+      "d": "Using operator overloading"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "What is a pure virtual function?",
+    "options": {
+      "a": "A function with no implementation",
+      "b": "A function implemented in the base class",
+      "c": "A function that can be overloaded",
+      "d": "A function that cannot be called"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which symbol is used to declare a pure virtual function?",
+    "options": {
+      "a": "= 1",
+      "b": "= 0",
+      "c": "# 0",
+      "d": "* 0"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is a friend function?",
+    "options": {
+      "a": "A member function with special access",
+      "b": "A non-member function with access to private/protected members",
+      "c": "A function that overloads operators",
+      "d": "A function inside the class"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "How is a friend function declared inside a class?",
+    "options": {
+      "a": "friend void func();",
+      "b": "private void func();",
+      "c": "static void func();",
+      "d": "virtual void func();"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of the following is TRUE about friend functions?",
+    "options": {
+      "a": "They are member functions",
+      "b": "They cannot access private members",
+      "c": "They have access to private and protected members",
+      "d": "They can only access public members"
+    },
+    "answer": "c",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is operator overloading?",
+    "options": {
+      "a": "Changing the precedence of operators",
+      "b": "Defining new operators",
+      "c": "Defining custom behavior for existing operators for user-defined types",
+      "d": "Changing the functionality of built-in data types"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which of these operators CANNOT be overloaded?",
+    "options": {
+      "a": "+",
+      "b": "[]",
+      "c": "::",
+      "d": "*"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What must at least one operand be when overloading an operator?",
+    "options": {
+      "a": "Built-in type",
+      "b": "User-defined type",
+      "c": "Pointer",
+      "d": "Integer"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the output of this code?\nclass Parent { public: void show() { cout << \"Parent class\"; } };\nclass Child : public Parent {};\nint main() { Child c; c.show(); return 0; }",
+    "options": {
+      "a": "Child class",
+      "b": "Parent class",
+      "c": "Compilation error",
+      "d": "Runtime error"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "In polymorphism, what does the base class pointer point to when calling a virtual function?",
+    "options": {
+      "a": "Base class function always",
+      "b": "Derived class function if overridden",
+      "c": "Cannot call virtual functions via base pointer",
+      "d": "None of the above"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of these best describes hierarchical inheritance?",
+    "options": {
+      "a": "One base class, multiple derived classes",
+      "b": "One derived class, multiple base classes",
+      "c": "Classes inherit in a chain",
+      "d": "Classes inherit from unrelated classes"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "What happens if a class contains at least one pure virtual function?",
+    "options": {
+      "a": "Class becomes abstract",
+      "b": "Class cannot be instantiated",
+      "c": "Class must override pure virtual function in derived class",
+      "d": "All of the above"
+    },
+    "answer": "d",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is the purpose of the `override` keyword in C++?",
+    "options": {
+      "a": "To define a new function",
+      "b": "To indicate a function overrides a base class virtual function",
+      "c": "To create a pure virtual function",
+      "d": "To call base class method"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "How do you declare a friend function to class Box?",
+    "options": {
+      "a": "friend void func(Box&);",
+      "b": "void friend func(Box&);",
+      "c": "friend Box func();",
+      "d": "friend class func(Box&);"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which of the following is the correct syntax to overload the + operator inside a class?",
+    "options": {
+      "a": "Complex operator +(Complex const &c);",
+      "b": "void operator +(Complex const &c);",
+      "c": "Complex + operator(Complex c);",
+      "d": "operator+ Complex(Complex c);"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is a virtual function in C++?",
+    "options": {
+      "a": "A function that can be overloaded",
+      "b": "A member function declared in base class that can be overridden in derived class",
+      "c": "A function that cannot be overridden",
+      "d": "A function that only exists in derived class"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which keyword is used to declare a virtual function?",
+    "options": {
+      "a": "override",
+      "b": "virtual",
+      "c": "friend",
+      "d": "static"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is the output of this code?\nclass Base { public: virtual void display() { cout << \"Base\"; } };\nclass Derived : public Base { public: void display() override { cout << \"Derived\"; } };\nint main() { Base* b; Derived d; b = &d; b->display(); return 0; }",
+    "options": {
+      "a": "Base",
+      "b": "Derived",
+      "c": "Compilation error",
+      "d": "Runtime error"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "If a derived class does not override a virtual function, which version is called?",
+    "options": {
+      "a": "Derived class version",
+      "b": "Base class version",
+      "c": "Error at compile time",
+      "d": "Error at runtime"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is the main benefit of virtual functions?",
+    "options": {
+      "a": "Compile-time polymorphism",
+      "b": "Runtime polymorphism",
+      "c": "Code reuse",
+      "d": "Exception handling"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What are templates used for in C++?",
+    "options": {
+      "a": "Handling exceptions",
+      "b": "Writing generic programs that work with any data type",
+      "c": "Defining virtual functions",
+      "d": "File handling"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "How do you declare a function template?",
+    "options": {
+      "a": "template <class T> T func(T a);",
+      "b": "virtual T func(T a);",
+      "c": "friend T func(T a);",
+      "d": "static T func(T a);"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is output of this code?\ntemplate <typename T> T add(T a, T b) { return a + b; }\nint main() { cout << add(3, 4) << endl; cout << add(2.5, 3.1); return 0; }",
+    "options": {
+      "a": "7 and 5.6",
+      "b": "Compilation error",
+      "c": "Only integers added",
+      "d": "Only doubles added"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which of the following is TRUE about templates?",
+    "options": {
+      "a": "They increase code duplication",
+      "b": "They reduce code duplication",
+      "c": "They work only with built-in types",
+      "d": "They cannot be used with classes"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "What keywords are used in C++ for exception handling?",
+    "options": {
+      "a": "try, catch, throw",
+      "b": "if, else, throw",
+      "c": "try, catch, finally",
+      "d": "throw, catch, finally"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What happens when an exception is thrown but not caught?",
+    "options": {
+      "a": "Program continues normally",
+      "b": "Program terminates",
+      "c": "Compilation error",
+      "d": "Exception is ignored"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "What is the purpose of the catch block?",
+    "options": {
+      "a": "Throw an exception",
+      "b": "Handle an exception",
+      "c": "Declare variables",
+      "d": "Define functions"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What will the following code output?\ntry { int x = 0; if (x == 0) throw \"Error!\"; } catch (const char* msg) { cout << msg; }",
+    "options": {
+      "a": "0",
+      "b": "Error!",
+      "c": "Exception not caught",
+      "d": "No output"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which classes are used for file operations in C++?",
+    "options": {
+      "a": "ifstream, ofstream, fstream",
+      "b": "iostream, iomanip, ios",
+      "c": "fstream, file, stream",
+      "d": "fstream, iostream, file"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which class is used for writing to files?",
+    "options": {
+      "a": "ifstream",
+      "b": "ofstream",
+      "c": "fstream",
+      "d": "iostream"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does this code do?\nofstream fout(\"file.txt\"); fout << \"Hello\"; fout.close();",
+    "options": {
+      "a": "Reads from file.txt",
+      "b": "Writes 'Hello' to file.txt",
+      "c": "Deletes file.txt",
+      "d": "Appends to file.txt"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is a namespace used for in C++?",
+    "options": {
+      "a": "Exception handling",
+      "b": "Organizing code and avoiding name conflicts",
+      "c": "File handling",
+      "d": "Virtual functions"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "How do you access a variable named 'value' inside namespace 'first'?",
+    "options": {
+      "a": "first::value",
+      "b": "value::first",
+      "c": "first.value",
+      "d": "value.first"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which is the standard namespace in C++?",
+    "options": {
+      "a": "std",
+      "b": "standard",
+      "c": "default",
+      "d": "namespace"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "What are preprocessor directives?",
+    "options": {
+      "a": "Instructions processed after compilation",
+      "b": "Instructions processed before compilation",
+      "c": "Functions inside classes",
+      "d": "Exception handling constructs"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does #define do in C++?",
+    "options": {
+      "a": "Includes a file",
+      "b": "Defines a macro",
+      "c": "Declares a variable",
+      "d": "Defines a function"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which directive is used to include header files?",
+    "options": {
+      "a": "#define",
+      "b": "#include",
+      "c": "#ifdef",
+      "d": "#pragma"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does the following code output?\n#define PI 3.14\nint main() { cout << PI; return 0; }",
+    "options": {
+      "a": "PI",
+      "b": "3.14",
+      "c": "Compilation error",
+      "d": "0"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which preprocessor directive is used for conditional compilation?",
+    "options": {
+      "a": "#ifdef",
+      "b": "#include",
+      "c": "#define",
+      "d": "#pragma"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What does the 'new' keyword do in C++?",
+    "options": {
+      "a": "Allocates memory at compile time",
+      "b": "Allocates memory dynamically on the heap at runtime",
+      "c": "Deletes a variable",
+      "d": "Declares a pointer"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which keyword is used to free dynamically allocated memory?",
+    "options": {
+      "a": "free",
+      "b": "delete",
+      "c": "dispose",
+      "d": "remove"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "How do you allocate an array dynamically in C++?",
+    "options": {
+      "a": "int *arr = new int[10];",
+      "b": "int arr = new int(10);",
+      "c": "int arr[] = new int(10);",
+      "d": "int arr = new int[];"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which is the correct way to delete a dynamically allocated array?",
+    "options": {
+      "a": "delete arr;",
+      "b": "delete[] arr;",
+      "c": "free(arr);",
+      "d": "remove(arr);"
+    },
+    "answer": "b",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is STL in C++?",
+    "options": {
+      "a": "Standard Template Library - a collection of template classes and functions",
+      "b": "Simple Type Library",
+      "c": "System Template Loader",
+      "d": "Standard Text Library"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which of the following is NOT an STL container?",
+    "options": {
+      "a": "vector",
+      "b": "map",
+      "c": "arraylist",
+      "d": "set"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "What does the following STL algorithm do?\n`sort(v.begin(), v.end());`",
+    "options": {
+      "a": "Sorts the vector 'v' in ascending order",
+      "b": "Finds an element in 'v'",
+      "c": "Reverses the vector 'v'",
+      "d": "Removes duplicates from 'v'"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which of the following is used to traverse STL containers?",
+    "options": {
+      "a": "Pointers",
+      "b": "Iterators",
+      "c": "References",
+      "d": "Indices"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which of these is a benefit of using STL?",
+    "options": {
+      "a": "Increases code duplication",
+      "b": "Makes C++ less powerful",
+      "c": "Provides reusable and efficient data structures and algorithms",
+      "d": "Requires manual memory management"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which statement best describes C++?",
+    "options": {
+      "a": "Interpreted scripting language",
+      "b": "Compiled, object-oriented language combining low-level and high-level features",
+      "c": "Only used for web development",
+      "d": "A functional programming language"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Where is C++ commonly used?",
+    "options": {
+      "a": "Operating systems, game engines, browsers, embedded systems",
+      "b": "Web front-end development",
+      "c": "Mobile app scripting",
+      "d": "Pure data science tasks"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is one advantage of C++ mentioned in the summary?",
+    "options": {
+      "a": "Slow execution speed",
+      "b": "Supports modularity, reusability, and performance",
+      "c": "No support for OOP",
+      "d": "Interpreted language"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which languages were influenced by C++?",
+    "options": {
+      "a": "Python and Ruby",
+      "b": "Java and C#",
+      "c": "JavaScript and TypeScript",
+      "d": "PHP and Perl"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "What happens if you forget to use delete after new in C++?",
+    "options": {
+      "a": "Program crashes immediately",
+      "b": "Memory leak occurs",
+      "c": "Memory is automatically freed",
+      "d": "Compilation error"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which operator is used to access elements of a vector in STL?",
+    "options": {
+      "a": "[]",
+      "b": "()",
+      "c": "{}",
+      "d": "<>"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "What is the complexity of std::sort algorithm in STL on average?",
+    "options": {
+      "a": "O(n^2)",
+      "b": "O(log n)",
+      "c": "O(n log n)",
+      "d": "O(n)"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which header file must be included to use STL vectors?",
+    "options": {
+      "a": "<iostream>",
+      "b": "<vector>",
+      "c": "<algorithm>",
+      "d": "<string>"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "What does the 'auto' keyword do when used with STL iterators?",
+    "options": {
+      "a": "Automatically allocates memory",
+      "b": "Automatically infers the type of iterator",
+      "c": "Defines a constant variable",
+      "d": "Defines a pointer"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is NOT a valid STL algorithm?",
+    "options": {
+      "a": "sort()",
+      "b": "find()",
+      "c": "reverse()",
+      "d": "delete()"
+    },
+    "answer": "d",
+    "difficulty": "3"
+  },
+  {
+    "question": "What is the purpose of the std::accumulate function in STL?",
+    "options": {
+      "a": "Adds all elements in a container",
+      "b": "Sorts elements",
+      "c": "Finds an element",
+      "d": "Removes duplicates"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "Which container would you use if you need fast lookups by key?",
+    "options": {
+      "a": "vector",
+      "b": "list",
+      "c": "map",
+      "d": "stack"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "What is a key advantage of using templates in C++?",
+    "options": {
+      "a": "Improves runtime speed drastically",
+      "b": "Allows code reuse with different data types",
+      "c": "Eliminates the need for pointers",
+      "d": "Disables type checking"
+    },
+    "answer": "b",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which of these is NOT true about STL iterators?",
+    "options": {
+      "a": "They behave like pointers",
+      "b": "Used to traverse containers",
+      "c": "Only work with vectors",
+      "d": "Provide a generic way to access container elements"
+    },
+    "answer": "c",
+    "difficulty": "3"
+  },
+  {
+    "question": "Which of the following best describes the C++ standard template library?",
+    "options": {
+      "a": "A library that provides templates for standard data structures and algorithms",
+      "b": "A set of tools for UI development",
+      "c": "A compiler for C++",
+      "d": "A runtime environment"
+    },
+    "answer": "a",
+    "difficulty": "3"
+  },
+  {
+    "question": "What is the main reason to use dynamic memory allocation in C++?",
+    "options": {
+      "a": "To allocate memory at compile time",
+      "b": "To allocate memory whose size is not known at compile time",
+      "c": "To improve performance by avoiding memory usage",
+      "d": "To declare constants"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following correctly deletes a dynamically allocated single int pointer 'p'?",
+    "options": {
+      "a": "delete p;",
+      "b": "delete[] p;",
+      "c": "free(p);",
+      "d": "dispose p;"
+    },
+    "answer": "a",
+    "difficulty": "2"
+  },
+  {
+    "question": "What is the key feature of C++ that allows it to be both low-level and high-level?",
+    "options": {
+      "a": "Interpretation",
+      "b": "Object-oriented programming and direct memory manipulation",
+      "c": "Dynamic typing",
+      "d": "Garbage collection"
+    },
+    "answer": "b",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which of the following is NOT a use case of C++?",
+    "options": {
+      "a": "Operating system development",
+      "b": "Embedded systems",
+      "c": "Web front-end design",
+      "d": "Game engine programming"
+    },
+    "answer": "c",
+    "difficulty": "1"
+  },
+  {
+    "question": "Which language is heavily influenced by C++?",
+    "options": {
+      "a": "Java",
+      "b": "Python",
+      "c": "JavaScript",
+      "d": "HTML"
+    },
+    "answer": "a",
+    "difficulty": "1"
+  }
+]

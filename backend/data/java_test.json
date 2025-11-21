@@ -1,0 +1,1234 @@
+[
+  {
+    "question": "Who is credited with the creation of the Java programming language?",
+    "options": {
+      "a": "Dennis Ritchie",
+      "b": "Guido van Rossum",
+      "c": "James Gosling",
+      "d": "Bjarne Stroustrup"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which component executes Java bytecode?",
+    "options": {
+      "a": "JRE",
+      "b": "JVM",
+      "c": "JDK",
+      "d": "JAR"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the entry point of a standalone Java application?",
+    "options": {
+      "a": "start()",
+      "b": "run()",
+      "c": "main()",
+      "d": "init()"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which Java feature ensures automatic memory management?",
+    "options": {
+      "a": "Pointers",
+      "b": "Destructor",
+      "c": "Garbage Collector",
+      "d": "Memory Allocator"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following tools is used to compile Java source code?",
+    "options": {
+      "a": "java",
+      "b": "javadoc",
+      "c": "javac",
+      "d": "jlink"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which Java feature allows it to run on different operating systems without modification?",
+    "options": {
+      "a": "Strong Typing",
+      "b": "Object Orientation",
+      "c": "Platform Independence",
+      "d": "Rich Libraries"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What does the Java Just-In-Time (JIT) compiler do?",
+    "options": {
+      "a": "Checks syntax errors",
+      "b": "Compiles Java to bytecode",
+      "c": "Converts bytecode to native code at runtime",
+      "d": "Links multiple Java files"
+    },
+    "answer": "c",
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following is NOT a common use of Java?",
+    "options": {
+      "a": "Embedded Systems",
+      "b": "Web Applications",
+      "c": "Operating System Kernel Development",
+      "d": "Android Applications"
+    },
+    "answer": "c",
+    "difficulty": 3
+  },
+  {
+    "question": "Which modifier in Java is used to restrict access to a class within its own package only?",
+    "options": {
+      "a": "public",
+      "b": "private",
+      "c": "protected",
+      "d": "default (no modifier)"
+    },
+    "answer": "d",
+    "difficulty": 3
+  },
+  {
+    "question": "What is the purpose of the 'main' method in Java?",
+    "options": {
+      "a": "To define class-level variables",
+      "b": "To initialize static blocks",
+      "c": "To serve as the entry point for execution",
+      "d": "To handle exceptions"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a valid Java comment for documenting APIs?",
+    "options": {
+      "a": "// comment",
+      "b": "/* comment */",
+      "c": "/** comment */",
+      "d": "# comment"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is NOT a valid identifier in Java?",
+    "options": {
+      "a": "_myVar",
+      "b": "$myVar",
+      "c": "2ndVar",
+      "d": "myVar2"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which naming convention is typically used for Java class names?",
+    "options": {
+      "a": "snake_case",
+      "b": "kebab-case",
+      "c": "camelCase",
+      "d": "PascalCase"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the scope of a variable declared inside a method in Java?",
+    "options": {
+      "a": "Class scope",
+      "b": "Global scope",
+      "c": "Package scope",
+      "d": "Local scope"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "In the code `public class Student { int rollNo; String name; }`, which of the following is a class identifier?",
+    "options": {
+      "a": "Student",
+      "b": "rollNo",
+      "c": "name",
+      "d": "public"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of these comments is used for a single-line comment in Java?",
+    "options": {
+      "a": "# This is a comment",
+      "b": "// This is a comment",
+      "c": "/* This is a comment */",
+      "d": "<!-- This is a comment -->"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the default access level for identifiers in Java if no modifier is specified?",
+    "options": {
+      "a": "public",
+      "b": "protected",
+      "c": "private",
+      "d": "package-private"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is an enum identifier in Java?",
+    "options": {
+      "a": "System",
+      "b": "String",
+      "c": "MON",
+      "d": "Week"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of these identifiers refers to a method in Java?",
+    "options": {
+      "a": "int",
+      "b": "average",
+      "c": "marks1",
+      "d": "Student"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which identifier naming is most commonly used for variables and methods in Java?",
+    "options": {
+      "a": "camelCase",
+      "b": "PascalCase",
+      "c": "snake_case",
+      "d": "UPPERCASE"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a valid primitive data type in Java?",
+    "options": {
+      "a": "String",
+      "b": "Integer",
+      "c": "boolean",
+      "d": "Character"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which keyword is used to declare a constant in Java?",
+    "options": {
+      "a": "static",
+      "b": "const",
+      "c": "immutable",
+      "d": "final"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "Where are objects (reference types) stored in Java memory?",
+    "options": {
+      "a": "Stack",
+      "b": "Heap",
+      "c": "Cache",
+      "d": "Register"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which naming convention is correct for a constant in Java?",
+    "options": {
+      "a": "finalValue",
+      "b": "Final_Value",
+      "c": "FINAL_VALUE",
+      "d": "FinalValue"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the default value of an uninitialized int field variable?",
+    "options": {
+      "a": "0",
+      "b": "null",
+      "c": "undefined",
+      "d": "Not allowed"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following variables has class (static) scope?",
+    "options": {
+      "a": "A variable inside a loop",
+      "b": "A parameter in a method",
+      "c": "A variable declared with 'static' inside a class",
+      "d": "A local variable declared in main()"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What will happen if you use a local variable before initializing it?",
+    "options": {
+      "a": "It will be assigned a default value",
+      "b": "It will compile but give a warning",
+      "c": "It will cause a compile-time error",
+      "d": "It will throw a runtime exception"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which type of variable can be accessed by all instances of a class?",
+    "options": {
+      "a": "Instance variable",
+      "b": "Local variable",
+      "c": "Static variable",
+      "d": "Parameter variable"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which statement about Java variable naming is TRUE?",
+    "options": {
+      "a": "Variable names can start with a digit",
+      "b": "Keywords can be used as variable names",
+      "c": "Variable names are case-sensitive",
+      "d": "Variable names can contain spaces"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Why is proper scope management important in Java?",
+    "options": {
+      "a": "It reduces file size",
+      "b": "It avoids garbage collection",
+      "c": "It improves code encapsulation and safety",
+      "d": "It makes the code run faster"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a primitive data type in Java?",
+    "options": {
+      "a": "String",
+      "b": "Scanner",
+      "c": "float",
+      "d": "ArrayList"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "How many bytes does a Java `char` type occupy in memory?",
+    "options": {
+      "a": "1 byte",
+      "b": "2 bytes",
+      "c": "4 bytes",
+      "d": "8 bytes"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which keyword is used to print text followed by a newline in Java?",
+    "options": {
+      "a": "System.out.print()",
+      "b": "System.console()",
+      "c": "System.out.println()",
+      "d": "System.print.out()"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which format specifier is used with `System.out.printf()` to print an integer?",
+    "options": {
+      "a": "%s",
+      "b": "%d",
+      "c": "%f",
+      "d": "%c"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the output of the following code?\n```java\nint age = 25;\nSystem.out.printf(\"Age: %d\\n\", age);\n```",
+    "options": {
+      "a": "Age: %d",
+      "b": "Age = 25",
+      "c": "Age: 25",
+      "d": "25: Age"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which class is commonly used for reading keyboard input in Java console applications?",
+    "options": {
+      "a": "InputReader",
+      "b": "BufferedWriter",
+      "c": "Scanner",
+      "d": "Reader"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the correct way to read a single character input using Scanner?",
+    "options": {
+      "a": "sc.nextChar();",
+      "b": "sc.readChar();",
+      "c": "sc.next().charAt(0);",
+      "d": "sc.read().charAt(0);"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a reference type in Java?",
+    "options": {
+      "a": "int",
+      "b": "float",
+      "c": "char",
+      "d": "String"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "Which Java data type would you use to store a number like `3.14f`?",
+    "options": {
+      "a": "double",
+      "b": "float",
+      "c": "int",
+      "d": "long"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Why should we call `sc.close()` after using a Scanner?",
+    "options": {
+      "a": "To release memory manually",
+      "b": "To flush the output",
+      "c": "To close the input stream and avoid resource leaks",
+      "d": "To end the program"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which class is used to read an entire line of input from the console in Java?",
+    "options": {
+      "a": "Scanner",
+      "b": "BufferedReader",
+      "c": "InputReader",
+      "d": "ConsoleReader"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a valid arithmetic operator in Java?",
+    "options": {
+      "a": "&",
+      "b": "%",
+      "c": "&&",
+      "d": "=="
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the result of the expression: `5 % 2`?",
+    "options": {
+      "a": "2",
+      "b": "0",
+      "c": "1",
+      "d": "3"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which relational operator checks if two values are not equal in Java?",
+    "options": {
+      "a": "!=",
+      "b": "!==",
+      "c": "<>",
+      "d": "=="
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which logical operator represents the logical AND in Java?",
+    "options": {
+      "a": "||",
+      "b": "!",
+      "c": "&",
+      "d": "&&"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the escape sequence `\\t` represent?",
+    "options": {
+      "a": "New line",
+      "b": "Tab space",
+      "c": "Backslash",
+      "d": "Double quote"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which format specifier is used to print a floating point number using `printf()`?",
+    "options": {
+      "a": "%d",
+      "b": "%s",
+      "c": "%c",
+      "d": "%f"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "Which loop guarantees at least one execution of the loop body?",
+    "options": {
+      "a": "for loop",
+      "b": "while loop",
+      "c": "do...while loop",
+      "d": "enhanced for loop"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What will the following code output?\n```java\nint x = 10;\nx++;\nSystem.out.println(x);\n```",
+    "options": {
+      "a": "10",
+      "b": "11",
+      "c": "9",
+      "d": "Compilation error"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which loop is most suitable when the number of iterations is known beforehand?",
+    "options": {
+      "a": "while loop",
+      "b": "do...while loop",
+      "c": "for loop",
+      "d": "infinite loop"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the correct signature for the main method in a Java application?",
+    "options": {
+      "a": "public void main(String[] args)",
+      "b": "public static void main(String[] args)",
+      "c": "static void main(String args)",
+      "d": "void main(String[] args)"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which keyword is used to define a method that belongs to the class rather than instances?",
+    "options": {
+      "a": "final",
+      "b": "abstract",
+      "c": "static",
+      "d": "private"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What does Java use for passing arguments to methods?",
+    "options": {
+      "a": "Call by reference",
+      "b": "Call by object",
+      "c": "Call by pointer",
+      "d": "Call by value"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "Given the following code, what will be the output?\n```java\nint a = 10;\nchange(a);\nSystem.out.println(a);\n```\nWhere `change(int x)` sets `x = 100;`",
+    "options": {
+      "a": "10",
+      "b": "100",
+      "c": "0",
+      "d": "Compilation error"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "How can an object's internal state be modified inside a method in Java?",
+    "options": {
+      "a": "Only by passing primitive types",
+      "b": "Only by returning a new object",
+      "c": "By modifying the object via the passed reference",
+      "d": "Java does not support this"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is true about method overloading?",
+    "options": {
+      "a": "Method name must differ",
+      "b": "Return type must differ",
+      "c": "Parameter list must differ",
+      "d": "Method must be static"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the correct way to declare and initialize an array in Java?",
+    "options": {
+      "a": "int arr() = new int[5];",
+      "b": "array int arr = [5];",
+      "c": "int[] arr = new int[5];",
+      "d": "int arr = int[5];"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following statements about arrays is TRUE?",
+    "options": {
+      "a": "Arrays in Java are primitive types.",
+      "b": "Arrays have dynamic size.",
+      "c": "Array index starts from 1.",
+      "d": "Arrays in Java are objects."
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "What will the following code print?\n```java\nint[] arr = {10, 20, 30};\nSystem.out.println(arr.length);",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "d": "Compilation error"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the average printed by the following code?\n```java\nint[] marks = {50,60,70,80,90};\nint sum = 0;\nfor (int m : marks) sum += m;\ndouble avg = (double) sum / marks.length;\nSystem.out.println(\"Average: \" + avg);",
+    "options": {
+      "a": "65.0",
+      "b": "75.0",
+      "c": "70.0",
+      "d": "60.0"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is TRUE about Java arrays?",
+    "options": {
+      "a": "They can grow or shrink dynamically.",
+      "b": "They store elements of mixed types.",
+      "c": "They are zero-indexed objects on the heap.",
+      "d": "They are passed by reference only."
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the output of the following code?\n```java\nString a = \"hello\";\nString b = new String(\"hello\");\nSystem.out.println(a == b);\nSystem.out.println(a.equals(b));\n```",
+    "options": {
+      "a": "true true",
+      "b": "false false",
+      "c": "true false",
+      "d": "false true"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "What exception is thrown when accessing an invalid array index?",
+    "options": {
+      "a": "NullPointerException",
+      "b": "IndexOutOfBoundsException",
+      "c": "ArrayIndexOutOfBoundsException",
+      "d": "IllegalArgumentException"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a characteristic of multidimensional arrays in Java?",
+    "options": {
+      "a": "They must be rectangular in shape.",
+      "b": "They are implemented as arrays of arrays.",
+      "c": "They use one-based indexing.",
+      "d": "They are dynamically resizable."
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What does the Java Collections Framework NOT include?",
+    "options": {
+      "a": "List",
+      "b": "Set",
+      "c": "Map",
+      "d": "Pointer"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following best describes generics in Java?",
+    "options": {
+      "a": "They allow runtime polymorphism.",
+      "b": "They ensure type safety at compile time.",
+      "c": "They replace inheritance.",
+      "d": "They eliminate the need for constructors."
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which keyword is used to specify a bounded generic type?",
+    "options": {
+      "a": "limit",
+      "b": "extends",
+      "c": "super",
+      "d": "restrict"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a checked exception in Java?",
+    "options": {
+      "a": "NullPointerException",
+      "b": "ArrayIndexOutOfBoundsException",
+      "c": "IOException",
+      "d": "ArithmeticException"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of the `finally` block in exception handling?",
+    "options": {
+      "a": "To catch exceptions only.",
+      "b": "To skip the catch block.",
+      "c": "To ensure code runs after try-catch, regardless of outcome.",
+      "d": "To suppress all exceptions."
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which concept allows different classes to define methods with the same name but different behavior?",
+    "options": {
+      "a": "Encapsulation",
+      "b": "Inheritance",
+      "c": "Polymorphism",
+      "d": "Abstraction"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "In Java, which OOP principle is achieved using private fields and public getters/setters?",
+    "options": {
+      "a": "Inheritance",
+      "b": "Polymorphism",
+      "c": "Encapsulation",
+      "d": "Abstraction"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which class will correctly override the method `void speak()` from its superclass `Animal`?",
+    "options": {
+      "a": "`class Dog extends Animal { void speak() { ... } }`",
+      "b": "`class Dog implements Animal { void speak() { ... } }`",
+      "c": "`class Dog inherits Animal { void speak() { ... } }`",
+      "d": "`class Dog overloads Animal { void speak() { ... } }`"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following can be defined in an interface starting from Java 8?",
+    "options": {
+      "a": "Constructors",
+      "b": "Instance variables",
+      "c": "Default and static methods",
+      "d": "Private instance fields"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is TRUE about abstract classes?",
+    "options": {
+      "a": "They cannot have constructors.",
+      "b": "They cannot contain abstract methods.",
+      "c": "They can hold fields and non-abstract methods.",
+      "d": "They can be instantiated directly."
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the output of the following Java code?\n```java\ninterface Printable { void print(); }\nabstract class Base { abstract void run(); }\nclass Impl extends Base implements Printable {\n  void run() { System.out.println(\"Running\"); }\n  public void print() { System.out.println(\"Print\"); }\n}\npublic class IAExample {\n  public static void main(String[] args) {\n    Impl i = new Impl(); i.run(); i.print();\n  }\n}\n```",
+    "options": {
+      "a": "Print\nRunning",
+      "b": "Running\nPrint",
+      "c": "Print\nPrint",
+      "d": "Compilation Error"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following best describes an anonymous inner class?",
+    "options": {
+      "a": "A class without a name that implements an interface or extends a class inline.",
+      "b": "A class declared inside another class without any access modifier.",
+      "c": "A class that overrides all methods of Object class.",
+      "d": "A class defined inside an interface."
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which Java feature allows passing behavior as data using a concise syntax?",
+    "options": {
+      "a": "Interfaces",
+      "b": "Lambda expressions",
+      "c": "Abstract classes",
+      "d": "Static methods"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of these is NOT a valid functional interface in Java?",
+    "options": {
+      "a": "Runnable",
+      "b": "Comparator",
+      "c": "Serializable",
+      "d": "Consumer"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the output of the following code?\n```java\nList<Integer> list = Arrays.asList(1, 2, 3);\nlist.forEach(n -> System.out.println(n * 2));\n```",
+    "options": {
+      "a": "1 2 3",
+      "b": "2 4 6",
+      "c": "1 4 9",
+      "d": "No output"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following statements about Streams is FALSE?",
+    "options": {
+      "a": "Streams can be sequential or parallel.",
+      "b": "Streams mutate the original collection.",
+      "c": "Streams support lazy evaluation.",
+      "d": "Streams require a terminal operation to produce a result."
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which method is used to submit tasks to a thread pool in Java?",
+    "options": {
+      "a": "execute()",
+      "b": "submit()",
+      "c": "start()",
+      "d": "runTask()"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What does the `synchronized` keyword in Java ensure?",
+    "options": {
+      "a": "A thread is paused.",
+      "b": "Only one thread can access the critical section at a time.",
+      "c": "The method becomes static.",
+      "d": "The object is immutable."
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What advantage does `ReentrantLock` offer over `synchronized`?",
+    "options": {
+      "a": "It requires less memory.",
+      "b": "It automatically manages threads.",
+      "c": "It provides more control like tryLock and interruptible locks.",
+      "d": "It is deprecated in Java 8."
+    },
+    "answer": "c",
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following is TRUE about lambda expressions in Java?",
+    "options": {
+      "a": "They can be used to implement any interface.",
+      "b": "They must implement functional interfaces (single abstract method).",
+      "c": "They can contain multiple methods.",
+      "d": "They replace all classes in Java."
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which Java package introduced non-blocking I/O and improved file system APIs?",
+    "options": {
+      "a": "java.io",
+      "b": "java.nio",
+      "c": "java.net",
+      "d": "java.util"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a correct use of reading a file’s content into a String using NIO?",
+    "options": {
+      "a": "Files.readLine(Path.of(\"file.txt\"));",
+      "b": "Files.readString(Path.of(\"file.txt\"));",
+      "c": "Files.readAll(Path.of(\"file.txt\"));",
+      "d": "Files.readBytes(Path.of(\"file.txt\"));"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What must a class implement to enable default Java serialization?",
+    "options": {
+      "a": "Serializable",
+      "b": "Externalizable",
+      "c": "Cloneable",
+      "d": "Comparable"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which keyword is used to skip a field from default serialization?",
+    "options": {
+      "a": "static",
+      "b": "transient",
+      "c": "volatile",
+      "d": "final"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which retention policy means the annotation is only present in the source code and discarded by the compiler?",
+    "options": {
+      "a": "RUNTIME",
+      "b": "CLASS",
+      "c": "SOURCE",
+      "d": "SYSTEM"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which component in the JVM stores class metadata and definitions?",
+    "options": {
+      "a": "Heap",
+      "b": "Stack",
+      "c": "Metaspace",
+      "d": "Code Cache"
+    },
+    "answer": "c",
+    "difficulty": 3
+  },
+  {
+    "question": "Which Java module system feature was introduced in Java 9?",
+    "options": {
+      "a": "Dynamic class loading",
+      "b": "Module declarations (module‑info.java)",
+      "c": "Automatic garbage collection tuning",
+      "d": "Package-private access"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which build tool uses `pom.xml` and a convention-based lifecycle?",
+    "options": {
+      "a": "Gradle",
+      "b": "Ant",
+      "c": "Maven",
+      "d": "SBT"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which testing framework is commonly used in modern Java projects for unit testing?",
+    "options": {
+      "a": "JUnit",
+      "b": "TestNG",
+      "c": "JUnit and TestNG both",
+      "d": "QUnit"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which logging abstraction is commonly used in Java applications to allow swapping underlying implementations?",
+    "options": {
+      "a": "System.out",
+      "b": "java.util.logging",
+      "c": "SLF4J",
+      "d": "Logback"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which annotation signals that a method is deprecated (should not be used)?",
+    "options": {
+      "a": "@Override",
+      "b": "@SuppressWarnings",
+      "c": "@Deprecated",
+      "d": "@Retention"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is NOT a property of Java’s default garbage collection approach?",
+    "options": {
+      "a": "Generational collection",
+      "b": "Automatic memory reclamation",
+      "c": "Manual free of objects",
+      "d": "Multiple algorithms (G1, ZGC, etc.)"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which design pattern is illustrated by providing a global access point but only allowing one instance of a class?",
+    "options": {
+      "a": "Factory",
+      "b": "Builder",
+      "c": "Singleton",
+      "d": "Observer"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which statement is true about modules in Java (JPMS)?",
+    "options": {
+      "a": "Modules eliminate the need for packages",
+      "b": "Modules can export packages and require other modules",
+      "c": "Modules replace classes",
+      "d": "Modules are only for web applications"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "When dealing with I/O in Java, which construct ensures automatic resource closing?",
+    "options": {
+      "a": "try { } catch { }",
+      "b": "finally block",
+      "c": "try-with-resources",
+      "d": "synchronized block"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following formats is typically used to package Java command-line applications?",
+    "options": {
+      "a": "WAR",
+      "b": "JAR",
+      "c": "EAR",
+      "d": "ZIP"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which tool can be used to create optimized Java runtime images?",
+    "options": {
+      "a": "javac",
+      "b": "javadoc",
+      "c": "jlink",
+      "d": "jps"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is one key benefit of using GraalVM's native-image for Java deployment?",
+    "options": {
+      "a": "Improved syntax highlighting",
+      "b": "Reduced runtime classpath size",
+      "c": "Faster startup time and smaller memory footprint",
+      "d": "Automatic UI generation"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Why is Docker commonly used for deploying Java applications?",
+    "options": {
+      "a": "It compiles Java code faster",
+      "b": "It ensures consistent runtime environments",
+      "c": "It replaces Java with native code",
+      "d": "It increases thread priority"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which Java technology allows for monitoring and management at runtime?",
+    "options": {
+      "a": "JMX",
+      "b": "JPA",
+      "c": "JDBC",
+      "d": "JAR"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which Java-based reactive programming library is designed around non-blocking streams?",
+    "options": {
+      "a": "RxJava",
+      "b": "JUnit",
+      "c": "Spring MVC",
+      "d": "Log4j"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is NOT typically a microservice concept?",
+    "options": {
+      "a": "Service Discovery",
+      "b": "Monolithic Deployment",
+      "c": "API Gateway",
+      "d": "Circuit Breaker"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which JVM language is known for null safety and modern syntax?",
+    "options": {
+      "a": "Scala",
+      "b": "Clojure",
+      "c": "Kotlin",
+      "d": "Groovy"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which tool or platform is commonly used for deploying Java applications in cloud-native environments?",
+    "options": {
+      "a": "JAR",
+      "b": "Kubernetes",
+      "c": "Swing",
+      "d": "Ant"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following should be mastered early when learning Java?",
+    "options": {
+      "a": "Spring Boot",
+      "b": "Hibernate",
+      "c": "Control flow and OOP concepts",
+      "d": "Microservices architecture"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which topic helps Java developers write concurrent, performant code?",
+    "options": {
+      "a": "JSP",
+      "b": "Concurrency and JVM internals",
+      "c": "JUnit testing",
+      "d": "Log4j configuration"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which combination is most suitable for enterprise-level Java development?",
+    "options": {
+      "a": "Spring + Hibernate",
+      "b": "JSP + AWT",
+      "c": "JavaFX + Log4j",
+      "d": "Servlets + JDBC only"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "What is a recommended way to solidify your Java knowledge?",
+    "options": {
+      "a": "Reading Java docs only",
+      "b": "Watching only YouTube tutorials",
+      "c": "Practicing by building, testing, and deploying projects",
+      "d": "Skipping testing and focusing only on design"
+    },
+    "answer": "c",
+    "difficulty": 1
+  }
+]

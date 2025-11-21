@@ -1,0 +1,830 @@
+{
+  "title": "C++ Programming Smart Learning Content",
+  "topics": [
+    {
+      "title": "Introduction to C++",
+      "description": "History of C++",
+      "extra": [
+        "C++ was developed by Bjarne Stroustrup at AT&T Bell Laboratories (Murray Hill, New Jersey) in 1979.",
+        "It was originally called 'C with Classes', because it extended the C language by adding object-oriented features.",
+        "C++ is a cross-platform language that can be used to create high-performance applications.",
+        "\"C++ is a superset of C programming with additional implementation of object-oriented concepts\".",
+        "C++ is an important programming language for students and working professionals to become great software developers.",
+        "C++ programming gives you a clear understanding of object-oriented programming. You will understand low level implementation of polymorphism when you implement virtual tables and virtual table pointers, or dynamic type identification.",
+        "C++ really teaches you the difference between compiler, linker, and loader, different data types, storage classes, variable types, their scopes, etc."
+      ]
+    },
+    {
+      "title": "Features of C++",
+      "description": "Key features and strengths of C++.",
+      "extra": [
+        "C Language Compatibility: C++ is an extension of C (originally called C with Classes). Almost all valid C code can be compiled and executed in C++. Functions, arrays, pointers, and printf()/scanf() from C can also be used in C++.",
+        "Object-oriented Programming: C++ supports the concepts of OOPs such as objects & classes, encapsulation, data binding, inheritance, and polymorphism.",
+        "Classes & Objects → blueprint & actual entity.",
+        "Encapsulation → wrapping data and functions together.",
+        "Data Binding → restricting direct access to data (using private/public).",
+        "Inheritance → creating new classes from existing ones.",
+        "Polymorphism → one function behaving differently in different contexts.",
+        "Compiled Language: C++ is a compiled language, meaning the source code is converted into machine code by a compiler (like g++ or clang++). This makes it faster than interpreted languages (like Python or JavaScript) where code is executed line-by-line. Because of compilation, C++ is widely used in game engines, operating systems, real-time systems, and embedded systems.",
+        "Standard Template Library (STL): STL is a collection of pre-built classes and functions for common data structures and algorithms. Saves time since you don’t have to write everything from scratch.",
+        "Containers → Data structures like vector, list, map, set.",
+        "Iterators → Used to access elements of containers.",
+        "Algorithms → Predefined functions like sort(), find(), reverse().",
+        "Dynamic Memory Management: In C++, memory can be allocated at runtime using the new operator and released using the delete operator. This makes programs flexible and allows them to use memory efficiently.",
+        "Exception Handling: Errors can happen during runtime (like dividing by zero, invalid input, etc.). In C, handling such errors is difficult. In C++, we use try, catch, throw for safe error handling."
+      ]
+    },
+    {
+      "title": "Structure of a C++ Program",
+      "description": "General structure and flow of a C++ program.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"This is the structure of a C++ program!\";\n    return 0;\n}",
+          "output": "This is the structure of a C++ program!",
+          "explanation": ""
+        }
+      ],
+      "extra": [
+        "Preprocessor Directive (#include): Tells the compiler to include header files before compilation.",
+        "Namespace (using namespace std;): Defines a scope to avoid naming conflicts.",
+        "Main Function (int main()): Entry point of every C++ program. Program execution starts here. Must return an integer (usually 0 for successful execution).",
+        "Statements & Expressions: The body of the program, enclosed in { }.",
+        "Return Statement (return 0;): Ends the program and returns control to the operating system."
+      ]
+    },
+    {
+      "title": "Compiling and Running C++ Programs",
+      "description": "Compilation process for C++ source code into an executable.",
+      "extra": [
+        "Source Code (.cpp): What you write.",
+        "Preprocessor: Prepares the recipe (expands macros & includes).",
+        "Compiler: Translates into Assembly (syntax check, semantic check, optimization, assembly generation).",
+        "Assembly Code (.s): Human-readable machine instructions.",
+        "Assembler: Converts to binary (machine code).",
+        "Object File (.o / .obj): Incomplete piece of the program.",
+        "Linker: Combines everything (libraries + your code).",
+        "Executable Program (.exe / a.out): Final runnable program."
+      ]
+    },
+    {
+      "title": "Writing Your First Program (Hello World)",
+      "description": "Basic Hello World program in C++.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\n// main() is where program execution begins.\nint main() {\n   cout << \"Hello, World!\"; // prints Hello, World!\n   return 0;\n}",
+          "output": "Hello, World!",
+          "explanation": "Demonstrates the simplest C++ program structure."
+        }
+      ]
+    },
+    {
+      "title": "Basics of C++",
+      "description": "C++ basic syntax and structure.",
+      "examples": [],
+      "extra": [
+        "Syntax in C++ defines the rules for writing code.",
+        "If we don’t follow these rules, the compiler will give errors.",
+        "They can also be viewed as the grammatical rules defining the structure of a programming language.",
+        "The C++ language has its own syntax for the functionalities it provides.",
+        "The program structure contains header files, main function, namespace declaration, and statements."
+      ]
+    },
+    {
+      "title": "Tokens in C++",
+      "description": "Smallest element in a C++ program meaningful to the compiler.",
+      "examples": [],
+      "extra": [
+        "Keywords: Reserved words with special meaning (cannot be used as identifiers).",
+        "Examples: int, float, return, while, class, public, if, else, switch, for, void.",
+        "Identifiers: Names given to variables, functions, classes, objects, arrays, etc.",
+        "Rules: Must begin with a letter or underscore, case-sensitive, cannot use keywords.",
+        "Constants: Fixed values that do not change (integer, float, char, string, boolean).",
+        "Variables: Named memory storage, value can change during program execution.",
+        "Operators: Symbols that perform operations on variables and values.",
+        "Punctuators: Symbols like ; , { } ( ) [ ] : used to structure a program."
+      ]
+    },
+    {
+      "title": "Data Types in C++",
+      "description": "Different kinds of data supported by C++ with associated memory requirements.",
+      "examples": [],
+      "extra": [
+        "Primitive Types: char, int, bool, float, double.",
+        "Derived Types: Function, Array, Pointer, Reference.",
+        "User-defined Types: Class, Structure, Union, typedef.",
+        "char → stores a single character (1 byte).",
+        "int → whole numbers (4 bytes).",
+        "bool → true/false (1 byte).",
+        "float → single precision decimal (4 bytes).",
+        "double → double precision decimal (8 bytes).",
+        "Function → reusable block of code with return type.",
+        "Array → contiguous block of same data type.",
+        "Pointer → stores memory address of a variable.",
+        "Reference → alias of another variable.",
+        "Class → blueprint for objects with methods and attributes.",
+        "Structure → groups multiple variables.",
+        "Union → stores one member at a time (shared memory).",
+        "typedef → creates an alias name for a type."
+      ]
+    },
+    {
+      "title": "Variables in C++",
+      "description": "A variable is a name given to a memory location that stores a value.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int num;\n    int num1;\n    int _value;\n    int totalMarks;\n    float student_percentage;\n    return 0;\n}",
+          "output": "",
+          "explanation": "Examples of valid variable declarations in C++."
+        }
+      ],
+      "extra": [
+        "Start with a letter or underscore (_).",
+        "Can contain letters, digits, and underscores.",
+        "Cannot use C++ keywords (reserved words).",
+        "Case-sensitive (num and Num are different).",
+        "No spaces or special characters except underscore (_)."
+      ]
+    },
+    {
+      "title": "Constants in C++",
+      "description": "A constant is a variable whose value cannot be changed once initialized.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    const int num = 10;\n    cout << num;\n    return 0;\n}",
+          "output": "10",
+          "explanation": "num is declared constant and cannot be reassigned."
+        }
+      ],
+      "extra": [
+        "Declared using the const keyword.",
+        "Readability: Names like PI, MAX_SIZE are easier to understand.",
+        "Maintainability: Change value in one place only.",
+        "Safety: Prevents accidental modification.",
+        "Performance: Compiler can optimize constants better."
+      ]
+    },
+    {
+      "title": "Input and Output in C++",
+      "description": "C++ uses cin for input and cout for output, provided by the iostream library.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello, World!\" << endl;\n    cout << \"The result is: \" << 25 + 10 << endl;\n    return 0;\n}",
+          "output": "Hello, World!\nThe result is: 35",
+          "explanation": "Demonstrates cout usage."
+        },
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int age;\n    cout << \"Enter your age: \";\n    cin >> age;\n    cout << \"Your age is: \" << age << endl;\n    return 0;\n}",
+          "output": "Enter your age: 20\nYour age is: 20",
+          "explanation": "Demonstrates cin usage."
+        }
+      ],
+      "extra": [
+        "cin means character input.",
+        "cout means character output.",
+        "Both come from the iostream library.",
+        "cin uses >> extraction operator.",
+        "cout uses << insertion operator.",
+        "endl inserts a newline character."
+      ]
+    },
+    {
+      "title": "Type Casting in C++",
+      "description": "Type Casting means converting one data type into another.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 10, b = 3;\n    float result;\n\n    result = (float)a / b;\n    cout << \"Result = \" << result;\n    return 0;\n}",
+          "output": "Result = 3.33333",
+          "explanation": "Explicit type casting int → float."
+        }
+      ],
+      "extra": [
+        "Implicit Type Casting: Done automatically by compiler (e.g., int promoted to double).",
+        "Explicit Type Casting: Done manually by programmer (e.g., (int)pi)."
+      ]
+    },
+    {
+      "title": "Operators in C++",
+      "description": "Operators perform operations on variables and values.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 8, b = 3;\n    cout << \"a + b = \" << (a + b) << endl;\n    cout << \"a - b = \" << (a - b) << endl;\n    cout << \"a * b = \" << (a * b) << endl;\n    cout << \"a / b = \" << (a / b) << endl;\n    cout << \"a % b = \" << (a % b) << endl;\n    cout << \"++a = \" << ++a << endl;\n    cout << \"b-- = \" << b--;\n    return 0;\n}",
+          "output": "a + b = 11\na - b = 5\na * b = 24\na / b = 2\na % b = 2\n++a = 9\nb-- = 3",
+          "explanation": "Arithmetic operators in action."
+        }
+      ],
+      "extra": [
+        "Arithmetic Operators: +, -, *, /, %, ++, --",
+        "Relational Operators: ==, !=, >, <, >=, <=",
+        "Logical Operators: &&, ||, !",
+        "Assignment Operators: =, +=, -=, *=, /=",
+        "Ternary Operator: ? :"
+      ]
+    },
+    {
+      "title": "Control Structures in C++",
+      "description": "Control structures define the flow of execution in a program.",
+      "examples": [],
+      "extra": [
+        "Types of control structures include decision-making, looping, and jump statements.",
+        "They decide which block of code executes, how many times, and in what order."
+      ]
+    },
+    {
+      "title": "Decision Making in C++",
+      "description": "Used to execute code based on conditions.",
+      "examples": [
+        {
+          "code": "int x = 5;\nif (x > 0) {\n    cout << \"Positive\\n\";\n}",
+          "output": "Positive",
+          "explanation": "if executes when condition is true."
+        },
+        {
+          "code": "int age = 16;\nif (age >= 18)\n   cout << \"Adult\\n\";\nelse\n   cout << \"Minor\\n\";",
+          "output": "Minor",
+          "explanation": "if-else executes one of two blocks."
+        },
+        {
+          "code": "int marks = 82;\nif (marks >= 50) {\n   if (marks >= 75) cout << \"Above average\\n\";\n   else cout << \"Passed\\n\";\n} else {\n   cout << \"Fail\\n\";\n}",
+          "output": "Above average",
+          "explanation": "Nested if for multiple conditions."
+        },
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n   char x = 'A';\n   switch (x) {\n      case 'A':\n         cout << \"A\";\n         break;\n      case 'B':\n         cout << \"B\";\n         break;\n      default:\n         cout << \"Other than A and B\";\n         break;\n   }\n   return 0;\n}",
+          "output": "A",
+          "explanation": "switch selects among multiple cases."
+        }
+      ],
+      "extra": [
+        "if → executes block if condition is true.",
+        "if-else → executes either if or else block.",
+        "Nested if → an if inside another if.",
+        "switch → selects one case based on a value.",
+        "Case values must be int or char type.",
+        "Break prevents fall-through in switch.",
+        "Default executes if no case matches."
+      ]
+    },
+    {
+      "title": "Loops in C++",
+      "description": "Loops execute a block of code repeatedly until a condition is met.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n   for (int i = 1; i <= 5; i++) {\n      cout << i << \" \";\n   }\n   return 0;\n}",
+          "output": "1 2 3 4 5",
+          "explanation": "for loop executes a fixed number of times."
+        },
+        {
+          "code": "int i = 1;\nwhile (i <= 5) {\n   cout << \"Number: \" << i << endl;\n   i++;\n}",
+          "output": "Number: 1\nNumber: 2\nNumber: 3\nNumber: 4\nNumber: 5",
+          "explanation": "while loop executes while condition is true."
+        },
+        {
+          "code": "int i = 1;\ndo {\n   cout << \"Count = \" << i << endl;\n   i++;\n} while (i <= 5);",
+          "output": "Count = 1\nCount = 2\nCount = 3\nCount = 4\nCount = 5",
+          "explanation": "do-while executes at least once."
+        }
+      ],
+      "extra": [
+        "for loop → entry-controlled, executes fixed times.",
+        "while loop → entry-controlled, condition checked before body.",
+        "do-while loop → exit-controlled, executes body at least once."
+      ]
+    },
+    {
+      "title": "Jump Statements in C++",
+      "description": "Used to change the normal flow of execution.",
+      "examples": [
+        {
+          "code": "for (int i = 0; i < 5; i++) {\n   if (i == 3) break;\n   cout << i << \" \";\n}",
+          "output": "0 1 2",
+          "explanation": "break exits the loop."
+        },
+        {
+          "code": "for (int i = 0; i < 5; i++) {\n   if (i == 2) continue;\n   cout << i << \" \";\n}",
+          "output": "0 1 3 4",
+          "explanation": "continue skips the current iteration."
+        },
+        {
+          "code": "for (int i = 0; i < 5; i++) {\n   if (i == 3) goto end;\n   cout << i << \" \";\n}\nend:\ncout << \"End\";",
+          "output": "0 1 2 End",
+          "explanation": "goto jumps to a labeled statement."
+        }
+      ],
+      "extra": [
+        "break → exits loop or switch immediately.",
+        "continue → skips current iteration, continues loop.",
+        "goto → transfers control to a labeled statement.",
+        "return → exits from a function and returns control to caller."
+      ]
+    },
+    {
+      "title": "Functions in C++",
+      "description": "A function is a block of code that performs a specific task and can be reused.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\n// Function declaration\nint add(int, int);\n\nint main() {\n    int sum = add(5, 3);\n    cout << \"Sum: \" << sum;\n    return 0;\n}\n\n// Function definition\nint add(int a, int b) {\n    return a + b;\n}",
+          "output": "Sum: 8",
+          "explanation": "Function declaration, definition, and call."
+        }
+      ],
+      "extra": [
+        "Function Declaration → specifies function name, return type, parameters.",
+        "Function Definition → contains actual code inside { }.",
+        "Function Call → invokes the function from main().",
+        "Return Type → type of value function returns (int, float, void).",
+        "Arguments/Parameters → input values to the function."
+      ]
+    },
+    {
+      "title": "Arguments in C++ Functions",
+      "description": "Parameters can be passed by value, by reference, or with default values.",
+      "examples": [
+        {
+          "code": "void display(int a, int b = 10) {\n   cout << \"a = \" << a << \", b = \" << b << endl;\n}\n\nint main() {\n   display(5);\n   display(5, 20);\n   return 0;\n}",
+          "output": "a = 5, b = 10\na = 5, b = 20",
+          "explanation": "Demonstrates default arguments."
+        }
+      ],
+      "extra": [
+        "Pass by Value → copy of argument is passed.",
+        "Pass by Reference → reference (&) passed, changes affect original.",
+        "Default Arguments → parameters with default values if not provided."
+      ]
+    },
+    {
+      "title": "Inline Functions in C++",
+      "description": "Inline functions expand in place to reduce function call overhead.",
+      "examples": [
+        {
+          "code": "inline int square(int x) {\n   return x * x;\n}\n\nint main() {\n   cout << square(5);\n   return 0;\n}",
+          "output": "25",
+          "explanation": "Compiler may replace function call with body."
+        }
+      ],
+      "extra": [
+        "Reduces function call overhead.",
+        "May increase code size if used excessively.",
+        "Best for small, frequently used functions."
+      ]
+    },
+    {
+      "title": "Function Overloading in C++",
+      "description": "Two or more functions can have the same name but different parameter lists.",
+      "examples": [
+        {
+          "code": "int add(int a, int b) {\n   return a + b;\n}\n\ndouble add(double a, double b) {\n   return a + b;\n}\n\nint main() {\n   cout << add(5, 3) << endl;\n   cout << add(2.5, 3.1);\n   return 0;\n}",
+          "output": "8\n5.6",
+          "explanation": "Compiler chooses function based on arguments."
+        }
+      ],
+      "extra": [
+        "Overloaded functions must differ in number/type of parameters.",
+        "Cannot overload by return type only."
+      ]
+    },
+    {
+      "title": "Recursion in C++",
+      "description": "A function that calls itself directly or indirectly.",
+      "examples": [
+        {
+          "code": "int factorial(int n) {\n   if (n <= 1) return 1;\n   else return n * factorial(n - 1);\n}\n\nint main() {\n   cout << factorial(5);\n   return 0;\n}",
+          "output": "120",
+          "explanation": "Factorial implemented using recursion."
+        }
+      ],
+      "extra": [
+        "Base case is required to stop recursion.",
+        "Recursive calls use stack memory.",
+        "Useful for problems like factorial, Fibonacci, tree traversal."
+      ]
+    },
+    {
+      "title": "Storage Classes in C++",
+      "description": "Define scope, visibility, and lifetime of variables.",
+      "examples": [],
+      "extra": [
+        "auto → default for local variables, automatic storage.",
+        "register → request to store variable in CPU register.",
+        "static → preserves value across function calls.",
+        "extern → refers to global variable declared elsewhere.",
+        "mutable → allows modification of class member even in const object."
+      ]
+    },
+    {
+      "title": "Arrays in C++",
+      "description": "An array is a collection of elements of the same type stored in contiguous memory locations.",
+      "examples": [
+        {
+          "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n   int arr[5] = {10, 20, 30, 40, 50};\n   for (int i = 0; i < 5; i++) {\n      cout << arr[i] << \" \";\n   }\n   return 0;\n}",
+          "output": "10 20 30 40 50",
+          "explanation": "Demonstrates declaration, initialization, and traversal of array."
+        }
+      ],
+      "extra": [
+        "Single-dimensional arrays store elements in one row.",
+        "Multi-dimensional arrays store elements in rows and columns.",
+        "Array index starts from 0.",
+        "Arrays have fixed size."
+      ]
+    },
+    {
+      "title": "Strings in C++",
+      "description": "A string is a sequence of characters, stored as an array of char or as std::string class.",
+      "examples": [
+        {
+          "code": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n   string s = \"Hello\";\n   cout << s << endl;\n   cout << \"Length: \" << s.length();\n   return 0;\n}",
+          "output": "Hello\nLength: 5",
+          "explanation": "Using std::string class."
+        }
+      ],
+      "extra": [
+        "C-style strings: char str[] = \"Hello\";",
+        "std::string is preferred for modern C++.",
+        "Functions include length(), append(), compare(), substr()."
+      ]
+    },
+    {
+      "title": "Pointers in C++",
+      "description": "A pointer is a variable that stores the memory address of another variable.",
+      "examples": [
+        {
+          "code": "int a = 10;\nint *p = &a;\ncout << \"Value: \" << *p;",
+          "output": "Value: 10",
+          "explanation": "Pointer stores address, * dereferences it."
+        }
+      ],
+      "extra": [
+        "Pointer declaration: int *ptr;",
+        "Address-of operator (&) gives variable’s address.",
+        "Dereference operator (*) accesses value at address.",
+        "NULL pointer points to nothing.",
+        "Pointers enable dynamic memory allocation."
+      ]
+    },
+    {
+      "title": "Structures in C++",
+      "description": "A structure is a user-defined data type that groups different data types under one name.",
+      "examples": [
+        {
+          "code": "struct Student {\n   int id;\n   char name[20];\n};\n\nint main() {\n   Student s1 = {1, \"John\"};\n   cout << s1.id << \" \" << s1.name;\n   return 0;\n}",
+          "output": "1 John",
+          "explanation": "Structure groups different types together."
+        }
+      ],
+      "extra": [
+        "Defined using struct keyword.",
+        "Can contain variables of different data types.",
+        "Members are accessed using dot operator.",
+        "Structures support nesting and arrays of structures."
+      ]
+    },
+    {
+      "title": "Enumerations in C++",
+      "description": "An enum is a user-defined type consisting of a set of named integral constants.",
+      "examples": [
+        {
+          "code": "enum Week {Mon, Tue, Wed, Thu, Fri, Sat, Sun};\nint main() {\n   Week day = Wed;\n   cout << day;\n   return 0;\n}",
+          "output": "2",
+          "explanation": "Enumeration constants are integers starting from 0."
+        }
+      ],
+      "extra": [
+        "Default values start from 0 and increase by 1.",
+        "Values can be explicitly assigned.",
+        "Improves code readability by using names instead of numbers."
+      ]
+    },
+    {
+      "title": "Typedef in C++",
+      "description": "typedef gives a new name (alias) to an existing data type.",
+      "examples": [
+        {
+          "code": "typedef unsigned int uint;\nint main() {\n   uint age = 25;\n   cout << age;\n   return 0;\n}",
+          "output": "25",
+          "explanation": "uint is an alias for unsigned int."
+        }
+      ],
+      "extra": [
+        "Simplifies complex declarations.",
+        "Improves code readability.",
+        "Useful in cross-platform programming."
+      ]
+    },
+    {
+      "title": "References in C++",
+      "description": "A reference is an alias for another variable.",
+      "examples": [
+        {
+          "code": "int a = 10;\nint &ref = a;\nref = 20;\ncout << a;",
+          "output": "20",
+          "explanation": "ref is another name for a."
+        }
+      ],
+      "extra": [
+        "Reference must be initialized when declared.",
+        "Cannot be reassigned to another variable later.",
+        "Used in pass by reference to functions."
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming in C++",
+      "description": "OOP is a programming paradigm based on the concept of objects that contain data and functions.",
+      "examples": [],
+      "extra": [
+        "OOP focuses on objects rather than functions.",
+        "Supports modularity and code reusability.",
+        "Core concepts: Class, Object, Inheritance, Polymorphism, Abstraction, Encapsulation."
+      ]
+    },
+    {
+      "title": "Classes and Objects in C++",
+      "description": "A class is a blueprint for objects. Objects are instances of a class.",
+      "examples": [
+        {
+          "code": "class Student {\npublic:\n   string name;\n   int age;\n};\n\nint main() {\n   Student s1;\n   s1.name = \"John\";\n   s1.age = 20;\n   cout << s1.name << \" \" << s1.age;\n   return 0;\n}",
+          "output": "John 20",
+          "explanation": "Defines a class and creates an object."
+        }
+      ],
+      "extra": [
+        "class keyword defines a class.",
+        "Objects are created from classes.",
+        "Members can be public, private, or protected."
+      ]
+    },
+    {
+      "title": "Constructors in C++",
+      "description": "A constructor is a special function that initializes objects.",
+      "examples": [
+        {
+          "code": "class Student {\npublic:\n   string name;\n   int age;\n   Student(string n, int a) { name = n; age = a; }\n};\n\nint main() {\n   Student s1(\"John\", 20);\n   cout << s1.name << \" \" << s1.age;\n   return 0;\n}",
+          "output": "John 20",
+          "explanation": "Parameterized constructor initializes object with values."
+        }
+      ],
+      "extra": [
+        "Constructor has same name as class.",
+        "No return type, not even void.",
+        "Called automatically when object is created.",
+        "Types: Default, Parameterized, Copy Constructor."
+      ]
+    },
+    {
+      "title": "Destructors in C++",
+      "description": "A destructor is a special function used to release resources before an object is destroyed.",
+      "examples": [
+        {
+          "code": "class Test {\npublic:\n   ~Test() {\n      cout << \"Destructor called\";\n   }\n};\n\nint main() {\n   Test t;\n   return 0;\n}",
+          "output": "Destructor called",
+          "explanation": "Destructor is called when object goes out of scope."
+        }
+      ],
+      "extra": [
+        "Destructor name is same as class with a ~ prefix.",
+        "No parameters and no return type.",
+        "Used to free resources like memory, files, connections."
+      ]
+    },
+    {
+      "title": "Encapsulation in C++",
+      "description": "Encapsulation is the bundling of data and methods operating on that data within one unit.",
+      "examples": [
+        {
+          "code": "class Student {\nprivate:\n   int age;\npublic:\n   void setAge(int a) { age = a; }\n   int getAge() { return age; }\n};\n\nint main() {\n   Student s;\n   s.setAge(21);\n   cout << s.getAge();\n   return 0;\n}",
+          "output": "21",
+          "explanation": "Encapsulation hides data using private members."
+        }
+      ],
+      "extra": [
+        "Data members are private.",
+        "Access is controlled via public getter/setter methods.",
+        "Provides data hiding and security."
+      ]
+    },
+    {
+      "title": "Inheritance in C++",
+      "description": "Inheritance allows one class to acquire properties and behavior of another class.",
+      "examples": [
+        {
+          "code": "class Parent {\npublic:\n   void show() { cout << \"Parent class\"; }\n};\n\nclass Child : public Parent {\n};\n\nint main() {\n   Child c;\n   c.show();\n   return 0;\n}",
+          "output": "Parent class",
+          "explanation": "Child inherits from Parent."
+        }
+      ],
+      "extra": [
+        "Base class → parent class being inherited from.",
+        "Derived class → child class that inherits.",
+        "Types: Single, Multiple, Multilevel, Hierarchical, Hybrid Inheritance.",
+        "Inheritance improves code reusability."
+      ]
+    },
+    {
+      "title": "Polymorphism in C++",
+      "description": "Polymorphism allows one function or operator to behave differently based on context.",
+      "examples": [
+        {
+          "code": "class Shape {\npublic:\n   virtual void draw() { cout << \"Drawing shape\"; }\n};\n\nclass Circle : public Shape {\npublic:\n   void draw() override { cout << \"Drawing circle\"; }\n};\n\nint main() {\n   Shape *s = new Circle();\n   s->draw();\n   return 0;\n}",
+          "output": "Drawing circle",
+          "explanation": "Runtime polymorphism with virtual functions."
+        }
+      ],
+      "extra": [
+        "Compile-time polymorphism → function overloading, operator overloading.",
+        "Runtime polymorphism → achieved via virtual functions.",
+        "Base class pointers can call derived class methods."
+      ]
+    },
+    {
+      "title": "Abstraction in C++",
+      "description": "Abstraction hides implementation details and shows only essential features.",
+      "examples": [
+        {
+          "code": "class AbstractShape {\npublic:\n   virtual void draw() = 0; // pure virtual function\n};\n\nclass Rectangle : public AbstractShape {\npublic:\n   void draw() override { cout << \"Drawing rectangle\"; }\n};\n\nint main() {\n   Rectangle r;\n   r.draw();\n   return 0;\n}",
+          "output": "Drawing rectangle",
+          "explanation": "Abstract class with pure virtual function."
+        }
+      ],
+      "extra": [
+        "Achieved using abstract classes and interfaces.",
+        "Pure virtual function is declared with = 0.",
+        "Helps in designing flexible and extensible systems."
+      ]
+    },
+    {
+      "title": "Friend Functions in C++",
+      "description": "A friend function is not a member of a class but has access to its private and protected members.",
+      "examples": [
+        {
+          "code": "class Box {\nprivate:\n   int width;\npublic:\n   Box() : width(10) {}\n   friend void printWidth(Box b);\n};\n\nvoid printWidth(Box b) {\n   cout << \"Width: \" << b.width;\n}\n\nint main() {\n   Box b;\n   printWidth(b);\n   return 0;\n}",
+          "output": "Width: 10",
+          "explanation": "Friend function can access private member width."
+        }
+      ],
+      "extra": [
+        "Declared using friend keyword inside class.",
+        "Not in class scope but can access private/protected members.",
+        "Used for operator overloading and utility functions."
+      ]
+    },
+    {
+      "title": "Operator Overloading in C++",
+      "description": "Operator overloading allows defining custom behavior for operators with user-defined types.",
+      "examples": [
+        {
+          "code": "class Complex {\npublic:\n   int real, imag;\n   Complex(int r = 0, int i = 0) : real(r), imag(i) {}\n   Complex operator + (Complex const &c) {\n      return Complex(real + c.real, imag + c.imag);\n   }\n};\n\nint main() {\n   Complex c1(3, 4), c2(1, 2);\n   Complex c3 = c1 + c2;\n   cout << c3.real << \"+\" << c3.imag << \"i\";\n   return 0;\n}",
+          "output": "4+6i",
+          "explanation": "Overloaded + operator for Complex class."
+        }
+      ],
+      "extra": [
+        "Only existing operators can be overloaded.",
+        "At least one operand must be a user-defined type.",
+        "Cannot overload ::, ., sizeof, ?:, typeid."
+      ]
+    },
+    {
+      "title": "Virtual Functions in C++",
+      "description": "A virtual function is a member function declared in base class that can be overridden in derived class.",
+      "examples": [
+        {
+          "code": "class Base {\npublic:\n   virtual void display() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n   void display() override { cout << \"Derived\"; }\n};\n\nint main() {\n   Base* b;\n   Derived d;\n   b = &d;\n   b->display();\n   return 0;\n}",
+          "output": "Derived",
+          "explanation": "Virtual function allows runtime polymorphism."
+        }
+      ],
+      "extra": [
+        "Declared using virtual keyword.",
+        "Supports runtime polymorphism (dynamic binding).",
+        "If not overridden, base class version is called."
+      ]
+    },
+    {
+      "title": "Templates in C++",
+      "description": "Templates allow writing generic programs that work with any data type.",
+      "examples": [
+        {
+          "code": "template <typename T>\nT add(T a, T b) {\n   return a + b;\n}\n\nint main() {\n   cout << add(3, 4) << endl;\n   cout << add(2.5, 3.1);\n   return 0;\n}",
+          "output": "7\n5.6",
+          "explanation": "Function template works with int and double."
+        }
+      ],
+      "extra": [
+        "Templates reduce code duplication.",
+        "Function templates → generic functions.",
+        "Class templates → generic classes like vector, stack.",
+        "STL heavily uses templates."
+      ]
+    },
+    {
+      "title": "Exception Handling in C++",
+      "description": "C++ provides try, catch, and throw for handling runtime errors.",
+      "examples": [
+        {
+          "code": "int main() {\n   try {\n      int x = 0;\n      if (x == 0)\n         throw \"Division by zero!\";\n      cout << 10 / x;\n   } catch (const char* msg) {\n      cout << msg;\n   }\n   return 0;\n}",
+          "output": "Division by zero!",
+          "explanation": "Exception thrown and caught."
+        }
+      ],
+      "extra": [
+        "try block contains risky code.",
+        "throw keyword generates exception.",
+        "catch block handles the exception.",
+        "Multiple catch blocks allowed."
+      ]
+    },
+    {
+      "title": "File Handling in C++",
+      "description": "C++ provides fstream, ifstream, and ofstream classes for file operations.",
+      "examples": [
+        {
+          "code": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n   ofstream fout(\"example.txt\");\n   fout << \"Hello File!\";\n   fout.close();\n\n   ifstream fin(\"example.txt\");\n   string line;\n   getline(fin, line);\n   cout << line;\n   fin.close();\n   return 0;\n}",
+          "output": "Hello File!",
+          "explanation": "Writing to and reading from a file."
+        }
+      ],
+      "extra": [
+        "ofstream → output file stream (writing).",
+        "ifstream → input file stream (reading).",
+        "fstream → both input and output.",
+        "Always close files after use."
+      ]
+    },
+    {
+      "title": "Namespaces in C++",
+      "description": "Namespaces are used to organize code and avoid name conflicts.",
+      "examples": [
+        {
+          "code": "namespace first {\n   int value = 10;\n}\n\nnamespace second {\n   int value = 20;\n}\n\nint main() {\n   cout << first::value << endl;\n   cout << second::value;\n   return 0;\n}",
+          "output": "10\n20",
+          "explanation": "Namespace scope resolution using :: operator."
+        }
+      ],
+      "extra": [
+        "namespace keyword defines a namespace.",
+        "std is the standard namespace in C++.",
+        "Scope resolution operator (::) is used to access members."
+      ]
+    },
+    {
+      "title": "Preprocessor Directives in C++",
+      "description": "Preprocessor directives are instructions processed before compilation.",
+      "examples": [
+        {
+          "code": "#include <iostream>\n#define PI 3.14\n\nint main() {\n   cout << PI;\n   return 0;\n}",
+          "output": "3.14",
+          "explanation": "PI replaced by 3.14 before compilation."
+        }
+      ],
+      "extra": [
+        "#include → includes header files.",
+        "#define → defines macros.",
+        "#ifdef, #ifndef → conditional compilation.",
+        "#pragma → compiler-specific instructions."
+      ]
+    },
+    {
+      "title": "Dynamic Memory in C++",
+      "description": "Dynamic memory is allocated at runtime using new and freed using delete.",
+      "examples": [
+        {
+          "code": "int *p = new int(5);\ncout << *p;\ndelete p;",
+          "output": "5",
+          "explanation": "Memory allocated dynamically and deallocated."
+        }
+      ],
+      "extra": [
+        "new allocates memory on heap.",
+        "delete frees memory to prevent leaks.",
+        "new[] and delete[] are used for arrays."
+      ]
+    },
+    {
+      "title": "Standard Template Library (STL) in C++",
+      "description": "STL is a library of template classes and functions for data structures and algorithms.",
+      "examples": [
+        {
+          "code": "#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n   vector<int> v = {4, 1, 3, 2};\n   sort(v.begin(), v.end());\n   for (int x : v) cout << x << \" \";\n   return 0;\n}",
+          "output": "1 2 3 4",
+          "explanation": "STL sort function used on vector."
+        }
+      ],
+      "extra": [
+        "Containers → vector, list, map, set.",
+        "Algorithms → sort(), find(), reverse(), accumulate().",
+        "Iterators → used to traverse containers.",
+        "STL makes C++ powerful and reusable."
+      ]
+    },
+    {
+      "title": "Summary of C++",
+      "description": "C++ is a powerful, compiled, object-oriented language widely used for system and application development.",
+      "examples": [],
+      "extra": [
+        "Combines low-level (close to hardware) and high-level (OOP) features.",
+        "Used in operating systems, game engines, browsers, databases, embedded systems.",
+        "Supports modularity, reusability, performance.",
+        "Foundation for advanced languages like Java and C#."
+      ]
+    }
+  ]
+}

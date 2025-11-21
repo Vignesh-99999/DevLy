@@ -1,0 +1,1637 @@
+[
+  {
+    "question": "Which of the following is NOT a programming paradigm supported by Python?",
+    "options": {
+      "a": "Procedural",
+      "b": "Object-Oriented",
+      "c": "Functional",
+      "d": "Assembly"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the correct way to print 'Hello, Python!' in Python?",
+    "options": {
+      "a": "echo 'Hello, Python!'",
+      "b": "print(\"Hello, Python!\")",
+      "c": "console.log('Hello, Python!')",
+      "d": "printf(\"Hello, Python!\")"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "How does Python determine the type of a variable?",
+    "options": {
+      "a": "At compile time",
+      "b": "At runtime",
+      "c": "Type must be declared explicitly",
+      "d": "Based on user input"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a recommended IDE for Python data science and interactive coding?",
+    "options": {
+      "a": "VS Code",
+      "b": "PyCharm",
+      "c": "Jupyter Notebook",
+      "d": "Eclipse"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is mandatory in Python to define blocks of code?",
+    "options": {
+      "a": "Braces {}",
+      "b": "Indentation",
+      "c": "Semicolons",
+      "d": "Parentheses"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the 'Add to PATH' option do during Python installation on Windows?",
+    "options": {
+      "a": "Allows Python to run from the command line anywhere",
+      "b": "Adds Python to desktop shortcuts",
+      "c": "Installs additional Python libraries",
+      "d": "Sets Python as the default system language"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which indentation style does PEP 8 recommend for Python code?",
+    "options": {
+      "a": "2 spaces per level",
+      "b": "4 spaces per level",
+      "c": "1 tab per level",
+      "d": "No indentation"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Why should mixing tabs and spaces for indentation be avoided in Python?",
+    "options": {
+      "a": "It makes the code run slower",
+      "b": "Python interpreter will raise errors",
+      "c": "It is allowed without any issue",
+      "d": "Tabs are deprecated in Python 3"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which symbol is used for a single-line comment in Python?",
+    "options": {
+      "a": "//",
+      "b": "#",
+      "c": "/* */",
+      "d": "--"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "How do you write a multi-line comment or docstring in Python?",
+    "options": {
+      "a": "# comment",
+      "b": "\"\"\" comment \"\"\"",
+      "c": "<!-- comment -->",
+      "d": "// comment"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is NOT a primitive data type in Python?",
+    "options": {
+      "a": "int",
+      "b": "float",
+      "c": "char",
+      "d": "bool"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What will be the output of the following code?\n\nname = \"Alice\"\nage = 25\nprint(name, age)",
+    "options": {
+      "a": "Alice25",
+      "b": "Alice 25",
+      "c": "name age",
+      "d": "Error"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What does dynamic typing mean in Python?",
+    "options": {
+      "a": "Variable types must be declared before use",
+      "b": "Variable type is determined at runtime",
+      "c": "Only integers and strings are allowed",
+      "d": "Variables cannot change types once set"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which built-in function converts a string containing digits to an integer?",
+    "options": {
+      "a": "str()",
+      "b": "int()",
+      "c": "float()",
+      "d": "bool()"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What will the output of the following code be?\n\nx = \"10\"\ny = int(x)\nprint(y + 5)",
+    "options": {
+      "a": "105",
+      "b": "15",
+      "c": "TypeError",
+      "d": "\"10 5\""
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which statement is TRUE about Python comments?",
+    "options": {
+      "a": "Comments affect program execution",
+      "b": "Single-line comments start with /*",
+      "c": "Docstrings are used for documentation",
+      "d": "Python requires comments for all functions"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What happens if you try to cast a non-numeric string to int using int()?",
+    "options": {
+      "a": "Returns 0",
+      "b": "Raises a ValueError",
+      "c": "Returns None",
+      "d": "Converts to bool"
+    },
+    "answer": "b",
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following casts will convert the integer 5 to a string?",
+    "options": {
+      "a": "int(5)",
+      "b": "bool(5)",
+      "c": "str(5)",
+      "d": "float(5)"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What type of value does the input() function return in Python?",
+    "options": {
+      "a": "int",
+      "b": "float",
+      "c": "string",
+      "d": "bool"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is the correct way to embed a variable's value inside a string using f-strings?",
+    "options": {
+      "a": "\"Hello {name}\"",
+      "b": "f\"Hello {name}\"",
+      "c": "\"Hello + name\"",
+      "d": "\"Hello %name%\""
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What will be the output of this code?\n\nprint('Python', 'is', 'fun', sep='-')",
+    "options": {
+      "a": "Python is fun",
+      "b": "Python-is-fun",
+      "c": "Python,is,fun",
+      "d": "Pythonisfun"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which operator is used to check if two variables reference the same object in memory?",
+    "options": {
+      "a": "==",
+      "b": "is",
+      "c": "in",
+      "d": "!="
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the output of the following code?\n\na = 5\nb = 3\nprint(a + b, a > b)",
+    "options": {
+      "a": "8 True",
+      "b": "53 True",
+      "c": "8 False",
+      "d": "Error"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which Python data structure is ordered and mutable, allowing duplicate elements?",
+    "options": {
+      "a": "List",
+      "b": "Tuple",
+      "c": "Set",
+      "d": "Dictionary"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which data structure in Python is immutable and ordered?",
+    "options": {
+      "a": "List",
+      "b": "Set",
+      "c": "Tuple",
+      "d": "Dictionary"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which data structure only stores unique elements and is unordered?",
+    "options": {
+      "a": "List",
+      "b": "Tuple",
+      "c": "Set",
+      "d": "Dictionary"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "In a Python dictionary, what must be true about the keys?",
+    "options": {
+      "a": "Keys can be duplicated",
+      "b": "Keys must be unique",
+      "c": "Keys must be integers",
+      "d": "Keys must be mutable"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is NOT a valid arithmetic operator in Python?",
+    "options": {
+      "a": "**",
+      "b": "//",
+      "c": "%%",
+      "d": "%"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What keyword is used in Python to check an additional condition after an initial if statement?",
+    "options": {
+      "a": "else",
+      "b": "elif",
+      "c": "elseif",
+      "d": "endif"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What happens if none of the conditions in if and elif statements are true and there is an else block?",
+    "options": {
+      "a": "Code inside else block executes",
+      "b": "Program crashes",
+      "c": "Nothing happens",
+      "d": "Code inside if block executes"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is the correct syntax to start a for loop that iterates 5 times?",
+    "options": {
+      "a": "for i in range(5):",
+      "b": "for i = 0 to 5:",
+      "c": "for i in 5:",
+      "d": "loop i in range(5):"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "What statement is used to exit a loop immediately in Python?",
+    "options": {
+      "a": "exit",
+      "b": "stop",
+      "c": "break",
+      "d": "continue"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the continue statement do inside a loop?",
+    "options": {
+      "a": "Exits the loop",
+      "b": "Skips the current iteration and proceeds to next",
+      "c": "Restarts the loop from beginning",
+      "d": "Pauses the loop execution"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": {
+      "a": "func",
+      "b": "def",
+      "c": "function",
+      "d": "define"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of the return statement inside a function?",
+    "options": {
+      "a": "Print output",
+      "b": "End function and send back a value",
+      "c": "Define function parameters",
+      "d": "Call another function"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which type of function argument allows you to pass a variable number of positional arguments?",
+    "options": {
+      "a": "keyword arguments",
+      "b": "*args",
+      "c": "**kwargs",
+      "d": "default arguments"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "How do keyword arguments differ from positional arguments in Python functions?",
+    "options": {
+      "a": "Keyword arguments must be passed in order",
+      "b": "Positional arguments are passed by name",
+      "c": "Keyword arguments are specified by name and can be out of order",
+      "d": "Positional arguments are always optional"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What happens if you forget to indent the code block after an if statement?",
+    "options": {
+      "a": "Python ignores indentation",
+      "b": "IndentationError is raised",
+      "c": "The code runs anyway",
+      "d": "Code is treated as comment"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What keyword is used to create a lambda function in Python?",
+    "options": {
+      "a": "def",
+      "b": "lambda",
+      "c": "func",
+      "d": "anonymous"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is true about lambda functions?",
+    "options": {
+      "a": "They can have multiple expressions",
+      "b": "They do not return any value",
+      "c": "They can have only one expression and implicitly return its value",
+      "d": "They require a return statement"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which built-in Python function is commonly used with lambda functions to apply a transformation to each item in a list?",
+    "options": {
+      "a": "filter()",
+      "b": "reduce()",
+      "c": "map()",
+      "d": "sorted()"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is a Python module?",
+    "options": {
+      "a": "A Python file containing variables and functions",
+      "b": "A folder containing multiple Python files",
+      "c": "A built-in Python function",
+      "d": "A special Python class"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "What file must a folder contain to be recognized as a Python package?",
+    "options": {
+      "a": "__main__.py",
+      "b": "__init__.py",
+      "c": "setup.py",
+      "d": "package.py"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "How do you import the sqrt function from the math module?",
+    "options": {
+      "a": "import sqrt from math",
+      "b": "from math import sqrt",
+      "c": "import math.sqrt",
+      "d": "include math.sqrt"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "In Python OOP, what is the purpose of the __init__ method?",
+    "options": {
+      "a": "It is a regular method",
+      "b": "It acts as a constructor to initialize new objects",
+      "c": "It deletes an object",
+      "d": "It defines class variables"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What does inheritance allow in object-oriented programming?",
+    "options": {
+      "a": "Functions to have multiple return values",
+      "b": "A child class to inherit attributes and methods from a parent class",
+      "c": "Overloading operators",
+      "d": "Converting objects to strings"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which block in exception handling executes code regardless of whether an exception was raised or not?",
+    "options": {
+      "a": "try",
+      "b": "except",
+      "c": "else",
+      "d": "finally"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "What Python statement is used to manually raise an exception?",
+    "options": {
+      "a": "throw",
+      "b": "raise",
+      "c": "except",
+      "d": "try"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What does the 'w' mode do when opening a file in Python?",
+    "options": {
+      "a": "Read only, file must exist",
+      "b": "Write mode, creates new file or overwrites existing file",
+      "c": "Append mode, adds data to end of file",
+      "d": "Binary read mode"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which statement ensures a file is properly closed after its use?",
+    "options": {
+      "a": "open()",
+      "b": "close()",
+      "c": "with statement",
+      "d": "try-except block"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which function reads the entire content of a file as a string?",
+    "options": {
+      "a": "read()",
+      "b": "readline()",
+      "c": "readlines()",
+      "d": "write()"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which Python library is commonly used for data analysis?",
+    "options": {
+      "a": "Flask",
+      "b": "pandas",
+      "c": "TensorFlow",
+      "d": "Matplotlib"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of a Python framework compared to a library?",
+    "options": {
+      "a": "A framework is a collection of modules; a library provides structure",
+      "b": "A framework provides a structured environment for development; a library offers reusable code",
+      "c": "Frameworks are smaller than libraries",
+      "d": "Frameworks are only for machine learning"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What Python feature is demonstrated by the '@decorator' syntax?",
+    "options": {
+      "a": "Generators",
+      "b": "Context managers",
+      "c": "Decorators",
+      "d": "Iterators"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which keyword is used to produce values one at a time in a generator?",
+    "options": {
+      "a": "yield",
+      "b": "return",
+      "c": "next",
+      "d": "break"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of these is NOT a typical use of context managers in Python?",
+    "options": {
+      "a": "Managing file resources",
+      "b": "Managing network connections",
+      "c": "Creating classes",
+      "d": "Managing database connections"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the role of the __enter__ and __exit__ methods in Python?",
+    "options": {
+      "a": "To define generator behavior",
+      "b": "To implement context manager protocol",
+      "c": "To define class constructors",
+      "d": "To handle exceptions"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which Python module would you use to improve performance by running code in parallel on multiple CPU cores?",
+    "options": {
+      "a": "threading",
+      "b": "multiprocessing",
+      "c": "asyncio",
+      "d": "socket"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which Python libraries are commonly used for data science?",
+    "options": {
+      "a": "Django, Flask",
+      "b": "pandas, NumPy",
+      "c": "TensorFlow, PyTorch",
+      "d": "os, subprocess"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which domain primarily uses TensorFlow and PyTorch libraries?",
+    "options": {
+      "a": "Web development",
+      "b": "Automation",
+      "c": "Machine learning",
+      "d": "Game development"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "For web development in Python, which frameworks are most popular?",
+    "options": {
+      "a": "Flask and Django",
+      "b": "pandas and NumPy",
+      "c": "TensorFlow and scikit-learn",
+      "d": "Ansible and requests"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which Python modules are often used for automation tasks?",
+    "options": {
+      "a": "os, subprocess, requests",
+      "b": "Flask, Django",
+      "c": "NumPy, pandas",
+      "d": "PyGame, turtle"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following best describes Python’s learning curve?",
+    "options": {
+      "a": "Difficult to learn, easy to outgrow",
+      "b": "Easy to learn, hard to outgrow",
+      "c": "Easy to learn, easy to outgrow",
+      "d": "Difficult to learn, hard to outgrow"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What makes Python ideal for many different domains?",
+    "options": {
+      "a": "Simple syntax and strong community",
+      "b": "Limited ecosystem",
+      "c": "Difficult syntax but powerful libraries",
+      "d": "Closed source and proprietary"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is NOT true about Python?",
+    "options": {
+      "a": "It is cross-platform and open-source",
+      "b": "It has a massive ecosystem of packages",
+      "c": "It has a complicated syntax",
+      "d": "It has a strong standard library"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What type does the input() function return in Python?",
+    "options": {
+      "a": "int",
+      "b": "str",
+      "c": "float",
+      "d": "bool"
+    },
+    "answer": "b"
+  },
+  {
+    "question": "Which parameter of print() function controls the string appended at the end of the output?",
+    "options": {
+      "a": "sep",
+      "b": "end",
+      "c": "stop",
+      "d": "close"
+    },
+    "answer": "b"
+  },
+  {
+    "question": "What will be the output of the code?\n\n```python\nprint('a', 'b', 'c', sep='-')\n```",
+    "options": {
+      "a": "a b c",
+      "b": "abc",
+      "c": "a-b-c",
+      "d": "a, b, c"
+    },
+    "answer": "c"
+  },
+  {
+    "question": "Which of the following operators has the highest precedence in Python?",
+    "options": {
+      "a": "+",
+      "b": "*",
+      "c": "==",
+      "d": "and"
+    },
+    "answer": "b"
+  },
+  {
+    "question": "Which operator is used to check if two variables point to the same object in memory?",
+    "options": {
+      "a": "==",
+      "b": "is",
+      "c": "in",
+      "d": "!="
+    },
+    "answer": "b"
+  },
+  {
+    "question": "Which data structure allows duplicate elements and maintains insertion order?",
+    "options": {
+      "a": "Tuple",
+      "b": "Set",
+      "c": "List",
+      "d": "Dictionary keys"
+    },
+    "answer": "c"
+  },
+  {
+    "question": "Which data structure is immutable in Python?",
+    "options": {
+      "a": "List",
+      "b": "Tuple",
+      "c": "Set",
+      "d": "Dictionary"
+    },
+    "answer": "b"
+  },
+  {
+    "question": "What will be the output?\n\n```python\ns = {1, 2, 2, 3}\nprint(len(s))\n```",
+    "options": {
+      "a": "4",
+      "b": "3",
+      "c": "2",
+      "d": "Error"
+    },
+    "answer": "b"
+  },
+  {
+    "question": "What keyword is used to check multiple conditions in Python?",
+    "options": {
+      "a": "elif",
+      "b": "else if",
+      "c": "elseif",
+      "d": "elif else"
+    },
+    "answer": "a"
+  },
+  {
+    "question": "What is the output of this code?\n\n```python\nx = 10\nif x > 5:\n    print('Greater')\nelse:\n    print('Smaller')\n```",
+    "options": {
+      "a": "Greater",
+      "b": "Smaller",
+      "c": "Error",
+      "d": "None"
+    },
+    "answer": "a"
+  },
+  {
+    "question": "What does the 'continue' statement do inside a loop?",
+    "options": {
+      "a": "Exits the loop entirely",
+      "b": "Skips the rest of current iteration",
+      "c": "Restarts the loop from the beginning",
+      "d": "Pauses the loop"
+    },
+    "answer": "b"
+  },
+  {
+    "question": "Which of these loops iterates a fixed number of times?",
+    "options": {
+      "a": "while",
+      "b": "for",
+      "c": "do-while",
+      "d": "repeat-until"
+    },
+    "answer": "b"
+  },
+  {
+    "question": "Which collection type can be used to store key-value pairs?",
+    "options": {
+      "a": "List",
+      "b": "Set",
+      "c": "Dictionary",
+      "d": "Tuple"
+    },
+    "answer": "c"
+  },
+  {
+    "question": "What is the output?\n\n```python\nprint(f\"Sum: {2+3}\")\n```",
+    "options": {
+      "a": "Sum: 5",
+      "b": "Sum: 2+3",
+      "c": "Sum: {2+3}",
+      "d": "Error"
+    },
+    "answer": "a"
+  },
+  {
+    "question": "Which statement about Python’s membership operators is correct?",
+    "options": {
+      "a": "'in' checks identity of two variables",
+      "b": "'is' checks if a value is in a collection",
+      "c": "'in' checks if value exists in a sequence",
+      "d": "'is' is used for comparison of values"
+    },
+    "answer": "c"
+  },
+  {
+    "question": "Which of the following is NOT a paradigm supported by Python?",
+    "options": {
+      "a": "Procedural",
+      "b": "Object-Oriented",
+      "c": "Functional",
+      "d": "Assembly"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "What is a key feature of Python's typing system?",
+    "options": {
+      "a": "Static typing enforced at compile time",
+      "b": "Dynamic typing determined at runtime",
+      "c": "No typing system",
+      "d": "Strong typing with mandatory declarations"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "When installing Python on Windows, what option is recommended during setup?",
+    "options": {
+      "a": "Disable PATH addition",
+      "b": "Add Python to PATH",
+      "c": "Install without administrator privileges",
+      "d": "Skip installation of pip"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which IDE is best suited for interactive data science coding?",
+    "options": {
+      "a": "VS Code",
+      "b": "PyCharm",
+      "c": "Jupyter Notebook",
+      "d": "Eclipse"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "In Python, how are code blocks defined?",
+    "options": {
+      "a": "By using curly braces {}",
+      "b": "By indentation (spaces or tabs)",
+      "c": "By parentheses ()",
+      "d": "By semicolons ;"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the recommended number of spaces per indentation level according to PEP 8?",
+    "options": {
+      "a": "2 spaces",
+      "b": "3 spaces",
+      "c": "4 spaces",
+      "d": "Tab character only"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Why should mixing tabs and spaces in Python code be avoided?",
+    "options": {
+      "a": "It causes syntax errors",
+      "b": "It improves readability",
+      "c": "It speeds up code execution",
+      "d": "It allows multi-threading"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "What symbol is used to start a single-line comment in Python?",
+    "options": {
+      "a": "//",
+      "b": "#",
+      "c": "/*",
+      "d": "--"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is true about multi-line comments in Python?",
+    "options": {
+      "a": "They use /* ... */",
+      "b": "They use // for each line",
+      "c": "They use triple quotes (\"\"\" or ''')",
+      "d": "They are not supported"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is a good practice regarding comments in Python code?",
+    "options": {
+      "a": "Comment every single line regardless of clarity",
+      "b": "Avoid comments completely",
+      "c": "Use comments to explain logic and keep them up to date",
+      "d": "Use comments to write code"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which data type in Python is used to represent a sequence of characters?",
+    "options": {
+      "a": "int",
+      "b": "bool",
+      "c": "float",
+      "d": "str"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of these statements about Python variables is FALSE?",
+    "options": {
+      "a": "Variables are case-sensitive",
+      "b": "You must declare the type of a variable explicitly",
+      "c": "Variables can change types during execution",
+      "d": "Python uses references to objects"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What will be the output of the following code?\n\nx = \"10\"\ny = int(x)\nprint(y + 5)",
+    "options": {
+      "a": "105",
+      "b": "15",
+      "c": "TypeError",
+      "d": "10 5"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which built-in function converts a string to a floating-point number in Python?",
+    "options": {
+      "a": "int()",
+      "b": "str()",
+      "c": "float()",
+      "d": "bool()"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the bool() function return when passed the integer 0?",
+    "options": {
+      "a": "True",
+      "b": "False",
+      "c": "0",
+      "d": "None"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What symbol is used to start a single-line comment in Python?",
+    "options": {
+      "a": "//",
+      "b": "#",
+      "c": "/*",
+      "d": "--"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is true about multi-line comments in Python?",
+    "options": {
+      "a": "They use /* ... */",
+      "b": "They use // for each line",
+      "c": "They use triple quotes (\"\"\" or ''')",
+      "d": "They are not supported"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is a good practice regarding comments in Python code?",
+    "options": {
+      "a": "Comment every single line regardless of clarity",
+      "b": "Avoid comments completely",
+      "c": "Use comments to explain logic and keep them up to date",
+      "d": "Use comments to write code"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which data type in Python is used to represent a sequence of characters?",
+    "options": {
+      "a": "int",
+      "b": "bool",
+      "c": "float",
+      "d": "str"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of these statements about Python variables is FALSE?",
+    "options": {
+      "a": "Variables are case-sensitive",
+      "b": "You must declare the type of a variable explicitly",
+      "c": "Variables can change types during execution",
+      "d": "Python uses references to objects"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What will be the output of the following code?\n\nx = \"10\"\ny = int(x)\nprint(y + 5)",
+    "options": {
+      "a": "105",
+      "b": "15",
+      "c": "TypeError",
+      "d": "10 5"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which built-in function converts a string to a floating-point number in Python?",
+    "options": {
+      "a": "int()",
+      "b": "str()",
+      "c": "float()",
+      "d": "bool()"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the bool() function return when passed the integer 0?",
+    "options": {
+      "a": "True",
+      "b": "False",
+      "c": "0",
+      "d": "None"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What type of value does the input() function in Python always return?",
+    "options": {
+      "a": "int",
+      "b": "float",
+      "c": "string",
+      "d": "bool"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which feature introduced in Python 3.6 allows embedding expressions inside string literals?",
+    "options": {
+      "a": "Formatted string literals (f-strings)",
+      "b": "String concatenation",
+      "c": "String interpolation with % operator",
+      "d": "Template strings"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the print() function's parameter sep control?",
+    "options": {
+      "a": "The end character after printing",
+      "b": "The separator between multiple arguments",
+      "c": "The start character before printing",
+      "d": "Whether to print on a new line"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is NOT a valid Python arithmetic operator?",
+    "options": {
+      "a": "+",
+      "b": "**",
+      "c": "^^",
+      "d": "//"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the output of this code?\n\na = 5\nb = 3\nprint(a > b)",
+    "options": {
+      "a": "False",
+      "b": "True",
+      "c": "Error",
+      "d": "5 > 3"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which operator checks whether a value exists in a collection in Python?",
+    "options": {
+      "a": "is",
+      "b": "in",
+      "c": "==",
+      "d": "not"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following Python data structures is immutable?",
+    "options": {
+      "a": "List",
+      "b": "Tuple",
+      "c": "Set",
+      "d": "Dictionary"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which Python data structure allows fast key-value lookups?",
+    "options": {
+      "a": "List",
+      "b": "Set",
+      "c": "Dictionary",
+      "d": "Tuple"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which statement about Python sets is TRUE?",
+    "options": {
+      "a": "They allow duplicate elements",
+      "b": "They are ordered collections",
+      "c": "They are mutable and unordered",
+      "d": "They are immutable"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the correct keyword to check an additional condition after an initial if statement in Python?",
+    "options": {
+      "a": "elseif",
+      "b": "elif",
+      "c": "else if",
+      "d": "else"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What will be the output of this code?\n\nx = 10\nif x > 5:\n    print(\"Greater\")\nelse:\n    print(\"Smaller\")",
+    "options": {
+      "a": "Smaller",
+      "b": "Greater",
+      "c": "10",
+      "d": "Error"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which Python loop is most appropriate to iterate a fixed number of times?",
+    "options": {
+      "a": "while",
+      "b": "do-while",
+      "c": "for",
+      "d": "until"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the break statement do inside a loop?",
+    "options": {
+      "a": "Skips current iteration",
+      "b": "Exits the loop immediately",
+      "c": "Restarts the loop",
+      "d": "Does nothing"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which loop can lead to an infinite loop if the condition never becomes false?",
+    "options": {
+      "a": "for loop",
+      "b": "while loop",
+      "c": "do-while loop",
+      "d": "foreach loop"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "How do you define a function in Python?",
+    "options": {
+      "a": "function myFunc():",
+      "b": "def myFunc():",
+      "c": "func myFunc():",
+      "d": "define myFunc():"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which argument type allows a function to accept a variable number of positional arguments?",
+    "options": {
+      "a": "*args",
+      "b": "**kwargs",
+      "c": "positional",
+      "d": "keyword"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the use of the return statement in a Python function?",
+    "options": {
+      "a": "To stop the function execution",
+      "b": "To output a value from the function",
+      "c": "To define a function",
+      "d": "To print the function"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is true about else in an if-elif-else chain?",
+    "options": {
+      "a": "It is optional and runs if all previous conditions fail",
+      "b": "It must always have a condition",
+      "c": "It runs if any previous condition is true",
+      "d": "It ends the program"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "What keyword is used to create an anonymous function in Python?",
+    "options": {
+      "a": "def",
+      "b": "lambda",
+      "c": "func",
+      "d": "anon"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is TRUE about lambda functions?",
+    "options": {
+      "a": "They can contain multiple expressions",
+      "b": "They can only have one expression and no return keyword",
+      "c": "They always require a return statement",
+      "d": "They cannot accept parameters"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "How would you import only the sqrt function from the math module?",
+    "options": {
+      "a": "import sqrt from math",
+      "b": "from math import sqrt",
+      "c": "import math.sqrt",
+      "d": "include math.sqrt"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is a Python package?",
+    "options": {
+      "a": "A single Python file",
+      "b": "A collection of modules in a directory with __init__.py",
+      "c": "A compiled Python program",
+      "d": "A function library"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which method is called when a new object is created from a class?",
+    "options": {
+      "a": "__start__",
+      "b": "__create__",
+      "c": "__init__",
+      "d": "__new__"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "In OOP, what does inheritance mean?",
+    "options": {
+      "a": "An object contains multiple classes",
+      "b": "A class inherits features from another class",
+      "c": "Multiple objects inherit the same name",
+      "d": "A function inherits parameters"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What does the try block do in exception handling?",
+    "options": {
+      "a": "Runs code only if an error occurs",
+      "b": "Wraps code that might throw an exception",
+      "c": "Always executes after an exception",
+      "d": "Handles the exception"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which keyword is used to catch a specific exception in Python?",
+    "options": {
+      "a": "catch",
+      "b": "except",
+      "c": "error",
+      "d": "handle"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of the finally block in exception handling?",
+    "options": {
+      "a": "To execute code only if an exception was raised",
+      "b": "To execute code only if no exception was raised",
+      "c": "To execute code regardless of exceptions",
+      "d": "To stop the program after exception"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "How do you manually trigger an exception in Python?",
+    "options": {
+      "a": "throw",
+      "b": "raise",
+      "c": "error",
+      "d": "except"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which mode in the open() function is used to open a file for writing, creating the file if it doesn’t exist or overwriting it if it does?",
+    "options": {
+      "a": "r",
+      "b": "w",
+      "c": "a",
+      "d": "rb"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the 'a' mode do when opening a file?",
+    "options": {
+      "a": "Reads the file",
+      "b": "Writes and overwrites the file",
+      "c": "Appends data to the end of the file",
+      "d": "Reads the file in binary"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What advantage does using the with statement provide when working with files?",
+    "options": {
+      "a": "Allows file reading only",
+      "b": "Ensures the file is automatically closed after use",
+      "c": "Automatically creates the file",
+      "d": "Encrypts the file"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which Python library is commonly used for data analysis with arrays and dataframes?",
+    "options": {
+      "a": "Flask",
+      "b": "NumPy",
+      "c": "TensorFlow",
+      "d": "Matplotlib"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Django and Flask are Python libraries used for what purpose?",
+    "options": {
+      "a": "Machine learning",
+      "b": "Web development",
+      "c": "Data visualization",
+      "d": "Data analysis"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is NOT an advanced Python concept?",
+    "options": {
+      "a": "Decorator",
+      "b": "Iterator",
+      "c": "Variable",
+      "d": "Generator"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What does a Python decorator do?",
+    "options": {
+      "a": "Defines a new variable",
+      "b": "Modifies or extends the behavior of functions or methods",
+      "c": "Creates a loop",
+      "d": "Handles exceptions"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which keyword is used inside a generator function to yield values?",
+    "options": {
+      "a": "return",
+      "b": "yield",
+      "c": "break",
+      "d": "next"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the purpose of a context manager in Python?",
+    "options": {
+      "a": "To handle exceptions",
+      "b": "To manage resources like files, ensuring proper acquisition and release",
+      "c": "To create classes",
+      "d": "To run parallel threads"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which modules or techniques improve Python program performance by running code concurrently or in parallel?",
+    "options": {
+      "a": "Iterators and generators",
+      "b": "Threading and multiprocessing",
+      "c": "Decorators and context managers",
+      "d": "Pandas and NumPy"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following modes is used to open a file in binary read mode?",
+    "options": {
+      "a": "rb",
+      "b": "r",
+      "c": "wb",
+      "d": "b"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "What function would you use to write multiple lines to a file at once?",
+    "options": {
+      "a": "write()",
+      "b": "writelines()",
+      "c": "read()",
+      "d": "readlines()"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of these is NOT a valid way to import modules in Python?",
+    "options": {
+      "a": "import math",
+      "b": "from math import sqrt",
+      "c": "include math",
+      "d": "import os"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "TensorFlow and PyTorch are libraries primarily used for:",
+    "options": {
+      "a": "Web development",
+      "b": "Machine learning and AI",
+      "c": "Data visualization",
+      "d": "File handling"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following statements about Python generators is TRUE?",
+    "options": {
+      "a": "They return all values at once",
+      "b": "They use the yield keyword to produce values lazily",
+      "c": "They cannot be iterated over",
+      "d": "They are used to handle exceptions"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What method must an iterator implement in Python?",
+    "options": {
+      "a": "__iter__ and __next__",
+      "b": "__init__ and __call__",
+      "c": "__next__ only",
+      "d": "__enter__ and __exit__"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which Python keyword is used to manually trigger an exception?",
+    "options": {
+      "a": "throw",
+      "b": "raise",
+      "c": "catch",
+      "d": "except"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "In Python, what does the finally block do in exception handling?",
+    "options": {
+      "a": "Runs only if an exception occurs",
+      "b": "Runs only if no exception occurs",
+      "c": "Always runs regardless of exceptions",
+      "d": "Catches exceptions"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of these libraries would you use to create visualizations such as charts and plots?",
+    "options": {
+      "a": "NumPy",
+      "b": "Matplotlib",
+      "c": "Flask",
+      "d": "TensorFlow"
+    },
+    "answer": "b",
+    "difficulty": 1
+  }
+]

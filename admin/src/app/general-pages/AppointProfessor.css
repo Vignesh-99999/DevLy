@@ -1,0 +1,25 @@
+.appoint-professor .subject-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.appoint-professor .subject-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.appoint-professor .subject-item .form-check-input {
+  margin-right: 6px;
+  position: static;
+}
+
+.appoint-professor .subject-item .form-check-label {
+  margin-bottom: 0;
+}
+
+.appoint-professor .card-title {
+  margin-bottom: 1rem;
+}
+
+

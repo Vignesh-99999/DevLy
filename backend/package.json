@@ -1,0 +1,32 @@
+{
+  "name": "devly-backend",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "keywords": ["devly", "mern", "backend"],
+  "author": "Vignesh",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.2",
+    "motion": "^12.23.12",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.6",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "description": "DevLy MERN Backend"
+}

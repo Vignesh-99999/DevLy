@@ -1,0 +1,113 @@
+/* Make the whole page fill the screen */
+.landing-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Overlay on top of background animation for readability */
+.landing-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    rgba(10, 10, 30, 0.328), 
+    rgba(10, 10, 30, 0.329)
+  ); /* deep tech blue overlay */
+  z-index: 2;
+}
+
+/* Center content */
+.landing-content {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5f7fa;
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* Heading and paragraph styles */
+.landing-content h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.landing-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #dfe6ee;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Button styles */
+.login-btn {
+  padding: 14px 32px;
+  font-size: 17px;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb); /* purple/blue gradient */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #3b3fa6, #6c70d7);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.focus-box {
+  background: rgba(17, 25, 40, 0.65); /* dark glass effect */
+  padding: 40px 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px); /* glassmorphism */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+.landing-content h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+}
+.landing-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #e0e6ed;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Button more attention-grabbing */
+.login-btn {
+  padding: 14px 32px;
+  font-size: 17px;
+  background: linear-gradient(135deg, #06B6D4, #2563EB);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #0891b2, #1d4ed8);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
+}

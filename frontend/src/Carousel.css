@@ -1,0 +1,186 @@
+/* src/components/Carousel.css */
+
+/* wrapper & reset */
+.carousel-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 500px; /* adjust to taste */
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  user-select: none;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  border-radius: 12px;
+}
+
+/* the list that holds items */
+.slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* base item style (small thumbnail look) */
+.item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  height: 220px;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+  transition:
+    left 700ms cubic-bezier(.22,.9,.39,1),
+    top 700ms cubic-bezier(.22,.9,.39,1),
+    width 700ms cubic-bezier(.22,.9,.39,1),
+    height 700ms cubic-bezier(.22,.9,.39,1),
+    opacity 400ms ease;
+  overflow: hidden;
+  z-index: 5;
+  border: 2px solid rgba(0,0,0,0.15);
+}
+
+/* make the first two items full-bleed background (covers entire carousel area)
+   this reproduces the demo: item 1 and item 2 act as big background layers;
+   the content overlay sits on the second item (visible content)
+*/
+.item:nth-child(1),
+.item:nth-child(2) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* make sure the second layer sits above the first so overlay content shows */
+.item:nth-child(2) {
+  z-index: 2;
+}
+
+/* stacked right-side thumbnails (these are positioned relative to the center line)
+   3..6 are spaced out horizontally forming the vertical strip appearance in demo
+*/
+.item:nth-child(3) { left: 50%; }
+.item:nth-child(4) { left: calc(50% + 140px); }
+.item:nth-child(5) { left: calc(50% + 280px); }
+.item:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
+
+/* overlay content — visible on the second item (the foreground background) */
+.content {
+  display: none;
+  position: absolute;
+  left: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(38vw, 520px);
+  color: #ffffff;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  z-index: 3;
+  pointer-events: none;
+}
+.content.visible { display: block; pointer-events: auto; animation: showContent 600ms ease both; }
+
+@keyframes showContent {
+  from {
+    opacity: 0;
+    transform: translateY(calc(-50% + 50px));
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%);
+    filter: blur(0);
+  }
+}
+
+/* content typography */
+.content .title {
+  font-size: 28px;
+  margin: 0 0 0.75rem 0;
+  font-weight: 800;
+  letter-spacing: .6px;
+}
+.content .description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.1rem;
+  opacity: 0.95;
+  max-width: 46ch;
+}
+.readmore {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.85);
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .2s, transform .15s;
+}
+.readmore:hover { background: rgba(255,255,255,0.06); transform: translateY(-1px); }
+
+/* nav controls (round buttons centered bottom) */
+.nav {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.nav-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.9);
+  color: white;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(10,10,10,0.18);
+  transition: transform .15s ease, background .15s;
+}
+.nav-btn:hover { transform: translateY(-3px); background: rgba(255,255,255,1); }
+
+/* make thumbnails appear slightly taller on hover (optional visual cue) */
+.item:nth-child(n+3):hover { transform: translateY(-52%) scale(1.03); z-index: 6; }
+
+/* responsive tweaks */
+@media (max-width: 1024px) {
+  .carousel-wrapper { height: 360px; }
+  .item { width: 120px; height: 200px; }
+  .item:nth-child(4) { left: calc(50% + 120px); }
+  .item:nth-child(5) { left: calc(50% + 240px); }
+  .item:nth-child(6) { left: calc(50% + 360px); }
+  .content { width: min(45vw, 420px); left: 2rem; }
+  .content .title { font-size: 24px; }
+}
+
+@media (max-width: 700px) {
+  .carousel-wrapper { height: 320px; }
+  .content { width: 80%; left: 1.25rem; top: 18%; transform: none; }
+  .content.visible { top: 18%; transform: none; }
+  .item { width: 100px; height: 160px; }
+  .item:nth-child(3) { left: 55%; }
+  .item:nth-child(4) { left: calc(55% + 110px); }
+  .nav { bottom: 12px; }
+  .nav-btn { width: 40px; height: 40px; font-size: 18px; }
+}

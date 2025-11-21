@@ -1,0 +1,177 @@
+/* ----------- PAGE BACKGROUND ----------- */
+.otp-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: "Poppins", sans-serif;
+  padding: 15px;
+}
+
+/* ----------- CARD ----------- */
+.otp-card {
+  width: 900px;
+  max-width: 95%;
+  background: #fff;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------- LEFT SIDE ----------- */
+.verify-left {
+  flex: 1;
+  background: linear-gradient(135deg, #4a148c, #6a11cb);
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.verify-left h1 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.verify-left p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ----------- RIGHT SIDE ----------- */
+.verify-right {
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+}
+
+/* ----------- TIMER ----------- */
+.timer {
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+.timer.expired {
+  color: red;
+  font-weight: bold;
+}
+
+/* ----------- OTP INPUT BOX ----------- */
+.otp-input-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.otp-input-box input {
+  width: 55px;
+  height: 55px;
+  font-size: 28px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  outline: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  background: #f9f9f9;
+}
+
+.otp-input-box input:focus {
+  border-color: #6a11cb;
+  background: white;
+  box-shadow: 0px 0px 8px rgba(106, 17, 203, 0.4);
+}
+
+/* Disabled state */
+.otp-input-box input:disabled {
+  background: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* ----------- VERIFY BUTTON ----------- */
+.otp-submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.otp-submit-btn:hover {
+  background: #4a0fa1;
+}
+
+/* ----------- RESEND BUTTON ----------- */
+.resendBtn {
+  margin-top: 15px;
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: #6a11cb;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.resendBtn:disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.resendBtn:hover:not(:disabled) {
+  color: #4a0fa1;
+}
+
+/* ----------- LOGIN LINK ----------- */
+.login-text {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #444;
+}
+
+.login-text span {
+  color: #6a11cb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-text span:hover {
+  text-decoration: underline;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+  .otp-card {
+    flex-direction: column;
+  }
+  
+  .verify-left,
+  .verify-right {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .otp-input-box input {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,95 @@
+.verify-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9ff;
+}
+
+.verify-card {
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 380px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.verify-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.verify-card p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.verify-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  margin-bottom: 1.2rem;
+  transition: 0.2s;
+}
+
+.verify-card input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 5px rgba(99, 102, 241, 0.3);
+}
+
+.verify-card button {
+  width: 100%;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.verify-card button:hover {
+  background: #4f46e5;
+}
+
+.verify-links {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.resend-btn {
+  background: none;
+  border: none;
+  color: #111;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.resend-btn:hover {
+  color: #6366f1;
+}
+
+.login-link {
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

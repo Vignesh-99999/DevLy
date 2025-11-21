@@ -1,0 +1,708 @@
+{
+  "title": "C Programming Smart Learning Content",
+  "topics": [
+    {
+      "title": "C Introduction",
+      "description": "C is a powerful, general-purpose programming language developed in 1972 by Dennis Ritchie at Bell Labs. Known for its simplicity, speed, and control over system resources, C supports procedural and modular programming, making it ideal for system-level development and foundational learning.",
+      "extra": [
+        "Created in 1972 by Dennis Ritchie at Bell Labs.",
+        "Used to develop the UNIX operating system.",
+        "Supports procedural and modular programming.",
+        "Provides low-level memory access through pointers.",
+        "Known as the 'mother of all programming languages.'",
+        "Influenced languages like C++, Java, and Python.",
+        "Used in OS kernels, embedded systems, and compilers.",
+        "C code is compiled into fast, efficient machine code.",
+        "Offers deep insight into memory, data structures, and CPU operations.",
+        "Still widely taught for its foundational importance."
+      ]
+    },
+    {
+      "title": "Why Learn C?",
+      "description": "Learning C is highly beneficial for building a strong foundation in computer science. It offers speed, efficiency, and a better understanding of how memory and low-level operations work, making it easier to learn other languages and develop performance-critical applications.",
+      "extra": [
+        "C is faster than Java and Python.",
+        "Syntax is similar to Java, Python, C++, C#.",
+        "Deepens understanding of computer memory.",
+        "Helps in learning low-level programming.",
+        "Prepares you for systems, embedded, and OS development.",
+        "Used in operating systems, embedded systems, and game engines.",
+        "Improves knowledge of data structures and algorithms."
+      ]
+    },
+    {
+      "title": "Most Important Features of C",
+      "description": "C has several core features such as being procedural, fast, modular, statically typed, general purpose, and portable.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n    printf(\"Hello, C Programming!\\n\");\n    return 0;\n}",
+          "output": "Hello, C Programming!"
+        }
+      ],
+      "extra": [
+        "Procedural Language → follows step-by-step instructions.",
+        "Fast and Efficient → direct access to memory.",
+        "Modularity → divides program into reusable functions.",
+        "Statically Typed → type must be declared before use.",
+        "Portability → code runs across platforms."
+      ]
+    },
+    {
+      "title": "Compilation Process in C",
+      "description": "Compilation is the process of converting C code into machine-readable form. It involves multiple steps like preprocessing, compiling, assembling, and linking to create an executable file from your source code.",
+      "extra": [
+        "Compilation converts C code into machine code.",
+        "The preprocessor handles #include and macros.",
+        "The compiler generates assembly code from C code.",
+        "The assembler translates assembly into object code.",
+        "The linker combines object files into an executable.",
+        "Each step transforms code closer to machine language.",
+        "Output is an executable file like .exe or a.out.",
+        "Compilation improves performance and error checking.",
+        "C compilers include GCC, Clang, Turbo C, etc.",
+        "Without compilation, computers can't run C programs."
+      ]
+    },
+    {
+      "title": "Structure of the C Program",
+      "description": "Every C program follows a specific structure to compile and run correctly. It includes preprocessor directives, global declarations, a main function, variable declarations, statements, and optional functions.",
+      "extra": [
+        "Programs start with preprocessor directives like #include.",
+        "Global variables and functions are declared outside main().",
+        "The main() function is the entry point of every C program.",
+        "Variables must be declared before use within functions.",
+        "Program logic is inside functions using statements and expressions.",
+        "Additional functions help organize reusable code blocks.",
+        "Comments improve readability but don't affect compilation.",
+        "Missing main() or misplaced code leads to compilation errors.",
+        "Proper structure ensures clarity and error-free compilation.",
+        "Following this structure builds a foundation for complex programs."
+      ]
+    },
+    {
+      "title": "Applications of C Programming",
+      "description": "C is a general-purpose language used for system tools, compilers, device drivers, embedded systems, networking applications, and game development. Its speed makes it suitable for performance-heavy programs.",
+      "extra": [
+        "Used to develop operating systems like UNIX and Linux.",
+        "Core language for compilers and interpreters.",
+        "Ideal for device driver development.",
+        "Dominant in embedded systems programming (IoT, microcontrollers).",
+        "Widely used in networking software and protocols.",
+        "Preferred for game engines and graphics programming.",
+        "Suitable for performance-critical applications.",
+        "Provides low-level memory and hardware access.",
+        "Balances high-level programming with system control.",
+        "Extensively used in both academic and industrial projects."
+      ]
+    },
+    {
+      "title": "Advantages of C Programming",
+      "description": "C is a compiled, portable, middle-level language. It is general-purpose, efficient, and used across operating systems, embedded systems, and performance-critical applications.",
+      "extra": [
+        "Compiled language for fast execution.",
+        "Highly portable across platforms and devices.",
+        "Middle-level language with high and low-level features.",
+        "General-purpose: suitable for many application domains.",
+        "Efficient in speed and resource usage.",
+        "Supports structured and modular programming.",
+        "Offers rich operators and data types.",
+        "Allows direct hardware and memory manipulation.",
+        "Large community and extensive libraries available.",
+        "Foundation for many modern programming languages."
+      ]
+    },
+    {
+      "title": "C Comments",
+      "description": "Comments are human-readable notes in the code that make it easier to understand. They are ignored by the compiler and do not affect program execution.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n    // This is a single line comment\n    printf(\"Hello\");\n    return 0;\n}",
+          "output": "Hello"
+        }
+      ]
+    },
+    {
+      "title": "C Identifiers",
+      "description": "Identifiers are names given to program elements like variables, functions, arrays, structures, and constants. They help the compiler allocate memory and associate it with a name.",
+      "extra": [
+        "Keywords cannot be used as identifiers.",
+        "Must start with an alphabet or underscore.",
+        "Identifiers are case-sensitive.",
+        "Same identifier cannot be reused in the same scope."
+      ],
+      "examples": [
+        {
+          "code": "int value = 5;\nint Value = 10;",
+          "explanation": "'value' and 'Value' are different identifiers."
+        }
+      ]
+    },
+    {
+      "title": "Types of Identifiers in C",
+      "description": "Different program elements use identifiers.",
+      "extra": [
+        "Variable Identifier → Names for variables.",
+        "Function Identifier → Names for functions.",
+        "User-defined Type Identifier → Names for custom types like struct.",
+        "Typedef Identifier → Alias names for types.",
+        "Enum Identifier → Names for enumeration constants."
+      ],
+      "examples": [
+        {
+          "code": "int marks1 = 50, marks2 = 60;\nfloat avg = (float)(marks1 + marks2) / 2;",
+          "explanation": "marks1, marks2, and avg are variable identifiers."
+        },
+        {
+          "code": "int average(int a, int b) {\n    return (a + b) / 2;\n}",
+          "explanation": "average is a function identifier."
+        },
+        {
+          "code": "struct student { int rollno; char *name; };",
+          "explanation": "student is a user-defined type identifier."
+        },
+        {
+          "code": "typedef struct student STUDENT;\nSTUDENT s1;",
+          "explanation": "STUDENT is a typedef identifier."
+        },
+        {
+          "code": "enum week { Mon, Tue, Wed };",
+          "explanation": "Mon, Tue, Wed are enum identifiers."
+        }
+      ]
+    },
+    {
+      "title": "Scope of Identifiers",
+      "description": "The scope of an identifier decides where it can be accessed in a program.",
+      "extra": [
+        "Global identifiers → Declared outside functions, visible throughout the program.",
+        "Local identifiers → Declared inside functions, visible only within that function."
+      ],
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint marks = 100; // global identifier\nint main() {\n   printf(\"%d\", marks);\n   return 0;\n}",
+          "output": "100"
+        },
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int marks = 50; // local identifier\n   printf(\"%d\", marks);\n   return 0;\n}",
+          "output": "50"
+        }
+      ]
+    },
+    {
+      "title": "Variables in C",
+      "description": "Variables are containers for storing data values. Each variable has a type, which determines its memory size, range, and allowed operations.",
+      "examples": [
+        {
+          "code": "int age = 25;\nchar grade = 'A';",
+          "explanation": "age is an int, grade is a char."
+        },
+        {
+          "code": "int num;\nchar letter;\nfloat decimal;",
+          "explanation": "Uninitialized variables declaration."
+        }
+      ],
+      "extra": [
+        "Must be declared before use.",
+        "Type decides memory and operations.",
+        "Names must be unique."
+      ]
+    },
+    {
+      "title": "Rules for Naming Variables",
+      "description": "Variables must follow specific naming rules to ensure code clarity and successful compilation.",
+      "extra": [
+        "Can contain letters, digits, and underscores.",
+        "Must start with an alphabet or underscore.",
+        "Cannot contain spaces.",
+        "Cannot be a reserved word.",
+        "Must be unique in the program.",
+        "Variable names are case-sensitive.",
+        "Should be descriptive and meaningful.",
+        "Avoid starting names with digits.",
+        "Use underscores or camelCase for multi-word names.",
+        "Proper naming prevents compilation errors."
+      ]
+    },
+    {
+      "title": "Memory Allocation of Variables",
+      "description": "When a variable is declared, the compiler is told its type but memory is not allocated until it is defined. The size of memory depends on the variable type. The sizeof operator can be used to check memory usage.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int num = 22;\n   printf(\"%d bytes\", sizeof(num));\n   return 0;\n}",
+          "output": "4 bytes (on most systems)"
+        }
+      ]
+    },
+    {
+      "title": "Scope of Variables",
+      "description": "Scope defines where in the program a variable is visible and usable. In C, scope is usually limited to the block defined by { } braces.",
+      "extra": [
+        "Variables declared inside a block are visible only within that block.",
+        "Global variables declared outside all functions are visible throughout the program.",
+        "Function scope variables are accessible anywhere within their function.",
+        "Local variables exist only while the block is executing.",
+        "Scope prevents variable name conflicts and accidental modifications.",
+        "Limited scope aids efficient memory usage.",
+        "Understanding scope improves debugging and program clarity.",
+        "Blocks and functions define variable visibility boundaries."
+      ]
+    },
+    {
+      "title": "Why Scope Matters",
+      "description": "Scope is important for organizing code, avoiding conflicts, and preventing unintended changes to variables.",
+      "extra": [
+        "Prevents accidental changes to unrelated variables.",
+        "Allows same variable names in different scopes.",
+        "Keeps code modular and clean.",
+        "Helps manage memory by limiting variable lifetime.",
+        "Makes debugging easier by reducing variable interference.",
+        "Improves code readability and maintainability."
+      ]
+    },
+    {
+      "title": "Types of Variable Scope",
+      "description": "C supports different scopes for variables.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int x = 10;\n   {\n      int y = 20;\n      printf(\"Inside block: x = %d, y = %d\\n\", x, y);\n   }\n   return 0;\n}",
+          "output": [
+            "Inside block: x = 10, y = 20"
+          ],
+          "explanation": "y is accessible only inside the block."
+        },
+        {
+          "code": "#include <stdio.h>\nint g = 50;\nvoid printG() { printf(\"g = %d\\n\", g); }\nint main() {\n   printf(\"g = %d\\n\", g);\n   printG();\n   return 0;\n}",
+          "output": [
+            "g = 50",
+            "g = 50"
+          ],
+          "explanation": "g is global and accessible everywhere."
+        }
+      ]
+    },
+    {
+      "title": "Constants in C",
+      "description": "Constants are variables whose value cannot be changed once initialized. They are declared using the const keyword. Constants help make programs safer and easier to understand by preventing accidental modification of values that should remain fixed throughout execution. Using constants can improve code readability and maintainability, especially for values like mathematical constants or configuration parameters that should stay the same. Additionally, constants can sometimes enable compiler optimizations because their values are guaranteed not to change.",
+      "examples": [
+        {
+          "code": "const int PI = 3.14;\nprintf(\"%d\", PI);",
+          "explanation": "PI is a constant and cannot be reassigned."
+        }
+      ],
+      "extra": [
+        "Must be initialized at the time of declaration.",
+        "Compiler will throw an error if reassignment is attempted.",
+        "Constants improve code safety by preventing unintended value changes.",
+        "Can be used with any data type including int, float, char, etc.",
+        "Enhances code readability by giving meaningful names to fixed values.",
+        "May help the compiler optimize the program.",
+        "Constants can be declared globally or locally.",
+        "Use uppercase naming convention for constants for clarity.",
+        "const keyword ensures the value remains immutable during execution."
+      ]
+    },
+
+    {
+      "title": "Data Types in C",
+      "description": "Each variable in C has an associated data type that determines the kind of values it can store, its memory size, and the operations that can be performed.",
+      "tables": [
+        {
+          "data_type": "int",
+          "description": "Integer numbers (whole numbers)",
+          "memory": "2–4 bytes",
+          "example": "int age = 25;"
+        },
+        {
+          "data_type": "float",
+          "description": "Decimal numbers (single precision)",
+          "memory": "4 bytes",
+          "example": "float pi = 3.14;"
+        },
+        {
+          "data_type": "double",
+          "description": "Decimal numbers (double precision)",
+          "memory": "8 bytes",
+          "example": "double e = 2.718;"
+        },
+        {
+          "data_type": "char",
+          "description": "Single character",
+          "memory": "1 byte",
+          "example": "char grade = 'A';"
+        }
+      ],
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int age = 20;\n   float height = 5.8;\n   double pi = 3.141592;\n   char grade = 'A';\n   printf(\"Age: %d\\n\", age);\n   printf(\"Height: %.1f\\n\", height);\n   printf(\"Pi: %.6lf\\n\", pi);\n   printf(\"Grade: %c\\n\", grade);\n   return 0;\n}",
+          "output": [
+            "Age: 20",
+            "Height: 5.8",
+            "Pi: 3.141592",
+            "Grade: A"
+          ]
+        }
+      ],
+      "extra": [
+        "Derived data types include arrays, pointers, functions, and structures.",
+        "User-defined types include struct, union, enum, and typedef.",
+        "Void type is used when no value is returned or stored."
+      ]
+    },
+    {
+      "title": "Basic Input and Output in C",
+      "description": "C programs often need to read data from the user and display results. The standard I/O functions come from the <stdio.h> library. Input and output operations are fundamental for interactive programs. The two most commonly used functions are printf() for displaying formatted output and scanf() for reading formatted input. Both functions use format specifiers like %d for integers, %f for floats, and %c for characters to handle different data types. Proper use of these functions is essential for reliable data handling and user interaction in C programs.",
+      "extra": [
+        "printf() → Displays output.",
+        "scanf() → Reads input.",
+        "Both require including <stdio.h>.",
+        "Format specifiers control data type handling (e.g., %d, %f, %c).",
+        "printf supports formatting strings, numbers, and characters.",
+        "scanf requires variable addresses (using &) for input storage.",
+        "Input/output functions facilitate user interaction with the program.",
+        "Using \n in printf adds a newline to the output.",
+        "scanf can read multiple inputs in one call.",
+        "Always validate input to avoid unexpected behavior."
+      ]
+    },
+    {
+      "title": "Basic Output using printf()",
+      "description": "The printf() function is used to display formatted output on the console.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   printf(\"Hello World\");\n   return 0;\n}",
+          "output": "Hello World",
+          "explanation": "Prints a string to the console."
+        },
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int age = 22;\n   printf(\"Age: %d\\n\", age);\n   return 0;\n}",
+          "output": "Age: 22",
+          "explanation": "%d is used for integers."
+        }
+      ]
+    },
+    {
+      "title": "Basic Input using scanf()",
+      "description": "The scanf() function reads user input from the console. The format specifier tells scanf what type of data to expect.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int age;\n   printf(\"Enter age: \");\n   scanf(\"%d\", &age);\n   printf(\"Age = %d\", age);\n   return 0;\n}",
+          "output": [
+            "Enter age: 25",
+            "Age = 25"
+          ]
+        },
+        {
+          "code": "#include <stdio.h>\nint main() {\n   char ch;\n   printf(\"Enter a character: \");\n   scanf(\"%c\", &ch);\n   printf(\"You entered: %c\", ch);\n   return 0;\n}",
+          "output": [
+            "Enter a character: a",
+            "You entered: a"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "fgets() in C",
+      "description": "The fgets() function reads multiple characters (including spaces) from input until newline or size limit is reached.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   char name[20];\n   printf(\"Enter your name: \");\n   fgets(name, sizeof(name), stdin);\n   printf(\"Hello, %s\", name);\n   return 0;\n}",
+          "input": "Admin",
+          "output": "Hello, Admin"
+        }
+      ]
+    },
+    {
+      "title": "Operators in C",
+      "description": "Operators are symbols that tell the compiler to perform operations on variables and values. They include arithmetic, relational, logical, bitwise, assignment, and other operators. Operators can be unary (one operand), binary (two operands), or ternary (three operands).",
+      "examples": [
+        {
+          "code": "int a = 5, b = 3;\nint sum = a + b;\nprintf(\"%d\", sum);",
+          "output": "8"
+        },
+        {
+          "code": "int x = 10;\nx++;\nprintf(\"%d\", x);",
+          "output": "11"
+        },
+        {
+          "code": "int a = 5, b = 3;\nint max = (a > b) ? a : b;\nprintf(\"%d\", max);",
+          "output": "5"
+        }
+      ]
+    },
+    {
+      "title": "Format Specifiers",
+      "description": "Format specifiers tell printf() and scanf() how to interpret values.",
+      "tables": [
+        { "specifier": "%d", "used_for": "Integer", "example": "int a = 10;" },
+        { "specifier": "%f", "used_for": "Float", "example": "float pi = 3.14;" },
+        { "specifier": "%lf", "used_for": "Double", "example": "double pi = 3.14159;" },
+        { "specifier": "%c", "used_for": "Character", "example": "char ch = 'A';" },
+        { "specifier": "%s", "used_for": "String", "example": "char str[20];" }
+      ]
+    },
+    {
+      "title": "Escape Sequences",
+      "description": "Escape sequences are special character combinations used inside strings to represent characters that are otherwise difficult to type or display directly. They start with a backslash (\\) followed by a character that indicates the special meaning. Escape sequences help format output, include special symbols, and control text display in C programs.",
+      "tables": [
+        { "escape_sequence": "\\n", "meaning": "New line (moves the cursor to the next line)" },
+        { "escape_sequence": "\\t", "meaning": "Tab space (adds horizontal spacing)" },
+        { "escape_sequence": "\\\\", "meaning": "Backslash (prints a single backslash character)" },
+        { "escape_sequence": "\\\"", "meaning": "Double quote (allows inclusion of double quotes inside strings)" },
+        { "escape_sequence": "\\'", "meaning": "Single quote (allows inclusion of single quotes inside character or string literals)" },
+        { "escape_sequence": "\\r", "meaning": "Carriage return (moves cursor to the beginning of the line)" },
+        { "escape_sequence": "\\b", "meaning": "Backspace (deletes the previous character)" },
+        { "escape_sequence": "\\a", "meaning": "Alert (produces a beep sound)" },
+        { "escape_sequence": "\\v", "meaning": "Vertical tab (adds vertical spacing)" }
+      ]
+    },
+    {
+      "title": "Operators in C",
+      "description": "Operators are symbols that tell the compiler to perform operations on variables and values. They include arithmetic, relational, logical, bitwise, assignment, and other operators.",
+      "extra": [
+        "Unary operators work on one operand (++, --).",
+        "Binary operators work on two operands (+, -, *, /).",
+        "Ternary operator works on three operands (?:)."
+      ]
+    },
+    {
+      "title": "Types of Operators in C - Arithmetic",
+      "description": "Arithmetic operators perform mathematical operations.",
+      "tables": [
+        { "operator": "+", "name": "Addition", "description": "Adds two numbers", "example": "5 + 3", "result": "8" },
+        { "operator": "-", "name": "Subtraction", "description": "Subtracts one number", "example": "5 - 3", "result": "2" },
+        { "operator": "*", "name": "Multiplication", "description": "Multiplies numbers", "example": "5 * 3", "result": "15" },
+        { "operator": "/", "name": "Division", "description": "Divides numbers", "example": "5 / 2", "result": "2" },
+        { "operator": "%", "name": "Modulus", "description": "Remainder of division", "example": "5 % 2", "result": "1" }
+      ],
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int a=10, b=4;\n   printf(\"a+b=%d\\n\", a+b);\n   printf(\"a-b=%d\\n\", a-b);\n   return 0;\n}",
+          "output": [
+            "a+b=14",
+            "a-b=6"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Operators in C - Relational",
+      "description": "Relational operators compare two values and return true (1) or false (0).",
+      "tables": [
+        { "operator": "==", "syntax": "a == b", "description": "Equal to", "example": "5 == 3", "result": "0" },
+        { "operator": "!=", "syntax": "a != b", "description": "Not equal to", "example": "5 != 3", "result": "1" },
+        { "operator": ">", "syntax": "a > b", "description": "Greater than", "example": "5 > 3", "result": "1" },
+        { "operator": "<", "syntax": "a < b", "description": "Less than", "example": "5 < 3", "result": "0" }
+      ]
+    },
+    {
+      "title": "Types of Operators in C - Logical",
+      "description": "Logical operators combine multiple conditions.",
+      "tables": [
+        { "operator": "&&", "syntax": "a && b", "description": "Logical AND", "example": "(a>0 && b>0)", "result": "1" },
+        { "operator": "||", "syntax": "a || b", "description": "Logical OR", "example": "(a>0 || b<0)", "result": "1" },
+        { "operator": "!", "syntax": "!a", "description": "Logical NOT", "example": "!(a>0)", "result": "0" }
+      ]
+    },
+    {
+      "title": "Loops in C",
+      "description": "A loop is a block of code that runs repeatedly until a condition is met.",
+      "extra": [
+        "for loop → repeats a fixed number of times.",
+        "while loop → runs as long as condition is true.",
+        "do...while loop → runs at least once, then checks condition.",
+        "Nested loops → loops inside loops."
+      ],
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   for(int i=0;i<5;i++) printf(\"%d \", i);\n   return 0;\n}",
+          "output": "0 1 2 3 4"
+        },
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int a=1;\n   while(a<=3){ printf(\"Hello\\n\"); a++; }\n   return 0;\n}",
+          "output": [
+            "Hello",
+            "Hello",
+            "Hello"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions in C",
+      "description": "A function is a reusable block of code that performs a specific task. Functions improve modularity, readability, and code reuse.",
+      "extra": [
+        "return_type function_name(parameter list) { body }",
+        "Functions can be built-in (printf, scanf) or user-defined.",
+        "Functions allow breaking large programs into smaller parts."
+      ],
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nvoid greet() {\n   printf(\"Hello from function\\n\");\n}\nint main() {\n   greet();\n   return 0;\n}",
+          "output": "Hello from function"
+        }
+      ]
+    },
+    {
+      "title": "Ways to Pass Arguments in C",
+      "description": "Functions in C can receive values using two methods: Call by Value and Call by Reference.",
+      "extra": [
+        "Call by Value → A copy of the variable is passed. Changes inside function do not affect the original variable.",
+        "Call by Reference → The address of the variable is passed. Changes inside function affect the original variable."
+      ],
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nvoid changeValue(int num) {\n   num = 100;\n   printf(\"Inside function: %d\\n\", num);\n}\nint main() {\n   int x = 10;\n   changeValue(x);\n   printf(\"After call: %d\\n\", x);\n   return 0;\n}",
+          "output": [
+            "Inside function: 100",
+            "After call: 10"
+          ],
+          "explanation": "Call by Value does not modify the original variable."
+        },
+        {
+          "code": "#include <stdio.h>\nvoid changeValue(int *num) {\n   *num = 100;\n   printf(\"Inside function: %d\\n\", *num);\n}\nint main() {\n   int x = 10;\n   changeValue(&x);\n   printf(\"After call: %d\\n\", x);\n   return 0;\n}",
+          "output": [
+            "Inside function: 100",
+            "After call: 100"
+          ],
+          "explanation": "Call by Reference modifies the original variable."
+        }
+      ]
+    },
+    {
+      "title": "The main() Function in C",
+      "description": "The main() function is the entry point of every C program. Program execution begins here.",
+      "extra": [
+        "Can call library and user-defined functions.",
+        "Syntax: int main() { statements; return 0; }",
+        "Special characteristics: cannot be inline, static, or called explicitly."
+      ],
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   printf(\"Program starts here\\n\");\n   return 0;\n}",
+          "output": "Program starts here"
+        }
+      ]
+    },
+    {
+      "title": "Arrays in C",
+      "description": "An array is a collection of elements of the same type stored in contiguous memory locations. Accessed using indices.",
+      "extra": [
+        "Can store multiple values of the same type.",
+        "Once declared, array size is fixed.",
+        "Index starts from 0."
+      ],
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int marks[5] = {10,20,30,40,50};\n   for(int i=0;i<5;i++) printf(\"%d \", marks[i]);\n   return 0;\n}",
+          "output": "10 20 30 40 50"
+        }
+      ]
+    },
+    {
+      "title": "Array Example - Average Marks",
+      "description": "Using arrays to calculate average.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main(){\n   int marks[5] = {50, 60, 70, 80, 90};\n   int sum=0;\n   for(int i=0;i<5;i++){ sum += marks[i]; }\n   float avg = (float)sum/5;\n   printf(\"Average: %f\", avg);\n   return 0;\n}",
+          "output": "Average: 70.000000"
+        }
+      ]
+    },
+    {
+      "title": "Properties of Arrays",
+      "description": "Arrays in C are collections of elements of the same type stored in contiguous memory locations. They provide a way to store multiple values under a single variable name, accessible via indices. Arrays have a fixed size that must be defined at compile time, making them efficient but less flexible compared to dynamic data structures. They can also represent multidimensional data such as matrices.",
+      "extra": [
+        "All elements must be of the same type.",
+        "Stored in contiguous memory locations for efficient access.",
+        "Fixed size must be specified during declaration and cannot be changed later.",
+        "Elements are accessed using zero-based indices.",
+        "Can represent multidimensional arrays like 2D or 3D arrays.",
+        "Array name acts as a pointer to the first element.",
+        "No built-in bounds checking, so careful indexing is required.",
+        "Useful for storing collections of data like lists, matrices, or buffers."
+      ]
+    },
+    {
+      "title": "Multidimensional Arrays in C",
+      "description": "A multidimensional array is an array of arrays. The most common type is a 2D array, which is like a matrix with rows and columns.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main() {\n   int matrix[2][3] = { {1,2,3}, {4,5,6} };\n   for(int i=0;i<2;i++) {\n      for(int j=0;j<3;j++) {\n         printf(\"%d \", matrix[i][j]);\n      }\n      printf(\"\\n\");\n   }\n   return 0;\n}",
+          "output": [
+            "1 2 3",
+            "4 5 6"
+          ]
+        }
+      ],
+      "extra": [
+        "General form: type arrayName[size1][size2]...[sizeN];",
+        "Commonly used for matrices and tables.",
+        "Memory is contiguous and accessed row by row."
+      ]
+    },
+    {
+      "title": "Pointers in C",
+      "description": "A pointer is a variable that stores the address of another variable. Pointers are powerful for memory management and dynamic programming.",
+      "extra": [
+        "Declared using * operator.",
+        "Can point to any data type (int*, char*, float*).",
+        "Can be NULL if not assigned.",
+        "Commonly used in arrays, functions, and dynamic memory."
+      ],
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main(){\n   int a=10;\n   int *ptr;\n   ptr=&a;\n   printf(\"a=%d\\n\", a);\n   printf(\"Address=%p\\n\", ptr);\n   printf(\"Value using pointer=%d\", *ptr);\n   return 0;\n}",
+          "output": [
+            "a=10",
+            "Address=0x7ffee...",
+            "Value using pointer=10"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pointer Arithmetic",
+      "description": "Since pointers store memory addresses, arithmetic can be performed to move between memory locations.",
+      "examples": [
+        {
+          "code": "#include <stdio.h>\nint main(){\n   int arr[3] = {10,20,30};\n   int *p = arr;\n   for(int i=0;i<3;i++){\n      printf(\"%d \", *(p+i));\n   }\n   return 0;\n}",
+          "output": "10 20 30"
+        }
+      ]
+    },
+    {
+      "title": "Difference Between Pointers and Arrays",
+      "description": "Although arrays and pointers look similar, they are not the same in C.",
+      "tables": [
+        {
+          "aspect": "Memory Allocation",
+          "array": "Fixed size, allocated at compile time.",
+          "pointer": "Can point anywhere, supports dynamic memory."
+        },
+        {
+          "aspect": "Reassignment",
+          "array": "Array name cannot be reassigned.",
+          "pointer": "Pointer can be reassigned to another address."
+        },
+        {
+          "aspect": "sizeof Operator",
+          "array": "Returns total size of array.",
+          "pointer": "Returns size of the pointer itself."
+        }
+      ]
+    },
+    {
+      "title": "Applications of Pointers",
+      "description": "Pointers are widely used in system-level programming, data structures, and memory management. They provide a way to directly access and manipulate memory addresses, enabling efficient and powerful programming techniques. Pointers are fundamental for creating dynamic data structures, managing resources, and interacting with hardware.",
+      "extra": [
+        "Used in dynamic memory allocation functions like malloc, calloc, and free.",
+        "Enable passing large structures and arrays efficiently to functions by reference.",
+        "Essential in implementing linked lists, trees, graphs, and other complex data structures.",
+        "Used for accessing and controlling hardware addresses in embedded systems.",
+        "Facilitate efficient array manipulation and string handling.",
+        "Allow creation of flexible and reusable code through pointer arithmetic.",
+        "Important for system programming tasks such as writing operating systems and device drivers."
+      ]
+    }
+  ]
+}

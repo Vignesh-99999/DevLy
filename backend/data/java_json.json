@@ -1,0 +1,991 @@
+{
+  "title": "Java Programming Smart Learning Content",
+  "topics": [
+    {
+      "title": "Java Introduction",
+      "description": "Java is a high-level, class-based, object-oriented programming language first released by Sun Microsystems in 1995. Designed for portability, safety, and ease of use, Java programs run on the Java Virtual Machine (JVM), enabling write-once-run-anywhere across platforms.",
+      "extra": [
+        "Created by James Gosling and team at Sun Microsystems in 1995.",
+        "Runs on the Java Virtual Machine (JVM) for platform independence.",
+        "Strongly emphasizes object-oriented programming principles.",
+        "Provides automatic memory management via garbage collection.",
+        "Widely used for enterprise applications, Android development, and web services.",
+        "Has a large standard library (Java SE) and extensive ecosystem (JEE, Spring).",
+        "Backwards compatibility is a core Java philosophy.",
+        "Supports multi-threading and concurrent programming.",
+        "Focuses on security and type safety.",
+        "Evolves through regular releases with new language features."
+      ]
+    },
+    {
+      "title": "Why Learn Java?",
+      "description": "Learning Java equips you with skills for building scalable, cross-platform applications. Its widespread use in enterprise systems, Android, and large ecosystems makes it a practical and career-relevant language.",
+      "extra": [
+        "Strong demand in enterprise software and backend systems.",
+        "Syntax shares similarities with C, C++, and C# easing transitions.",
+        "Excellent tooling and IDE support (IntelliJ IDEA, Eclipse, NetBeans).",
+        "Robust standard libraries for networking, I/O, and concurrency.",
+        "Great for learning OOP concepts and design patterns.",
+        "Used in Android app development (with Kotlin interoperability).",
+        "Large community and abundant learning resources."
+      ]
+    },
+    {
+      "title": "Most Important Features of Java",
+      "description": "Java offers portability, object-oriented design, automatic memory management, strong type checking, and an extensive standard library.",
+      "examples": [
+        {
+          "code": "public class Hello {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, Java Programming!\");\n    }\n}",
+          "output": "Hello, Java Programming!"
+        }
+      ],
+      "extra": [
+        "Object-Oriented Language → classes, objects, inheritance, polymorphism.",
+        "Platform Independence → bytecode runs on JVM across OSes.",
+        "Automatic Garbage Collection → reduces memory leaks.",
+        "Strongly Typed → compile-time type checking.",
+        "Rich Standard Library → utilities for collections, I/O, concurrency."
+      ]
+    },
+    {
+      "title": "Compilation and Runtime Process in Java",
+      "description": "Java source code is compiled into bytecode by javac. The JVM interprets or JIT-compiles bytecode to native machine code at runtime, enabling portability and runtime optimizations.",
+      "extra": [
+        "javac compiles .java files to .class bytecode files.",
+        "JVM loads .class files and executes bytecode.",
+        "Just-In-Time (JIT) compiler optimizes hotspots to native code.",
+        "Classloader subsystem loads classes at runtime.",
+        "Runtime exceptions and checked exceptions handled differently.",
+        "Garbage collector reclaims unused objects automatically.",
+        "Outputs are platform-independent bytecode files.",
+        "Tools: javac, java, javadoc, jar, jlink.",
+        "Different JVM implementations exist (Oracle, OpenJDK).",
+        "Debugging and profiling supported by JVM tooling."
+      ]
+    },
+    {
+      "title": "Structure of a Java Program",
+      "description": "A Java program is organized into classes and packages. Each class contains fields, methods, and optionally inner classes. The main method is the entry point for standalone applications.",
+      "extra": [
+        "Packages group related classes and provide namespaces.",
+        "Classes define state (fields) and behavior (methods).",
+        "main(String[] args) is the program entry point for applications.",
+        "Modifiers (public, private, protected) control access.",
+        "Interfaces define contracts; abstract classes provide partial implementations.",
+        "Comments and JavaDoc improve readability and API documentation.",
+        "Every source file typically declares one public class matching the filename.",
+        "Static members belong to the class, instance members to objects.",
+        "Proper structure improves maintainability and testability.",
+        "Use build tools (Maven, Gradle) for dependencies and lifecycle."
+      ]
+    },
+    {
+      "title": "Applications of Java Programming",
+      "description": "Java is used across domains: server-side applications, Android apps, desktop tools, scientific computing, big data, cloud services, and embedded systems.",
+      "extra": [
+        "Enterprise backend systems and web services (Spring, Jakarta EE).",
+        "Android application development (platform support and libraries).",
+        "Distributed systems and microservices architectures.",
+        "Big data frameworks (Hadoop, Spark) often use Java/Scala.",
+        "Financial services and trading platforms for reliability and performance.",
+        "Desktop GUI applications (Swing, JavaFX).",
+        "Embedded Java (Java Card, IoT devices) in constrained environments.",
+        "Tooling and developer utilities (build systems, CI/CD).",
+        "Game server backends and real-time systems.",
+        "Academic and research use for algorithms and simulations."
+      ]
+    },
+    {
+      "title": "Advantages of Java Programming",
+      "description": "Java balances performance, safety, and developer productivity. Its portability, ecosystem, and strong typing make it suitable for large-scale systems.",
+      "extra": [
+        "Write once, run anywhere thanks to JVM.",
+        "Automatic memory management simplifies development.",
+        "Strong standard APIs reduce dependence on external libs.",
+        "Mature tooling and enterprise support.",
+        "Robust concurrency libraries for multi-threaded apps.",
+        "Backward-compatible evolution minimizes breaking changes.",
+        "Large talent pool and community support.",
+        "Extensive testing, profiling, and monitoring tools.",
+        "Modular system (JPMS) improves packaging and security.",
+        "Secure language design with sandboxing and secure class loading."
+      ]
+    },
+    {
+      "title": "Java Comments",
+      "description": "Comments are non-executable notes for developers. Java supports single-line, multi-line, and JavaDoc comments for API documentation.",
+      "examples": [
+        {
+          "code": "public class Example {\n    // Single-line comment\n    /* Multi-line\n       comment */\n    /** JavaDoc comment for methods and classes */\n    public static void main(String[] args) {\n        System.out.println(\"Hello\");\n    }\n}",
+          "output": "Hello"
+        }
+      ]
+    },
+    {
+      "title": "Java Identifiers",
+      "description": "Identifiers are names given to packages, classes, methods, variables, and other program elements. They must follow naming rules and conventions.",
+      "extra": [
+        "Cannot be Java reserved keywords.",
+        "Must start with a letter, dollar sign ($), or underscore (_), but use letters for clarity.",
+        "Case-sensitive: myVar and MyVar are different.",
+        "Use camelCase for variables and methods, PascalCase for classes.",
+        "Packages use lowercase and dot-separated names."
+      ],
+      "examples": [
+        {
+          "code": "int value = 5;\nint Value = 10;",
+          "explanation": "'value' and 'Value' are different identifiers in Java."
+        }
+      ]
+    },
+    {
+      "title": "Types of Identifiers in Java",
+      "description": "Identifiers name program elements like variables, methods, classes, interfaces, enums, and packages.",
+      "extra": [
+        "Variable Identifier → names for fields and local vars.",
+        "Method Identifier → names for methods and constructors.",
+        "Class/Interface Identifier → names for types.",
+        "Package Identifier → names for packages.",
+        "Enum Identifier → constants defined in enums."
+      ],
+      "examples": [
+        {
+          "code": "int marks1 = 50, marks2 = 60;\ndouble avg = (marks1 + marks2) / 2.0;",
+          "explanation": "marks1, marks2, and avg are variable identifiers."
+        },
+        {
+          "code": "public int average(int a, int b) { return (a + b) / 2; }",
+          "explanation": "average is a method identifier."
+        },
+        {
+          "code": "public class Student { int rollNo; String name; }",
+          "explanation": "Student is a class identifier."
+        },
+        {
+          "code": "package com.example.app;",
+          "explanation": "com.example.app is a package identifier."
+        },
+        {
+          "code": "public enum Week { MON, TUE, WED }",
+          "explanation": "MON, TUE, WED are enum identifiers."
+        }
+      ]
+    },
+    {
+      "title": "Scope of Identifiers",
+      "description": "Scope determines where an identifier is accessible. Java scopes include block, method, class, package, and module levels.",
+      "extra": [
+        "Local variables are visible only within the block or method they are declared in.",
+        "Instance variables are accessible through object instances within the class (respecting access modifiers).",
+        "Static variables belong to the class and are accessible via ClassName.member.",
+        "Package-private (default) members are visible within the same package.",
+        "Private members are visible only inside the defining class."
+      ],
+      "examples": [
+        {
+          "code": "public class ScopeExample {\n    int instanceVar = 100; // instance scope\n    public static void main(String[] args) {\n        int local = 50; // local scope\n        System.out.println(local);\n        System.out.println(new ScopeExample().instanceVar);\n    }\n}",
+          "output": "50\n100"
+        }
+      ]
+    },
+    {
+      "title": "Variables in Java",
+      "description": "Variables store data values with an associated type. Java distinguishes between primitive types and reference types.",
+      "examples": [
+        {
+          "code": "int age = 25;\nchar grade = 'A';\ndouble salary = 45000.50;",
+          "explanation": "age is an int, grade is a char, salary is a double."
+        },
+        {
+          "code": "String name;\nString city = \"Ahmedabad\";",
+          "explanation": "Strings are reference types in Java."
+        }
+      ],
+      "extra": [
+        "Local variables must be initialized before use.",
+        "Field variables have default values if not explicitly initialized.",
+        "Primitives: byte, short, int, long, float, double, char, boolean.",
+        "Reference types include arrays, classes, interfaces, and enums."
+      ]
+    },
+    {
+      "title": "Rules for Naming Variables",
+      "description": "Follow naming rules and conventions for clarity and maintainability.",
+      "extra": [
+        "Can contain letters, digits, underscore, and dollar sign (avoid $ in practice).",
+        "Must not be a reserved keyword.",
+        "Should start with a letter (preferred) and use camelCase for variables.",
+        "Classes use PascalCase, constants use UPPER_SNAKE_CASE.",
+        "Variable names are case-sensitive.",
+        "Be descriptive and meaningful for readability."
+      ]
+    },
+    {
+      "title": "Memory and Variables in Java",
+      "description": "Java memory model divides memory into heap (objects) and stack (primitive local variables and references). The JVM manages allocation and garbage collection.",
+      "examples": [
+        {
+          "code": "public class Memory {\n    public static void main(String[] args) {\n        int num = 22;\n        Integer boxed = Integer.valueOf(num);\n        System.out.println(num);\n    }\n}",
+          "output": "22"
+        }
+      ],
+      "extra": [
+        "Primitive values are stored directly; objects live on the heap and are referenced.",
+        "Garbage collector reclaims objects no longer reachable.",
+        "Stack frames store method-local primitives and references.",
+        "Understanding memory helps prevent leaks (e.g., static collections holding references)."
+      ]
+    },
+    {
+      "title": "Scope of Variables",
+      "description": "Variable scope in Java depends on where the variable is declared: block, method, class (instance/static), or package level.",
+      "extra": [
+        "Variables declared inside a block ({}) are visible only within that block.",
+        "Instance variables are visible to methods of the class (respecting access modifiers).",
+        "Static variables are shared across all instances of the class.",
+        "Method parameters are local to the method.",
+        "Limited scope improves encapsulation and reduces bugs."
+      ]
+    },
+    {
+      "title": "Why Scope Matters",
+      "description": "Proper scope management improves encapsulation, prevents unintended access, and reduces side effects, leading to safer and more maintainable code.",
+      "extra": [
+        "Prevents accidental modification of unrelated state.",
+        "Supports information hiding with private and protected modifiers.",
+        "Allows same names in different scopes without conflict.",
+        "Aids reasoning about code and reduces bugs.",
+        "Enables better unit testing by restricting visibility."
+      ]
+    },
+    {
+      "title": "Types of Variable Scope",
+      "description": "Java supports local scope, instance scope, class (static) scope, package scope, and module scope.",
+      "examples": [
+        {
+          "code": "public class ScopeDemo {\n    static int s = 50; // class scope\n    int i = 10; // instance scope\n    public void method() {\n        int local = 20; // local scope\n        System.out.println(\"local=\" + local);\n    }\n    public static void main(String[] args) {\n        new ScopeDemo().method();\n        System.out.println(\"s=\" + s);\n    }\n}",
+          "output": "local=20\ns=50",
+          "explanation": "local is accessible only inside method; s is class-level and visible in static context."
+        }
+      ]
+    },
+    {
+      "title": "Constants in Java",
+      "description": "Constants are typically declared using the final keyword. They represent immutable values and are often static and named using upper case.",
+      "examples": [
+        {
+          "code": "public class Const {\n    public static final double PI = 3.1415926535;\n    public static void main(String[] args) {\n        System.out.println(PI);\n    }\n}",
+          "explanation": "PI is a constant and cannot be reassigned."
+        }
+      ],
+      "extra": [
+        "Use static final for constants shared across instances.",
+        "Must be initialized before use.",
+        "Final local variables become immutable after assignment.",
+        "Constants improve readability and maintainability.",
+        "Naming convention: UPPER_SNAKE_CASE for constants."
+      ]
+    },
+    {
+      "title": "Data Types in Java",
+      "description": "Java has primitive types and reference types. Primitives include integral, floating point, char, and boolean. Reference types include classes, interfaces, arrays, and enums.",
+      "tables": [
+        {
+          "data_type": "int",
+          "description": "Integer numbers (32-bit)",
+          "memory": "4 bytes",
+          "example": "int age = 25;"
+        },
+        {
+          "data_type": "float",
+          "description": "Decimal numbers (single precision)",
+          "memory": "4 bytes",
+          "example": "float f = 3.14f;"
+        },
+        {
+          "data_type": "double",
+          "description": "Decimal numbers (double precision)",
+          "memory": "8 bytes",
+          "example": "double d = 2.718;"
+        },
+        {
+          "data_type": "char",
+          "description": "Single 16-bit Unicode character",
+          "memory": "2 bytes",
+          "example": "char grade = 'A';"
+        }
+      ],
+      "examples": [
+        {
+          "code": "public class Types {\n    public static void main(String[] args) {\n        int age = 20;\n        float height = 5.8f;\n        double pi = 3.141592;\n        char grade = 'A';\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"Height: \" + height);\n        System.out.println(\"Pi: \" + pi);\n        System.out.println(\"Grade: \" + grade);\n    }\n}",
+          "output": [
+            "Age: 20",
+            "Height: 5.8",
+            "Pi: 3.141592",
+            "Grade: A"
+          ]
+        }
+      ],
+      "extra": [
+        "Derived types: arrays, generics, collections.",
+        "User-defined types: classes, interfaces, enums.",
+        "Void type used for methods that return nothing."
+      ]
+    },
+    {
+      "title": "Basic Input and Output in Java",
+      "description": "Java uses System.out for console output and java.util.Scanner or BufferedReader for input. For formatted output, use System.out.printf or String.format.",
+      "extra": [
+        "System.out.println() → prints with newline.",
+        "System.out.print() → prints without newline.",
+        "Scanner reads typed input from System.in.",
+        "BufferedReader and InputStreamReader provide efficient text input.",
+        "Use try-with-resources for IO resources to ensure closure.",
+        "Validate and handle exceptions for robust input handling.",
+        "Formatting through printf supports format specifiers similar to C."
+      ]
+    },
+    {
+      "title": "Basic Output using System.out",
+      "description": "System.out provides simple console output methods.",
+      "examples": [
+        {
+          "code": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}",
+          "output": "Hello World",
+          "explanation": "Prints a string to the console."
+        },
+        {
+          "code": "public class PrintAge {\n    public static void main(String[] args) {\n        int age = 22;\n        System.out.printf(\"Age: %d\\n\", age);\n    }\n}",
+          "output": "Age: 22",
+          "explanation": "%d is used for integers in printf."
+        }
+      ]
+    },
+    {
+      "title": "Basic Input using Scanner",
+      "description": "Scanner reads tokens and primitive values from input streams. It is convenient for simple console programs.",
+      "examples": [
+        {
+          "code": "import java.util.Scanner;\npublic class ReadAge {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        System.out.print(\"Enter age: \");\n        int age = sc.nextInt();\n        System.out.println(\"Age = \" + age);\n        sc.close();\n    }\n}",
+          "output": [
+            "Enter age: 25",
+            "Age = 25"
+          ]
+        },
+        {
+          "code": "import java.util.Scanner;\npublic class ReadChar {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        System.out.print(\"Enter a character: \");\n        char ch = sc.next().charAt(0);\n        System.out.println(\"You entered: \" + ch);\n        sc.close();\n    }\n}",
+          "output": [
+            "Enter a character: a",
+            "You entered: a"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reading Lines with BufferedReader",
+      "description": "BufferedReader reads whole lines efficiently and is useful when you need line-oriented input.",
+      "examples": [
+        {
+          "code": "import java.io.*;\npublic class ReadLine {\n    public static void main(String[] args) throws Exception {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        System.out.print(\"Enter your name: \");\n        String name = br.readLine();\n        System.out.println(\"Hello, \" + name);\n    }\n}",
+          "input": "Admin",
+          "output": "Hello, Admin"
+        }
+      ]
+    },
+    {
+      "title": "Operators in Java",
+      "description": "Operators perform operations on variables and values: arithmetic, relational, logical, bitwise, assignment, and more.",
+      "examples": [
+        {
+          "code": "int a = 5, b = 3;\nint sum = a + b;\nSystem.out.println(sum);",
+          "output": "8"
+        },
+        {
+          "code": "int x = 10;\nx++;\nSystem.out.println(x);",
+          "output": "11"
+        },
+        {
+          "code": "int a = 5, b = 3;\nint max = (a > b) ? a : b;\nSystem.out.println(max);",
+          "output": "5"
+        }
+      ]
+    },
+    {
+      "title": "Format Specifiers",
+      "description": "Format specifiers are used with printf and String.format to format output.",
+      "tables": [
+        { "specifier": "%d", "used_for": "Integer", "example": "int a = 10;" },
+        { "specifier": "%f", "used_for": "Float/Double", "example": "double pi = 3.14;" },
+        { "specifier": "%c", "used_for": "Character", "example": "char ch = 'A';" },
+        { "specifier": "%s", "used_for": "String", "example": "String s = \"text\";" }
+      ]
+    },
+    {
+      "title": "Escape Sequences",
+      "description": "Escape sequences represent special characters in string and character literals in Java.",
+      "tables": [
+        { "escape_sequence": "\\n", "meaning": "New line" },
+        { "escape_sequence": "\\t", "meaning": "Tab space" },
+        { "escape_sequence": "\\\\", "meaning": "Backslash" },
+        { "escape_sequence": "\\\"", "meaning": "Double quote" },
+        { "escape_sequence": "\\'", "meaning": "Single quote" },
+        { "escape_sequence": "\\r", "meaning": "Carriage return" },
+        { "escape_sequence": "\\b", "meaning": "Backspace" },
+        { "escape_sequence": "\\f", "meaning": "Form feed" }
+      ]
+    },
+    {
+      "title": "Types of Operators in Java - Arithmetic",
+      "description": "Arithmetic operators perform mathematical operations on numeric types.",
+      "tables": [
+        { "operator": "+", "name": "Addition", "description": "Adds two numbers", "example": "5 + 3", "result": "8" },
+        { "operator": "-", "name": "Subtraction", "description": "Subtracts one number from another", "example": "5 - 3", "result": "2" },
+        { "operator": "*", "name": "Multiplication", "description": "Multiplies numbers", "example": "5 * 3", "result": "15" },
+        { "operator": "/", "name": "Division", "description": "Divides numbers", "example": "5 / 2", "result": "2 (integer division)" },
+        { "operator": "%", "name": "Modulus", "description": "Remainder of division", "example": "5 % 2", "result": "1" }
+      ],
+      "examples": [
+        {
+          "code": "int a = 10, b = 4;\nSystem.out.println(\"a+b=\" + (a + b));\nSystem.out.println(\"a-b=\" + (a - b));",
+          "output": [
+            "a+b=14",
+            "a-b=6"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types of Operators in Java - Relational",
+      "description": "Relational operators compare values and return boolean results.",
+      "tables": [
+        { "operator": "==", "syntax": "a == b", "description": "Equal to", "example": "5 == 3", "result": "false" },
+        { "operator": "!=", "syntax": "a != b", "description": "Not equal to", "example": "5 != 3", "result": "true" },
+        { "operator": ">", "syntax": "a > b", "description": "Greater than", "example": "5 > 3", "result": "true" },
+        { "operator": "<", "syntax": "a < b", "description": "Less than", "example": "5 < 3", "result": "false" }
+      ]
+    },
+    {
+      "title": "Types of Operators in Java - Logical",
+      "description": "Logical operators combine boolean expressions.",
+      "tables": [
+        { "operator": "&&", "syntax": "a && b", "description": "Logical AND", "example": "(a>0 && b>0)", "result": "true" },
+        { "operator": "||", "syntax": "a || b", "description": "Logical OR", "example": "(a>0 || b<0)", "result": "true" },
+        { "operator": "!", "syntax": "!a", "description": "Logical NOT", "example": "!(a>0)", "result": "false" }
+      ]
+    },
+    {
+      "title": "Loops in Java",
+      "description": "Loops repeat code until a condition is met. Java supports for, while, and do-while loops, plus enhanced for for collections.",
+      "extra": [
+        "for loop → repeats a fixed or computed number of times.",
+        "while loop → runs as long as condition is true.",
+        "do...while loop → runs at least once, then checks condition.",
+        "Enhanced for (for-each) → iterates over arrays and Iterable.",
+        "Nested loops → loops inside loops."
+      ],
+      "examples": [
+        {
+          "code": "public class Loops {\n    public static void main(String[] args) {\n        for (int i = 0; i < 5; i++) System.out.print(i + \" \");\n    }\n}",
+          "output": "0 1 2 3 4"
+        },
+        {
+          "code": "public class WhileExample {\n    public static void main(String[] args) {\n        int a = 1;\n        while (a <= 3) { System.out.println(\"Hello\"); a++; }\n    }\n}",
+          "output": [
+            "Hello",
+            "Hello",
+            "Hello"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions (Methods) in Java",
+      "description": "Methods are reusable blocks of code within classes. Java methods support overloading, access modifiers, return types, and variable arguments.",
+      "extra": [
+        "Method signature: returnType name(parameter list) { body }",
+        "Methods belong to classes; static methods belong to the class itself.",
+        "Support method overloading with different parameter lists.",
+        "Encapsulation is achieved by choosing appropriate access modifiers."
+      ],
+      "examples": [
+        {
+          "code": "public class Functions {\n    public static void greet() { System.out.println(\"Hello from method\"); }\n    public static void main(String[] args) { greet(); }\n}",
+          "output": "Hello from method"
+        }
+      ]
+    },
+    {
+      "title": "Passing Arguments in Java",
+      "description": "Java uses pass-by-value semantics. For primitives a copy of the value is passed; for objects a copy of the reference is passed (allowing modification of object state).",
+      "extra": [
+        "Call by value for primitives.",
+        "Object references are passed by value; methods can modify object fields but cannot reassign caller's reference.",
+        "Use immutable objects to prevent accidental state changes."
+      ],
+      "examples": [
+        {
+          "code": "public class PassByValue {\n    static void change(int x) { x = 100; System.out.println(\"Inside: \" + x); }\n    public static void main(String[] args) {\n        int a = 10; change(a); System.out.println(\"After: \" + a);\n    }\n}",
+          "output": [
+            "Inside: 100",
+            "After: 10"
+          ],
+          "explanation": "Primitives are not modified in caller."
+        },
+        {
+          "code": "import java.util.List;\nimport java.util.ArrayList;\npublic class PassRef {\n    static void modifyList(List<Integer> l) { l.add(100); }\n    public static void main(String[] args) {\n        List<Integer> list = new ArrayList<>();\n        modifyList(list);\n        System.out.println(list);\n    }\n}",
+          "output": "[100]",
+          "explanation": "Object state can be changed via the passed reference."
+        }
+      ]
+    },
+    {
+      "title": "The main() Method in Java",
+      "description": "main is the entry point for standalone Java applications. The signature is public static void main(String[] args). JVM invokes this method to start the program.",
+      "extra": [
+        "Can accept command-line arguments via args array.",
+        "Can be overloaded but JVM looks for the exact signature.",
+        "Use System.exit to terminate with status code if needed."
+      ],
+      "examples": [
+        {
+          "code": "public class MainDemo {\n    public static void main(String[] args) {\n        System.out.println(\"Program starts here\");\n    }\n}",
+          "output": "Program starts here"
+        }
+      ]
+    },
+    {
+      "title": "Arrays in Java",
+      "description": "Arrays are fixed-size containers for elements of the same type. Java arrays are objects and support indexing starting at 0.",
+      "extra": [
+        "Declare: type[] name = new type[size]; or type[] name = { ... };",
+        "Length accessed via array.length (no parentheses).",
+        "Arrays are objects on the heap and referenced by variables.",
+        "No built-in bounds checking beyond ArrayIndexOutOfBoundsException."
+      ],
+      "examples": [
+        {
+          "code": "public class Arrays {\n    public static void main(String[] args) {\n        int[] marks = {10,20,30,40,50};\n        for (int i = 0; i < marks.length; i++) System.out.print(marks[i] + \" \");\n    }\n}",
+          "output": "10 20 30 40 50"
+        }
+      ]
+    },
+    {
+      "title": "Array Example - Average Marks",
+      "description": "Using arrays to calculate average in Java.",
+      "examples": [
+        {
+          "code": "public class Avg {\n    public static void main(String[] args) {\n        int[] marks = {50,60,70,80,90};\n        int sum = 0;\n        for (int m : marks) sum += m;\n        double avg = (double) sum / marks.length;\n        System.out.println(\"Average: \" + avg);\n    }\n}",
+          "output": "Average: 70.0"
+        }
+      ]
+    },
+    {
+      "title": "Properties of Arrays",
+      "description": "Java arrays are objects with fixed size, homogeneous element types, and zero-based indexing. They support multidimensional arrays as arrays of arrays.",
+      "extra": [
+        "All elements must be of the same declared type (or compatible subtype).",
+        "Stored on the heap as objects.",
+        "Array.length gives size; no built-in resize (use Collections for dynamic size).",
+        "Multidimensional arrays are arrays of arrays (jagged arrays possible).",
+        "Array references can be reassigned to other arrays.",
+        "Access outside range throws ArrayIndexOutOfBoundsException."
+      ]
+    },
+    {
+      "title": "Multidimensional Arrays in Java",
+      "description": "Multidimensional arrays are arrays whose elements are themselves arrays. Java commonly uses 2D arrays for matrices and tables.",
+      "examples": [
+        {
+          "code": "public class Matrix {\n    public static void main(String[] args) {\n        int[][] matrix = { {1,2,3}, {4,5,6} };\n        for (int i = 0; i < matrix.length; i++) {\n            for (int j = 0; j < matrix[i].length; j++) {\n                System.out.print(matrix[i][j] + \" \");\n            }\n            System.out.println();\n        }\n    }\n}",
+          "output": [
+            "1 2 3",
+            "4 5 6"
+          ]
+        }
+      ],
+      "extra": [
+        "Declaration: type[][] name = new type[rows][cols];",
+        "Rows can have different lengths (jagged arrays).",
+        "Access via matrix[row][col]."
+      ]
+    },
+    {
+      "title": "References and Objects in Java",
+      "description": "In Java, reference variables refer to objects on the heap. Understanding references and object identity is essential for correct program behavior.",
+      "extra": [
+        "The == operator checks reference identity for objects, .equals checks value equality (when overridden).",
+        "Objects are created with new and garbage-collected when unreachable.",
+        "Strings are special: string literals are interned in the String pool.",
+        "Use immutability (String, Integer) to avoid unintended side effects."
+      ],
+      "examples": [
+        {
+          "code": "String a = \"hello\";\nString b = new String(\"hello\");\nSystem.out.println(a == b); // false\nSystem.out.println(a.equals(b)); // true",
+          "output": [
+            "false",
+            "true"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Collections Framework",
+      "description": "Java Collections Framework provides data structures like List, Set, Map, and utilities for algorithms, iteration, and concurrency variants.",
+      "extra": [
+        "List: ArrayList, LinkedList for ordered collections.",
+        "Set: HashSet, TreeSet for unique elements.",
+        "Map: HashMap, TreeMap for key-value associations.",
+        "Collections utility class offers sorting, searching, and synchronization helpers.",
+        "Concurrent collections (ConcurrentHashMap) support safe multi-threaded access."
+      ],
+      "examples": [
+        {
+          "code": "import java.util.*;\npublic class CollectionsExample {\n    public static void main(String[] args) {\n        List<Integer> list = new ArrayList<>();\n        list.add(10); list.add(20);\n        System.out.println(list);\n    }\n}",
+          "output": "[10, 20]"
+        }
+      ]
+    },
+    {
+      "title": "Generics in Java",
+      "description": "Generics provide type parameters for classes and methods, enabling compile-time type safety and reusable components.",
+      "extra": [
+        "Use angle brackets: List<String> for a list of strings.",
+        "Generics are implemented with type erasure at runtime.",
+        "Support bounded type parameters (extends, super).",
+        "Generics improve readability and reduce casting."
+      ],
+      "examples": [
+        {
+          "code": "List<String> names = new ArrayList<>();\nnames.add(\"Alice\");\nString s = names.get(0);",
+          "explanation": "No cast needed when retrieving typed elements."
+        }
+      ]
+    },
+    {
+      "title": "Exception Handling in Java",
+      "description": "Java uses try-catch-finally and throws declarations for error handling. Exceptions are objects derived from Throwable: Error and Exception (checked and unchecked).",
+      "extra": [
+        "Checked exceptions must be declared or handled (compile-time enforced).",
+        "Unchecked exceptions (RuntimeException) do not require declaration.",
+        "Finally block executes regardless of exceptions for cleanup.",
+        "Try-with-resources simplifies resource management for AutoCloseable."
+      ],
+      "examples": [
+        {
+          "code": "try {\n    int x = 10 / 0;\n} catch (ArithmeticException e) {\n    System.out.println(\"Division by zero\");\n} finally {\n    System.out.println(\"Done\");\n}",
+          "output": [
+            "Division by zero",
+            "Done"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming Concepts",
+      "description": "Java is built on OOP principles: classes and objects, encapsulation, inheritance, polymorphism, and abstraction.",
+      "extra": [
+        "Encapsulation through private fields and public getters/setters.",
+        "Inheritance with extends; interfaces for multiple contracts.",
+        "Polymorphism via method overriding and dynamic dispatch.",
+        "Abstraction using abstract classes and interfaces.",
+        "Design patterns leverage OOP concepts for maintainable code."
+      ],
+      "examples": [
+        {
+          "code": "class Animal { void speak() { System.out.println(\"Animal\"); } }\nclass Dog extends Animal { @Override void speak() { System.out.println(\"Woof\"); } }\npublic class OOPDemo { public static void main(String[] args) { Animal a = new Dog(); a.speak(); } }",
+          "output": "Woof"
+        }
+      ]
+    },
+    {
+      "title": "Classes and Objects",
+      "description": "Classes define blueprints for objects with fields and methods. Objects are instances of classes created at runtime.",
+      "examples": [
+        {
+          "code": "public class Student {\n    private int rollNo;\n    private String name;\n    public Student(int r, String n) { this.rollNo = r; this.name = n; }\n    public String toString() { return name + \"(\" + rollNo + \")\"; }\n    public static void main(String[] args) { System.out.println(new Student(1, \"A\")); }\n}",
+          "output": "A(1)"
+        }
+      ],
+      "extra": [
+        "Constructors initialize object state.",
+        "Overloaded constructors provide flexibility.",
+        "Static factory methods can be alternative constructors."
+      ]
+    },
+    {
+      "title": "Inheritance",
+      "description": "Inheritance allows a class to derive properties and behaviors from another class, promoting code reuse and hierarchical modeling.",
+      "examples": [
+        {
+          "code": "class Vehicle { void start() { System.out.println(\"Start\"); } }\nclass Car extends Vehicle { void openDoor() { System.out.println(\"Door opened\"); } }\npublic class InheritDemo { public static void main(String[] args) { Car c = new Car(); c.start(); c.openDoor(); } }",
+          "output": [
+            "Start",
+            "Door opened"
+          ]
+        }
+      ],
+      "extra": [
+        "Single inheritance for classes; interfaces enable multiple inheritance of types.",
+        "Use super to access parent constructors and methods.",
+        "Protected members are visible to subclasses and package."
+      ]
+    },
+    {
+      "title": "Interfaces and Abstract Classes",
+      "description": "Interfaces define contracts with abstract methods and default/static methods. Abstract classes provide partial implementations and can hold state.",
+      "examples": [
+        {
+          "code": "interface Printable { void print(); }\nabstract class Base { abstract void run(); }\nclass Impl extends Base implements Printable { void run() { System.out.println(\"Running\"); } public void print() { System.out.println(\"Print\"); } }\npublic class IAExample { public static void main(String[] args) { Impl i = new Impl(); i.run(); i.print(); } }",
+          "output": [
+            "Running",
+            "Print"
+          ]
+        }
+      ],
+      "extra": [
+        "Interfaces support default and static methods since Java 8.",
+        "Abstract classes can have constructors and fields.",
+        "Choose interface for behavior contracts, abstract class for shared code."
+      ]
+    },
+    {
+      "title": "Inner Classes and Anonymous Classes",
+      "description": "Java supports nested member classes, static nested classes, local classes, and anonymous classes for expressing behavior close to usage site.",
+      "examples": [
+        {
+          "code": "public class Outer {\n    class Inner { void hello() { System.out.println(\"Inner\"); } }\n    public static void main(String[] args) { new Outer().new Inner().hello(); }\n}",
+          "output": "Inner"
+        }
+      ],
+      "extra": [
+        "Anonymous classes provide concise implementations for interfaces or abstract classes.",
+        "Lambda expressions (since Java 8) often replace single-method anonymous classes."
+      ]
+    },
+    {
+      "title": "Lambda Expressions and Functional Interfaces",
+      "description": "Lambdas provide a concise syntax for single-method interfaces (functional interfaces), enabling functional-style operations on collections and streams.",
+      "examples": [
+        {
+          "code": "import java.util.*;\npublic class LambdaDemo {\n    public static void main(String[] args) {\n        List<Integer> list = Arrays.asList(1,2,3);\n        list.forEach(n -> System.out.println(n * 2));\n    }\n}",
+          "output": [
+            "2",
+            "4",
+            "6"
+          ]
+        }
+      ],
+      "extra": [
+        "Functional interfaces like Runnable, Comparator, Consumer, Function.",
+        "Lambdas improve readability for short behaviors.",
+        "Used heavily with Streams API for transformations and reductions."
+      ]
+    },
+    {
+      "title": "Streams API",
+      "description": "Streams provide a high-level API for processing sequences of elements with operations like map, filter, and reduce in a declarative style.",
+      "examples": [
+        {
+          "code": "import java.util.*;\nimport java.util.stream.*;\npublic class Streams {\n    public static void main(String[] args) {\n        List<Integer> nums = Arrays.asList(1,2,3,4,5);\n        int sum = nums.stream().filter(n -> n % 2 == 0).mapToInt(n -> n).sum();\n        System.out.println(sum);\n    }\n}",
+          "output": "6"
+        }
+      ],
+      "extra": [
+        "Streams can be sequential or parallel.",
+        "Operations are lazy until terminal operation is invoked.",
+        "Avoid using side-effects inside stream pipelines for correctness."
+      ]
+    },
+    {
+      "title": "Concurrency and Multithreading",
+      "description": "Java provides built-in support for concurrency via Thread, Runnable, Executors, and concurrent utilities in java.util.concurrent for safe multi-threaded programming.",
+      "extra": [
+        "Create threads by extending Thread or implementing Runnable/Callable.",
+        "ExecutorService manages thread pools and task execution.",
+        "Locks, synchronized, volatile, and atomic classes help coordinate shared state.",
+        "Concurrent collections and CompletableFuture simplify async programming.",
+        "Thread-safety requires careful design to avoid races and deadlocks."
+      ],
+      "examples": [
+        {
+          "code": "public class ThreadDemo {\n    public static void main(String[] args) {\n        Thread t = new Thread(() -> System.out.println(\"Hello from thread\"));\n        t.start();\n    }\n}",
+          "output": "Hello from thread"
+        }
+      ]
+    },
+    {
+      "title": "Synchronization and Locks",
+      "description": "Synchronization prevents concurrent access issues. Java provides synchronized blocks/methods and explicit Lock implementations for fine-grained control.",
+      "extra": [
+        "synchronized keyword enforces mutual exclusion on an object's monitor.",
+        "ReentrantLock offers advanced locking features (tryLock, timed lock).",
+        "Use high-level concurrency constructs where possible (Executors, concurrent collections).",
+        "Avoid coarse-grained locks that reduce concurrency and cause contention."
+      ]
+    },
+    {
+      "title": "I/O and File Handling",
+      "description": "Java I/O includes legacy java.io and NIO (java.nio) packages. Use NIO for scalable, non-blocking I/O and file system operations.",
+      "examples": [
+        {
+          "code": "import java.nio.file.*;\npublic class FileRead {\n    public static void main(String[] args) throws Exception {\n        String content = Files.readString(Path.of(\"sample.txt\"));\n        System.out.println(content);\n    }\n}",
+          "explanation": "NIO simplifies reading entire files as strings."
+        }
+      ],
+      "extra": [
+        "Use try-with-resources to auto-close streams.",
+        "Buffered streams improve performance for large I/O.",
+        "NIO Channels and ByteBuffers enable non-blocking I/O."
+      ]
+    },
+    {
+      "title": "Serialization",
+      "description": "Serialization converts objects to byte streams for persistence or network transmission. Java supports built-in serialization via java.io.Serializable and external libraries (Jackson, Gson) for JSON.",
+      "extra": [
+        "Implement Serializable to enable default object serialization.",
+        "Use transient to skip fields from serialization.",
+        "Prefer explicit serialization strategies or JSON for interoperability."
+      ]
+    },
+    {
+      "title": "Annotations",
+      "description": "Annotations add metadata to code and are widely used in frameworks (Spring, JPA). Java provides built-in annotations and supports custom annotation creation.",
+      "examples": [
+        {
+          "code": "@Deprecated\npublic void oldMethod() { }\n@Override\npublic String toString() { return \"x\"; }",
+          "explanation": "Common annotations include @Override, @Deprecated, @SuppressWarnings."
+        }
+      ],
+      "extra": [
+        "Annotations can have retention policies (SOURCE, CLASS, RUNTIME).",
+        "Frameworks use runtime annotations for dependency injection and configuration."
+      ]
+    },
+    {
+      "title": "JVM Internals and Garbage Collection",
+      "description": "Understanding JVM internals—class loading, memory regions (heap, metaspace), and garbage collection algorithms—helps optimize performance and diagnose memory issues.",
+      "extra": [
+        "Generational garbage collection optimizes for short-lived objects.",
+        "Multiple GC algorithms available (G1, ZGC, Shenandoah) for different workloads.",
+        "Monitor memory usage with tools: jvisualvm, jcmd, jstat, jmap.",
+        "Tuning JVM flags can improve throughput or latency."
+      ]
+    },
+    {
+      "title": "Modules (JPMS)",
+      "description": "Java Platform Module System (introduced in Java 9) allows modularization of applications, stronger encapsulation, and reduced runtime images.",
+      "extra": [
+        "Define modules using module-info.java.",
+        "Modules declare exports and required modules.",
+        "Use jlink to create custom runtime images with only required modules."
+      ]
+    },
+    {
+      "title": "Build Tools and Dependency Management",
+      "description": "Maven and Gradle automate building, testing, packaging, and dependency management for Java projects.",
+      "extra": [
+        "Maven uses pom.xml and a convention-based lifecycle.",
+        "Gradle provides a flexible, scriptable build with faster incremental builds.",
+        "Use dependency scopes (compile, test, runtime) to control classpath."
+      ]
+    },
+    {
+      "title": "Testing in Java",
+      "description": "Unit and integration testing are essential. JUnit and TestNG are popular testing frameworks; Mockito enables mocking for isolated tests.",
+      "extra": [
+        "Write small, focused unit tests with JUnit 5.",
+        "Use assertions and parameterized tests for coverage.",
+        "Automate tests with CI pipelines for reliability."
+      ]
+    },
+    {
+      "title": "Logging",
+      "description": "Logging frameworks (java.util.logging, Log4j, SLF4J + Logback) provide structured and configurable logging for debugging and production monitoring.",
+      "extra": [
+        "Use levels (DEBUG, INFO, WARN, ERROR) appropriately.",
+        "Avoid System.out for production logging.",
+        "Configure appenders and rolling policies for log management."
+      ]
+    },
+    {
+      "title": "Security Essentials",
+      "description": "Java offers APIs for cryptography, secure classloading, and secure communication (TLS). Follow secure coding practices to prevent common vulnerabilities.",
+      "extra": [
+        "Use strong typing and input validation to avoid injection attacks.",
+        "Prefer well-maintained libraries for crypto and authentication.",
+        "Keep the JVM and libraries up to date for security patches."
+      ]
+    },
+    {
+      "title": "Web Development with Java",
+      "description": "Java supports web development via servlets, Jakarta EE, and frameworks like Spring Boot for building RESTful APIs and full-stack applications.",
+      "extra": [
+        "Spring Boot simplifies microservice creation with embedded servers.",
+        "Use REST controllers for HTTP APIs and Spring Data for persistence.",
+        "Understand the request lifecycle and MVC patterns."
+      ]
+    },
+    {
+      "title": "Databases and Persistence",
+      "description": "Java applications interact with databases using JDBC, JPA/Hibernate, or modern reactive drivers for asynchronous data access.",
+      "extra": [
+        "JDBC for low-level SQL interaction.",
+        "JPA/Hibernate for ORM mapping between objects and relational tables.",
+        "Use connection pooling for performance (HikariCP)."
+      ]
+    },
+    {
+      "title": "Design Patterns",
+      "description": "Common design patterns (Singleton, Factory, Builder, Strategy, Observer) address recurring design problems and improve code structure and reusability.",
+      "examples": [
+        {
+          "code": "public class Singleton {\n    private static final Singleton INSTANCE = new Singleton();\n    private Singleton() {}\n    public static Singleton getInstance() { return INSTANCE; }\n}",
+          "explanation": "Eager-initialized Singleton pattern."
+        }
+      ],
+      "extra": [
+        "Choose patterns judiciously to avoid over-engineering.",
+        "Use patterns to communicate common designs to other developers."
+      ]
+    },
+    {
+      "title": "Performance Tuning",
+      "description": "Profile and optimize hotspots, tune garbage collector, minimize allocations, and use efficient data structures to improve Java application performance.",
+      "extra": [
+        "Use profilers (JProfiler, YourKit, VisualVM) to locate bottlenecks.",
+        "Prefer primitive arrays over boxed collections when possible.",
+        "Avoid unnecessary synchronization and excessive object creation."
+      ]
+    },
+    {
+      "title": "Deployment and Packaging",
+      "description": "Package Java applications as JARs, WARs, or native images with tools like jlink or GraalVM native-image for improved startup time and reduced footprint.",
+      "extra": [
+        "Use executable JARs for simple deployment.",
+        "Containerize Java apps with Docker for consistent environments.",
+        "Monitor runtime with JMX and observability tooling."
+      ]
+    },
+    {
+      "title": "Advanced Topics and Ecosystem",
+      "description": "Advanced Java includes reactive programming, microservices patterns, JVM language interoperability (Kotlin, Scala), and cloud-native deployments.",
+      "extra": [
+        "Reactive frameworks: Reactor, RxJava for non-blocking streams.",
+        "Microservices: service discovery, circuit breakers, API gateways.",
+        "Interoperate with other JVM languages for domain-specific advantages.",
+        "Use cloud services (Kubernetes, AWS, Azure) for scalable deployments."
+      ]
+    },
+    {
+      "title": "Further Learning Path",
+      "description": "Progress from core Java syntax to OOP, collections, concurrency, and then to frameworks, tooling, and architecture patterns for real-world applications.",
+      "extra": [
+        "Start with fundamentals: types, control flow, OOP concepts.",
+        "Master collections, generics, and streams.",
+        "Learn concurrency and JVM internals for performance.",
+        "Explore Spring, Hibernate, and microservices for enterprise work.",
+        "Practice building, testing, and deploying real projects."
+      ]
+    }
+  ]
+}

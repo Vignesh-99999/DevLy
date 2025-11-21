@@ -1,0 +1,1652 @@
+[
+  {
+    "question": "Who developed the C programming language?",
+    "options": {
+      "a": "James Gosling",
+      "b": "Dennis Ritchie",
+      "c": "Bjarne Stroustrup",
+      "d": "Guido van Rossum"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "In which year was the C programming language developed?",
+    "options": {
+      "a": "1969",
+      "b": "1972",
+      "c": "1983",
+      "d": "1995"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "C programming language was developed at which organization?",
+    "options": {
+      "a": "Microsoft",
+      "b": "IBM",
+      "c": "Bell Labs",
+      "d": "MIT"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a low-level language?",
+    "options": {
+      "a": "Python",
+      "b": "Java",
+      "c": "C",
+      "d": "Assembly"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "What type of programming paradigm does C support?",
+    "options": {
+      "a": "Object-oriented",
+      "b": "Functional",
+      "c": "Procedural",
+      "d": "Event-driven"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is the correct sequence of the C compilation process?",
+    "options": {
+      "a": "Compilation → Linking → Preprocessing → Execution",
+      "b": "Execution → Compilation → Linking → Preprocessing",
+      "c": "Preprocessing → Compilation → Linking → Execution",
+      "d": "Linking → Preprocessing → Compilation → Execution"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which phase of the compilation process handles macro expansion?",
+    "options": {
+      "a": "Linking",
+      "b": "Preprocessing",
+      "c": "Compilation",
+      "d": "Execution"
+    },
+    "answer": "b",
+    "difficulty": 3
+  },
+  {
+    "question": "What is the output of the compilation stage (before linking)?",
+    "options": {
+      "a": "Executable file",
+      "b": "Source code",
+      "c": "Object code",
+      "d": "Header file"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which file extension is usually associated with object files in C?",
+    "options": {
+      "a": ".c",
+      "b": ".h",
+      "c": ".exe",
+      "d": ".o"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of the linker in C programming?",
+    "options": {
+      "a": "Convert source code to object code",
+      "b": "Expand macros",
+      "c": "Combine object code and libraries into an executable",
+      "d": "Interpret the program line by line"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is NOT a part of the C compilation process?",
+    "options": {
+      "a": "Preprocessing",
+      "b": "Interpreting",
+      "c": "Compiling",
+      "d": "Linking"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the correct order of sections in a typical C program?",
+    "options": {
+      "a": "Preprocessor directives → main() → Variable declarations → Functions",
+      "b": "main() → Functions → Preprocessor directives → Variables",
+      "c": "Preprocessor directives → Global declarations → main() → User-defined functions",
+      "d": "main() → Preprocessor directives → Global declarations → Functions"
+    },
+    "answer": "c",
+    "difficulty": 3
+  },
+  {
+    "question": "Which function must every C program contain?",
+    "options": {
+      "a": "printf()",
+      "b": "scanf()",
+      "c": "main()",
+      "d": "start()"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the role of the 'main()' function in a C program?",
+    "options": {
+      "a": "Defines variables",
+      "b": "Specifies the header files",
+      "c": "Acts as the entry point for execution",
+      "d": "Compiles the code"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which header file is essential to use input/output functions like printf()?",
+    "options": {
+      "a": "math.h",
+      "b": "stdlib.h",
+      "c": "stdio.h",
+      "d": "string.h"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Where are global variables declared in a C program structure?",
+    "options": {
+      "a": "Inside main()",
+      "b": "Inside a user-defined function",
+      "c": "After preprocessor directives but before main()",
+      "d": "Inside the stdio.h file"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a valid C application domain?",
+    "options": {
+      "a": "Operating system development",
+      "b": "Web designing",
+      "c": "Photo editing",
+      "d": "Spreadsheet management"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is NOT an application of C programming?",
+    "options": {
+      "a": "Developing firmware for microcontrollers",
+      "b": "System-level programming",
+      "c": "Web page designing with HTML/CSS",
+      "d": "Writing operating systems"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Why is C considered a middle-level language?",
+    "options": {
+      "a": "It has limited features",
+      "b": "It only supports object-oriented programming",
+      "c": "It combines features of both high and low-level languages",
+      "d": "It is used only in academic environments"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is TRUE about C language?",
+    "options": {
+      "a": "C is an object-oriented language",
+      "b": "C supports garbage collection natively",
+      "c": "C allows direct manipulation of hardware via pointers",
+      "d": "C is slower than Python"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which operating system was written in C?",
+    "options": {
+      "a": "Linux",
+      "b": "UNIX",
+      "c": "Windows",
+      "d": "MacOS"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What does the file extension .c represent?",
+    "options": {
+      "a": "C header file",
+      "b": "C source code file",
+      "c": "Compiled object file",
+      "d": "Executable file"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the `#include <stdio.h>` line do in a C program?",
+    "options": {
+      "a": "Defines a new function",
+      "b": "Includes the standard input-output library",
+      "c": "Declares a variable",
+      "d": "Specifies the main function"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of comments in C code?",
+    "options": {
+      "a": "To speed up execution",
+      "b": "To make the program executable",
+      "c": "To provide explanation without affecting code execution",
+      "d": "To include headers"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which symbol is used for single-line comments in C?",
+    "options": {
+      "a": "#",
+      "b": "//",
+      "c": "/* */",
+      "d": "<!-- -->"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is NOT an advantage of C programming?",
+    "options": {
+      "a": "Highly portable",
+      "b": "Interpreted execution",
+      "c": "Efficient in resource usage",
+      "d": "Supports structured programming"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What type of language is C categorized as?",
+    "options": {
+      "a": "High-level",
+      "b": "Low-level",
+      "c": "Middle-level",
+      "d": "Markup language"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which feature of C allows direct hardware manipulation?",
+    "options": {
+      "a": "Structured programming",
+      "b": "Dynamic memory management",
+      "c": "Pointer support",
+      "d": "Garbage collection"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the execution model of C?",
+    "options": {
+      "a": "Compiled",
+      "b": "Interpreted",
+      "c": "Bytecode-based",
+      "d": "Just-in-time compiled"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the purpose of comments in C code?",
+    "options": {
+      "a": "To increase execution speed",
+      "b": "To be executed as code",
+      "c": "To explain code without affecting execution",
+      "d": "To declare variables"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which syntax is used for single-line comments in C?",
+    "options": {
+      "a": "/* comment */",
+      "b": "// comment",
+      "c": "# comment",
+      "d": "<!-- comment -->"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a valid identifier in C?",
+    "options": {
+      "a": "3value",
+      "b": "float",
+      "c": "_value3",
+      "d": "int"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which rule must be followed by identifiers in C?",
+    "options": {
+      "a": "Can start with a digit",
+      "b": "Case-insensitive",
+      "c": "Can use keywords",
+      "d": "Must start with a letter or underscore"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "In C, identifiers are:",
+    "options": {
+      "a": "Always uppercase",
+      "b": "Case-insensitive",
+      "c": "Case-sensitive",
+      "d": "Limited to 10 characters"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following are valid variable identifiers?",
+    "options": {
+      "a": "int", 
+      "b": "_total",
+      "c": "123abc",
+      "d": "double"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is an example of a function identifier?",
+    "options": {
+      "a": "main", 
+      "b": "int", 
+      "c": "float", 
+      "d": "if"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "In the code: `typedef struct student STUDENT;`, what is 'STUDENT'?",
+    "options": {
+      "a": "Function identifier",
+      "b": "Variable identifier",
+      "c": "Typedef identifier",
+      "d": "Enum identifier"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is an enum identifier?",
+    "options": {
+      "a": "typedef", 
+      "b": "Mon", 
+      "c": "printf", 
+      "d": "average"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What type of identifier is used to name custom types like structs?",
+    "options": {
+      "a": "Variable identifier",
+      "b": "Function identifier",
+      "c": "User-defined type identifier",
+      "d": "Enum identifier"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the scope of a global identifier?",
+    "options": {
+      "a": "Within a block",
+      "b": "Only in a loop",
+      "c": "Throughout the entire program",
+      "d": "Inside one function only"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Where are global identifiers declared?",
+    "options": {
+      "a": "Inside loops",
+      "b": "Outside of all functions",
+      "c": "Inside if statements",
+      "d": "Inside main() only"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the output of the following code?\n```c\nint marks = 100;\nint main() {\n  printf(\"%d\", marks);\n  return 0;\n}\n```",
+    "options": {
+      "a": "0",
+      "b": "Garbage value",
+      "c": "100",
+      "d": "Compilation error"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which identifier scope exists only within a function?",
+    "options": {
+      "a": "Global",
+      "b": "External",
+      "c": "Local",
+      "d": "Register"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the output of the following code?\n```c\nint main() {\n  int marks = 50;\n  printf(\"%d\", marks);\n  return 0;\n}\n```",
+    "options": {
+      "a": "100",
+      "b": "0",
+      "c": "50",
+      "d": "Error"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is TRUE about identifier names?",
+    "options": {
+      "a": "Identifiers can use spaces",
+      "b": "Keywords can be reused as identifiers",
+      "c": "Same name can be reused in the same scope",
+      "d": "Identifiers must be unique within a scope"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "What is a variable in C?",
+    "options": {
+      "a": "A fixed memory location",
+      "b": "A container for storing data values",
+      "c": "A keyword in C",
+      "d": "A function argument"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a valid variable declaration?",
+    "options": {
+      "a": "int age = 25;",
+      "b": "char = 'A';",
+      "c": "25 = int age;",
+      "d": "int = 50;"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "What determines the memory size and operations allowed on a variable in C?",
+    "options": {
+      "a": "Scope",
+      "b": "Data type",
+      "c": "Keyword",
+      "d": "Variable name"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is NOT a valid rule for naming variables in C?",
+    "options": {
+      "a": "Variable names must start with a letter or underscore",
+      "b": "Variable names can contain spaces",
+      "c": "Variable names are case-sensitive",
+      "d": "Variable names must not be reserved words"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which variable name follows proper C naming conventions?",
+    "options": {
+      "a": "3rdValue",
+      "b": "_tempResult",
+      "c": "char",
+      "d": "total marks"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which operator is used to find the memory used by a variable?",
+    "options": {
+      "a": "&",
+      "b": "sizeof",
+      "c": "*",
+      "d": "alloc"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What will be the output of the following code?\n```c\nint num = 22;\nprintf(\"%d bytes\", sizeof(num));\n```",
+    "options": {
+      "a": "2 bytes",
+      "b": "4 bytes",
+      "c": "8 bytes",
+      "d": "22 bytes"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "When is memory allocated to a variable in C?",
+    "options": {
+      "a": "At the time of declaration",
+      "b": "Only after initialization",
+      "c": "During runtime only",
+      "d": "When the program is compiled"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "What is variable scope in C?",
+    "options": {
+      "a": "The size of memory it uses",
+      "b": "The lifetime of the program",
+      "c": "Where in the program the variable can be accessed",
+      "d": "The address of the variable"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following best describes a local variable?",
+    "options": {
+      "a": "Declared outside all functions",
+      "b": "Accessible from any file",
+      "c": "Exists only within the block where it is declared",
+      "d": "Accessible only by the operating system"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Why does C enforce scope rules?",
+    "options": {
+      "a": "To use same variable names everywhere",
+      "b": "To prevent compilation",
+      "c": "To manage memory and avoid name conflicts",
+      "d": "To reduce memory size"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a global variable?",
+    "options": {
+      "a": "Declared inside main()",
+      "b": "Declared inside a loop",
+      "c": "Declared outside all functions",
+      "d": "Declared in stdio.h"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which statement is TRUE about scope?",
+    "options": {
+      "a": "Variables are accessible everywhere once declared",
+      "b": "Scope does not affect variable visibility",
+      "c": "Scope defines visibility and accessibility of variables",
+      "d": "Only global variables have scope"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the output of the following code?\n```c\nint g = 50;\nvoid printG() { printf(\"g = %d\\n\", g); }\nint main() {\n   printf(\"g = %d\\n\", g);\n   printG();\n   return 0;\n}\n```",
+    "options": {
+      "a": "Compilation error",
+      "b": "g = 50\ng = 50",
+      "c": "g = 50",
+      "d": "g = 0\ng = 0"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the output of this code?\n```c\nint main() {\n   int x = 10;\n   {\n      int y = 20;\n      printf(\"x = %d, y = %d\\n\", x, y);\n   }\n   return 0;\n}\n```",
+    "options": {
+      "a": "x = 10, y = 20",
+      "b": "x = 20, y = 10",
+      "c": "y = 20",
+      "d": "Error"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "What happens if you try to access a local variable outside its scope?",
+    "options": {
+      "a": "It returns 0",
+      "b": "It causes a segmentation fault",
+      "c": "It results in a compile-time error",
+      "d": "It automatically becomes global"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following improves code readability and helps debugging?",
+    "options": {
+      "a": "Using global variables everywhere",
+      "b": "Using variables with very short names",
+      "c": "Following variable scope rules",
+      "d": "Ignoring variable lifetime"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Can two variables with the same name exist in different scopes?",
+    "options": {
+      "a": "No",
+      "b": "Yes, but only in loops",
+      "c": "Yes, if they are in different functions or blocks",
+      "d": "Only in header files"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following describes 'block scope'?",
+    "options": {
+      "a": "Visible only inside a function",
+      "b": "Visible across all functions",
+      "c": "Visible inside the nearest enclosing braces { }",
+      "d": "Visible globally"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which keyword is used to declare a constant in C?",
+    "options": {
+      "a": "constant",
+      "b": "define",
+      "c": "const",
+      "d": "static"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What happens if you try to reassign a const variable?",
+    "options": {
+      "a": "It gets updated",
+      "b": "Compiler throws a warning",
+      "c": "Compiler throws an error",
+      "d": "It becomes global"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Why should constants be used in C programs?",
+    "options": {
+      "a": "To reduce code size",
+      "b": "To improve runtime speed",
+      "c": "To prevent unintended value changes",
+      "d": "To support recursion"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which is a valid declaration of a constant integer in C?",
+    "options": {
+      "a": "int const PI = 3.14;",
+      "b": "const int PI = 3.14;",
+      "c": "constant int PI = 3.14;",
+      "d": "int PI const = 3.14;"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a correct data type for storing a character?",
+    "options": {
+      "a": "char",
+      "b": "int",
+      "c": "float",
+      "d": "double"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which data type is most suitable for storing Pi (3.14159)?",
+    "options": {
+      "a": "char",
+      "b": "int",
+      "c": "float",
+      "d": "double"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the size of a `float` variable in C (on most systems)?",
+    "options": {
+      "a": "2 bytes",
+      "b": "4 bytes",
+      "c": "8 bytes",
+      "d": "1 byte"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which data type should you use to store a whole number like 25?",
+    "options": {
+      "a": "char",
+      "b": "int",
+      "c": "float",
+      "d": "double"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the `%f` format specifier represent in C I/O functions?",
+    "options": {
+      "a": "Integer",
+      "b": "Character",
+      "c": "Floating-point number",
+      "d": "String"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which header file must be included to use printf() and scanf()?",
+    "options": {
+      "a": "conio.h",
+      "b": "stdlib.h",
+      "c": "string.h",
+      "d": "stdio.h"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the output of this code?\n```c\nint age = 22;\nprintf(\"Age: %d\\n\", age);\n```",
+    "options": {
+      "a": "Age = 22",
+      "b": "Age: 22",
+      "c": "22",
+      "d": "Error"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the '&' symbol do in scanf()?",
+    "options": {
+      "a": "Adds values",
+      "b": "References a function",
+      "c": "Passes the memory address of a variable",
+      "d": "Declares a constant"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is used to print a double value with 6 decimal places?",
+    "options": {
+      "a": "%d",
+      "b": "%f",
+      "c": "%.6lf",
+      "d": "%c"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which format specifier is used for characters in printf()?",
+    "options": {
+      "a": "%s",
+      "b": "%c",
+      "c": "%d",
+      "d": "%f"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which function reads input from the user in C?",
+    "options": {
+      "a": "print()",
+      "b": "get()",
+      "c": "scanf()",
+      "d": "readln()"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What would happen if you forgot the '&' in scanf for an integer input?",
+    "options": {
+      "a": "It compiles and works",
+      "b": "It crashes at runtime",
+      "c": "Compiler error or unexpected behavior",
+      "d": "It uses a default value"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is TRUE about printf()?",
+    "options": {
+      "a": "Used to take user input",
+      "b": "Used to display formatted output",
+      "c": "Reads data from files",
+      "d": "Only works with integers"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which function would you use to display a string on the console?",
+    "options": {
+      "a": "scanf()",
+      "b": "gets()",
+      "c": "printf()",
+      "d": "input()"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a derived data type in C?",
+    "options": {
+      "a": "int",
+      "b": "float",
+      "c": "pointer",
+      "d": "char"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which is an example of a user-defined data type?",
+    "options": {
+      "a": "int",
+      "b": "struct",
+      "c": "double",
+      "d": "char"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which function in C is used to read a line of text including spaces?",
+    "options": {
+      "a": "scanf()",
+      "b": "gets()",
+      "c": "fgets()",
+      "d": "input()"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "In fgets(str, size, stdin), what does 'size' represent?",
+    "options": {
+      "a": "Maximum number of characters to be written",
+      "b": "Exact number of characters to read",
+      "c": "Minimum buffer size",
+      "d": "Number of strings to read"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is an arithmetic operator in C?",
+    "options": {
+      "a": "&&",
+      "b": "++",
+      "c": "%",
+      "d": "=="
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the result of the expression: 5 % 2?",
+    "options": {
+      "a": "0",
+      "b": "1",
+      "c": "2",
+      "d": "5"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which operator is used for conditional expressions in C?",
+    "options": {
+      "a": "::",
+      "b": "?:",
+      "c": "&&",
+      "d": "|="
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which is a logical operator in C?",
+    "options": {
+      "a": "==",
+      "b": "!",
+      "c": "+",
+      "d": "&"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the '==' operator do in C?",
+    "options": {
+      "a": "Assigns a value",
+      "b": "Compares two values for equality",
+      "c": "Increments a value",
+      "d": "Checks for inequality"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is a unary operator?",
+    "options": {
+      "a": "+",
+      "b": "&&",
+      "c": "--",
+      "d": "%"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What will be the output of: int a = 5; printf(\"%d\", a++);?",
+    "options": {
+      "a": "5",
+      "b": "6",
+      "c": "Compilation Error",
+      "d": "Undefined"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of these format specifiers is used for float values?",
+    "options": {
+      "a": "%f",
+      "b": "%d",
+      "c": "%c",
+      "d": "%s"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which format specifier is used to print a character?",
+    "options": {
+      "a": "%d",
+      "b": "%f",
+      "c": "%c",
+      "d": "%s"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which format specifier would you use for a double in C?",
+    "options": {
+      "a": "%f",
+      "b": "%d",
+      "c": "%lf",
+      "d": "%c"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the escape sequence for a new line in C?",
+    "options": {
+      "a": "\\t",
+      "b": "\\r",
+      "c": "\\n",
+      "d": "\\b"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the escape sequence '\\\\' represent in C?",
+    "options": {
+      "a": "Tab",
+      "b": "Backslash",
+      "c": "Double quote",
+      "d": "Backspace"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the result of the expression: !(5 > 3)?",
+    "options": {
+      "a": "1",
+      "b": "0",
+      "c": "5",
+      "d": "Error"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which operator returns 1 only if both conditions are true?",
+    "options": {
+      "a": "||",
+      "b": "&&",
+      "c": "!=",
+      "d": "=="
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Which format specifier is used to input a string?",
+    "options": {
+      "a": "%c",
+      "b": "%d",
+      "c": "%s",
+      "d": "%f"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which operator is used to assign a value to a variable in C?",
+    "options": {
+      "a": "=",
+      "b": "==",
+      "c": "!=",
+      "d": ":="
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which escape sequence is used for horizontal tab in C?",
+    "options": {
+      "a": "\\n",
+      "b": "\\r",
+      "c": "\\t",
+      "d": "\\v"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is NOT a relational operator in C?",
+    "options": {
+      "a": ">=",
+      "b": "<=",
+      "c": "<>",
+      "d": "=="
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which function reads input until a newline or EOF or buffer size limit?",
+    "options": {
+      "a": "puts()",
+      "b": "scanf()",
+      "c": "fgets()",
+      "d": "gets()"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which operator will give remainder when used with integers?",
+    "options": {
+      "a": "+",
+      "b": "%",
+      "c": "/",
+      "d": "*"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "Choose the correct ternary operator syntax:",
+    "options": {
+      "a": "a > b ? a : b;",
+      "b": "if (a > b) then a else b;",
+      "c": "a > b :: a :: b;",
+      "d": "a > b ? b : a :"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which operator is used to combine two conditions such that if either is true, the result is true?",
+    "options": {
+      "a": "&&",
+      "b": "||",
+      "c": "!=",
+      "d": "%"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What is printed by this code: int a=5, b=3; printf(\"%d\", a+b);",
+    "options": {
+      "a": "8",
+      "b": "2",
+      "c": "5",
+      "d": "3"
+    },
+    "answer": "a",
+    "difficulty": 1
+  },
+  {
+    "question": "Which escape sequence rings a system bell?",
+    "options": {
+      "a": "\\b",
+      "b": "\\a",
+      "c": "\\n",
+      "d": "\\t"
+    },
+    "answer": "b",
+    "difficulty": 3
+  },
+  {
+    "question": "Which is the correct format specifier for printing a string?",
+    "options": {
+      "a": "%c",
+      "b": "%d",
+      "c": "%s",
+      "d": "%f"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+    {
+    "question": "Which of the following will result in an error?",
+    "options": {
+      "a": "printf(\"%d\", 5+3);",
+      "b": "printf(\"%f\", 3.14);",
+      "c": "printf(\"%c\", 'A');",
+      "d": "printf(\"%d\", 'A');"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following best describes the purpose of escape sequences in C?",
+    "options": {
+      "a": "To escape infinite loops",
+      "b": "To access system memory",
+      "c": "To represent special characters in strings",
+      "d": "To perform arithmetic operations"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What does the escape sequence \\r do in C?",
+    "options": {
+      "a": "Moves the cursor to the start of the current line",
+      "b": "Deletes the last character",
+      "c": "Adds a newline",
+      "d": "Creates a horizontal tab"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which logical operator will result in false only if both conditions are false?",
+    "options": {
+      "a": "&&",
+      "b": "||",
+      "c": "!",
+      "d": "&"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Choose the correct statement about the increment operator:",
+    "options": {
+      "a": "x++ decreases the value of x",
+      "b": "x++ is same as ++x",
+      "c": "x++ increases x after its current value is used",
+      "d": "++x uses the original value of x"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which loop in C guarantees at least one execution of the loop body?",
+    "options": {
+      "a": "for loop",
+      "b": "while loop",
+      "c": "do...while loop",
+      "d": "infinite loop"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the output of the following code?\n\n#include <stdio.h>\nint main() {\n   for(int i=0;i<3;i++) printf(\"%d \", i);\n   return 0;\n}",
+    "options": {
+      "a": "1 2 3",
+      "b": "0 1 2",
+      "c": "0 1 2 3",
+      "d": "0 1 2 3 4"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What is a major benefit of using functions in C?",
+    "options": {
+      "a": "They make the code longer",
+      "b": "They avoid use of variables",
+      "c": "They make programs modular and reusable",
+      "d": "They reduce performance"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following correctly defines a user-defined function in C?",
+    "options": {
+      "a": "function greet() { print(\"Hi\"); }",
+      "b": "def greet(): print(\"Hi\")",
+      "c": "void greet() { printf(\"Hi\"); }",
+      "d": "function void greet() { print(\"Hi\") }"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "In C, what is the return type of the main function?",
+    "options": {
+      "a": "void",
+      "b": "char",
+      "c": "int",
+      "d": "float"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following statements about `main()` is FALSE?",
+    "options": {
+      "a": "It is the entry point of the program.",
+      "b": "It can be called from another function.",
+      "c": "It returns an integer.",
+      "d": "It can call user-defined functions."
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What is printed by the following code?\n\n#include <stdio.h>\nint main() {\n   int a=1;\n   while(a<=2) { printf(\"Hi \"); a++; }\n   return 0;\n}",
+    "options": {
+      "a": "Hi Hi Hi",
+      "b": "Hi",
+      "c": "Hi Hi",
+      "d": "Nothing"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following shows 'Call by Value'?",
+    "options": {
+      "a": "changeValue(&x);",
+      "b": "changeValue(x);",
+      "c": "changeValue(*x);",
+      "d": "changeValue(**x);"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "What will be the final value of `x` after this code runs?\n\n#include <stdio.h>\nvoid change(int *num) {\n   *num = 20;\n}\nint main() {\n   int x = 5;\n   change(&x);\n   printf(\"%d\", x);\n   return 0;\n}",
+    "options": {
+      "a": "5",
+      "b": "20",
+      "c": "0",
+      "d": "Error"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which loop is best when the number of iterations is known?",
+    "options": {
+      "a": "while",
+      "b": "do...while",
+      "c": "goto",
+      "d": "for"
+    },
+    "answer": "d",
+    "difficulty": 1
+  },
+  {
+    "question": "What is the starting index of an array in C?",
+    "options": {
+      "a": "1",
+      "b": "-1",
+      "c": "0",
+      "d": "Depends on array type"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is the correct declaration of a 1D array in C?",
+    "options": {
+      "a": "int arr[] = (1, 2, 3);",
+      "b": "int arr(3) = {1, 2, 3};",
+      "c": "int arr[3] = {1, 2, 3};",
+      "d": "array arr[3] = [1, 2, 3];"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What will be the output of the following code?\n\n#include <stdio.h>\nint main() {\n   int marks[5] = {10,20,30,40,50};\n   printf(\"%d\", marks[2]);\n   return 0;\n}",
+    "options": {
+      "a": "10",
+      "b": "20",
+      "c": "30",
+      "d": "50"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the output of this code?\n\n#include <stdio.h>\nint main(){\n   int marks[5] = {50, 60, 70, 80, 90};\n   int sum=0;\n   for(int i=0;i<5;i++){ sum += marks[i]; }\n   float avg = (float)sum/5;\n   printf(\"Average: %f\", avg);\n   return 0;\n}",
+    "options": {
+      "a": "70",
+      "b": "70.000000",
+      "c": "350",
+      "d": "Average"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is a correct declaration of a 2D array?",
+    "options": {
+      "a": "int arr[2,3];",
+      "b": "int arr(2)(3);",
+      "c": "int arr[2][3];",
+      "d": "array arr[2][3];"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which statement about arrays in C is TRUE?",
+    "options": {
+      "a": "Array size can be changed after declaration.",
+      "b": "Elements are accessed using one-based indexing.",
+      "c": "Arrays can store values of different types.",
+      "d": "Array elements are stored in contiguous memory locations."
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the output of this code?\n\n#include <stdio.h>\nint main() {\n   int matrix[2][3] = { {1,2,3}, {4,5,6} };\n   printf(\"%d\", matrix[1][2]);\n   return 0;\n}",
+    "options": {
+      "a": "2",
+      "b": "3",
+      "c": "5",
+      "d": "6"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "Which property is NOT true about arrays in C?",
+    "options": {
+      "a": "They are zero-indexed.",
+      "b": "They can be dynamically resized.",
+      "c": "They store elements of the same type.",
+      "d": "They are stored in contiguous memory."
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "How is a 2D array stored in memory in C?",
+    "options": {
+      "a": "Column-wise",
+      "b": "Randomly",
+      "c": "Row-wise (row-major order)",
+      "d": "Not stored in memory"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What does the name of an array represent in C?",
+    "options": {
+      "a": "Size of the array",
+      "b": "Value of the first element",
+      "c": "Address of the first element",
+      "d": "Type of the array"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What does a pointer variable store?",
+    "options": {
+      "a": "Value of a variable",
+      "b": "Data type",
+      "c": "Memory address of a variable",
+      "d": "Size of the variable"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is the correct way to declare a pointer to an integer in C?",
+    "options": {
+      "a": "int ptr;",
+      "b": "pointer int *ptr;",
+      "c": "int *ptr;",
+      "d": "int &ptr;"
+    },
+    "answer": "c",
+    "difficulty": 1
+  },
+  {
+    "question": "What will the following code output?\n\n#include <stdio.h>\nint main() {\n   int a=10;\n   int *ptr = &a;\n   printf(\"%d\", *ptr);\n   return 0;\n}",
+    "options": {
+      "a": "10",
+      "b": "Address of a",
+      "c": "Garbage value",
+      "d": "Compiler error"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which operator is used to get the address of a variable in C?",
+    "options": {
+      "a": "*",
+      "b": "&",
+      "c": "#",
+      "d": "%"
+    },
+    "answer": "b",
+    "difficulty": 1
+  },
+  {
+    "question": "What will be the output of the code below?\n\n#include <stdio.h>\nint main(){\n   int arr[3] = {10,20,30};\n   int *p = arr;\n   printf(\"%d\", *(p+1));\n   return 0;\n}",
+    "options": {
+      "a": "10",
+      "b": "20",
+      "c": "30",
+      "d": "Garbage value"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following statements about arrays and pointers is TRUE?",
+    "options": {
+      "a": "Array names can be reassigned to point to different memory.",
+      "b": "Pointers cannot be used to access array elements.",
+      "c": "Pointers can be reassigned, arrays cannot.",
+      "d": "sizeof(pointer) returns total array size."
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What does the sizeof operator return when used with an array?",
+    "options": {
+      "a": "Size of one element",
+      "b": "Size of pointer",
+      "c": "Total size of all elements in the array",
+      "d": "Size of memory block"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is NOT a valid application of pointers in C?",
+    "options": {
+      "a": "Accessing and modifying memory",
+      "b": "Implementing data structures like linked lists",
+      "c": "Performing arithmetic calculations",
+      "d": "Dynamic memory allocation"
+    },
+    "answer": "c",
+    "difficulty": 2
+  },
+  {
+    "question": "What is the output of the following code?\n\n#include <stdio.h>\nint main(){\n   int a = 5;\n   int *ptr = &a;\n   *ptr = 15;\n   printf(\"%d\", a);\n   return 0;\n}",
+    "options": {
+      "a": "5",
+      "b": "15",
+      "c": "0",
+      "d": "Garbage value"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which function is used for dynamic memory allocation in C?",
+    "options": {
+      "a": "malloc()",
+      "b": "alloc()",
+      "c": "getmem()",
+      "d": "new()"
+    },
+    "answer": "a",
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following is true about NULL pointers in C?",
+    "options": {
+      "a": "They point to random memory",
+      "b": "They contain 0 as the address",
+      "c": "They cannot be dereferenced safely",
+      "d": "Both b and c"
+    },
+    "answer": "d",
+    "difficulty": 2
+  },
+  {
+    "question": "What will happen if you dereference an uninitialized pointer?",
+    "options": {
+      "a": "Returns 0",
+      "b": "Compiles and runs successfully",
+      "c": "Causes undefined behavior",
+      "d": "Initializes pointer automatically"
+    },
+    "answer": "c",
+    "difficulty": 3
+  },
+  {
+    "question": "What does the following code print?\n\n#include <stdio.h>\nint main(){\n   int a = 5, b = 10;\n   int *p = &a;\n   p = &b;\n   printf(\"%d\", *p);\n   return 0;\n}",
+    "options": {
+      "a": "5",
+      "b": "10",
+      "c": "0",
+      "d": "Garbage value"
+    },
+    "answer": "b",
+    "difficulty": 2
+  },
+  {
+    "question": "Which statement about pointer arithmetic is correct?",
+    "options": {
+      "a": "Adding 1 to a pointer increases its address by 1 byte",
+      "b": "Pointer arithmetic is only valid for numeric types",
+      "c": "Pointer arithmetic depends on the data type size",
+      "d": "You cannot subtract one pointer from another"
+    },
+    "answer": "c",
+    "difficulty": 2
+  }
+]
