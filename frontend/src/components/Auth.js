@@ -1,3 +1,4 @@
+// src/auth/Auth.js
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
@@ -30,7 +31,7 @@ const Auth = () => {
     country: "",
   });
 
-  const [loading, setLoading] = useState(false); // 🔥 Add loading state
+  const [loading, setLoading] = useState(false); // 🔥 Loading for login/signup
 
   // Detect query param for mode switching (signin/signup)
   useEffect(() => {
@@ -48,7 +49,7 @@ const Auth = () => {
       return Swal.fire("Error", "Please fill all fields", "error");
     }
 
-    setLoading(true); // start loading
+    setLoading(true);
     try {
       const res = await axios.post("/api/auth/login", { email, password, role });
       const { token, role: userRole, user, professor } = res.data;
@@ -59,7 +60,7 @@ const Auth = () => {
         localStorage.setItem("role", "admin");
         localStorage.setItem("email", email);
         Swal.fire("Success", "Admin login successful", "success").then(() => {
-          navigate("/dashboard");
+            
         });
       } else if (userRole === "professor") {
         localStorage.setItem("role", "professor");
@@ -86,7 +87,7 @@ const Auth = () => {
         "error"
       );
     } finally {
-      setLoading(false); // stop loading
+      setLoading(false);
     }
   };
 
@@ -125,7 +126,7 @@ const Auth = () => {
       return Swal.fire("Mismatch", "Passwords do not match", "error");
     }
 
-    setLoading(true); // start loading
+    setLoading(true);
     try {
       const res = await axios.post("/api/auth/signup", {
         name,
@@ -145,7 +146,7 @@ const Auth = () => {
         "error"
       );
     } finally {
-      setLoading(false); // stop loading
+      setLoading(false);
     }
   };
 
@@ -156,8 +157,8 @@ const Auth = () => {
           {/* LOGIN FORM */}
           <form className="sign-in-form" onSubmit={handleLogin}>
             <h2 className="title">Sign in</h2>
-
             <div className="input-field">
+              <i className="fas fa-user-tag" />
               <select
                 value={loginData.role}
                 onChange={(e) => setLoginData({ ...loginData, role: e.target.value })}
@@ -167,8 +168,8 @@ const Auth = () => {
                 <option value="admin">Admin</option>
               </select>
             </div>
-
             <div className="input-field">
+              <i className="fas fa-user" />
               <input
                 type="email"
                 placeholder="Email"
@@ -176,8 +177,8 @@ const Auth = () => {
                 onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
               />
             </div>
-
             <div className="input-field">
+              <i className="fas fa-lock" />
               <input
                 type={showLoginPassword ? "text" : "password"}
                 placeholder="Password"
@@ -189,20 +190,103 @@ const Auth = () => {
                 onClick={() => setShowLoginPassword(!showLoginPassword)}
               />
             </div>
-
-            <button type="submit" className="btn solid" disabled={loading}>
-              {loading ? "Please wait..." : "Login"}
-            </button>
+            <input type="submit" value={loading ? "Logging in..." : "Login"} className="btn solid" disabled={loading} />
           </form>
 
           {/* SIGNUP FORM */}
           <form className="sign-up-form" onSubmit={handleSignup}>
             <h2 className="title">Sign up</h2>
-            {/* Add input fields similar to login */}
-            <button type="submit" className="btn solid" disabled={loading}>
-              {loading ? "Signing up..." : "Sign up"}
-            </button>
+            <div className="input-field">
+              <i className="fas fa-user" />
+              <input
+                type="text"
+                placeholder="Name"
+                value={signupData.name}
+                onChange={(e) => setSignupData({ ...signupData, name: e.target.value })}
+              />
+            </div>
+            <div className="input-field">
+              <i className="fas fa-envelope" />
+              <input
+                type="email"
+                placeholder="Email"
+                value={signupData.email}
+                onChange={(e) => setSignupData({ ...signupData, email: e.target.value })}
+              />
+            </div>
+            <div className="input-field">
+              <i className="fas fa-globe" />
+              <select
+                value={signupData.country}
+                onChange={(e) => setSignupData({ ...signupData, country: e.target.value })}
+              >
+                <option value="">Select Country</option>
+                <option value="IN">India</option>
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+              </select>
+            </div>
+            <div className="input-field">
+              <i className="fas fa-phone" />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                value={signupData.number}
+                onChange={(e) => {
+                  const val = e.target.value;
+                  if (/^\d*$/.test(val)) setSignupData({ ...signupData, number: val });
+                }}
+              />
+            </div>
+            <div className="input-field">
+              <i className="fas fa-lock" />
+              <input
+                type={showSignupPassword ? "text" : "password"}
+                placeholder="Password"
+                value={signupData.password}
+                onChange={(e) => setSignupData({ ...signupData, password: e.target.value })}
+              />
+              <i
+                className={`fas ${showSignupPassword ? "fa-eye-slash" : "fa-eye"} eye-toggle`}
+                onClick={() => setShowSignupPassword(!showSignupPassword)}
+              />
+            </div>
+            <div className="input-field">
+              <i className="fas fa-lock" />
+              <input
+                type={showSignupConfirmPassword ? "text" : "password"}
+                placeholder="Confirm Password"
+                value={signupData.confirmPassword}
+                onChange={(e) => setSignupData({ ...signupData, confirmPassword: e.target.value })}
+              />
+              <i
+                className={`fas ${showSignupConfirmPassword ? "fa-eye-slash" : "fa-eye"} eye-toggle`}
+                onClick={() => setShowSignupConfirmPassword(!showSignupConfirmPassword)}
+              />
+            </div>
+            <input type="submit" value={loading ? "Signing up..." : "Sign up"} className="btn solid" disabled={loading} />
           </form>
+        </div>
+      </div>
+
+      {/* PANELS */}
+      <div className="panels-container">
+        <div className="panel left-panel">
+          <div className="content">
+            <h3>New here?</h3>
+            <p>Sign up and start your journey!</p>
+            <button className="btn transparent" onClick={() => setIsSignup(true)}>Sign up</button>
+          </div>
+          <img src="/log.svg" className="image" alt="Login" />
+        </div>
+
+        <div className="panel right-panel">
+          <div className="content">
+            <h3>One of us?</h3>
+            <p>Then sign in and get started!</p>
+            <button className="btn transparent" onClick={() => setIsSignup(false)}>Sign in</button>
+          </div>
+          <img src="/register.svg" className="image" alt="Register" />
         </div>
       </div>
     </div>
