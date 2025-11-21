@@ -49,7 +49,7 @@ const Auth = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", {
+      const res = await axios.post("/api/auth/login", {
         email,
         password,
         role,
@@ -81,7 +81,7 @@ const Auth = () => {
         localStorage.setItem("name", res.data.user.name);
 
         if (res.data.user.profilePic) {
-          const fullUrl = `http://localhost:5000${res.data.user.profilePic}`;
+          const fullUrl = `${res.data.user.profilePic}`;
           localStorage.setItem("profilePic", fullUrl);
         } else {
           localStorage.removeItem("profilePic");

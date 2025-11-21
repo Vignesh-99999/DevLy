@@ -38,7 +38,7 @@ export default function TutorialTable() {
   useEffect(() => {
     const fetchTutorials = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/tutorials/${selectedLanguage}`);
+        const res = await fetch(`/api/tutorials/${selectedLanguage}`);
         const data = await res.json();
         if (data.ok && data.tutorials.length > 0) setTutorials(data.tutorials);
         else setTutorials([]);

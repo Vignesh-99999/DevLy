@@ -11,14 +11,13 @@ export default function StudentList() {
   const [loading, setLoading] = useState(true);
   const [loadingUser, setLoadingUser] = useState(null);
 
-  const API = "http://localhost:5000";
 
   // -----------------------------
   // FETCH STUDENTS
   // -----------------------------
   const fetchStudents = async () => {
     try {
-      const res = await axios.get(`${API}/api/admin/users`);
+      const res = await axios.get(`/api/admin/users`);
       setStudents(res.data || []);
     } catch (err) {
       console.error(err);

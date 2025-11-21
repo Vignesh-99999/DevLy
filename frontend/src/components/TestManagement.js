@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
 
 const API_BASE =
-  process.env.REACT_APP_API_BASE || "http://localhost:5000/api/tests";
+  process.env.REACT_APP_API_BASE || "/api/tests";
 
 export default function TestManagement() {
   const [tests, setTests] = useState([]);

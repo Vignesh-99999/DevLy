@@ -5,7 +5,6 @@ import axios from "axios";
 import "./VerifyOtp.css";
 
 
-axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
 
 /* ------------------------- CONFIG ------------------------- */
 /* SAFE FALLBACK IF .env IS MISSING */

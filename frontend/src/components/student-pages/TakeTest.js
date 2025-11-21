@@ -76,7 +76,7 @@ export default function TakeTest() {
   const fetchTest = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`http://localhost:5000/api/student-tests/${id}`, {
+      const res = await axios.get(`/api/student-tests/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -169,7 +169,7 @@ export default function TakeTest() {
       const timeTaken = Math.floor((Date.now() - startTime) / 1000 / 60);
 
       const response = await axios.post(
-        `http://localhost:5000/api/student-tests/${id}/submit`,
+        `/api/student-tests/${id}/submit`,
         { answers: answersArray, timeTaken },
         { headers: { Authorization: `Bearer ${token}` } }
       );

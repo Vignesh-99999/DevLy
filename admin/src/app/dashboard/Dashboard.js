@@ -12,7 +12,7 @@ export class Dashboard extends Component {
 
   componentDidMount() {
     // 🔹 Adjust the URL to your backend
-    fetch("http://localhost:5000/api/admin/stats")
+    fetch("/api/admin/stats")
       .then((res) => res.json())
       .then((data) => {
         this.setState({

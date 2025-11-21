@@ -51,7 +51,7 @@ export default function ProfessorDashboard() {
           return;
         }
 
-        const res = await axios.get(`http://localhost:5000/api/professors/profile`, {
+        const res = await axios.get(`/api/professors/profile`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -115,7 +115,7 @@ export default function ProfessorDashboard() {
       }
 
       const res = await axios.put(
-        `http://localhost:5000/api/professors/profile`,
+        `/api/professors/profile`,
         {
           name: editForm.name,
           email: editForm.email,

@@ -25,7 +25,7 @@ export default function EditProfileModal({ show, onClose, onProfileUpdate }) {
     if (!token) return;
 
     axios
-      .get("http://localhost:5000/api/users/profile", {
+      .get("/api/users/profile", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -38,7 +38,7 @@ export default function EditProfileModal({ show, onClose, onProfileUpdate }) {
           password: "",
           profilePic: u.profilePic || null,
         });
-        setPreviewPic(u.profilePic ? `http://localhost:5000${u.profilePic}` : null);
+        setPreviewPic(u.profilePic ? `${u.profilePic}` : null);
       })
       .catch((err) => {
         console.error("Profile fetch error:", err);
@@ -85,7 +85,7 @@ export default function EditProfileModal({ show, onClose, onProfileUpdate }) {
         data.append("profilePic", formData.profilePic);
       }
 
-      const res = await axios.put("http://localhost:5000/api/users/profile", data, {
+      const res = await axios.put("/api/users/profile", data, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`,

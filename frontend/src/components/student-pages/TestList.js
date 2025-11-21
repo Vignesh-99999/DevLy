@@ -23,7 +23,7 @@ export default function TestList() {
   const fetchTests = useCallback(async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:5000/api/student-tests/available", {
+      const res = await axios.get("/api/student-tests/available", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTests(res.data.tests || []);
