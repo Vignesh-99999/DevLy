@@ -137,7 +137,7 @@ const Auth = () => {
     }
 
     try {
-      const res = await axios.post("http://127.0.0.1:5000/api/auth/signup", {
+      const res = await axios.post("/api/auth/signup", {
         name,
         email,
         number,
