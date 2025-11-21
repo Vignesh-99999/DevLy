@@ -13,9 +13,11 @@ export default function TutorialTable() {
   const [searchTerm, setSearchTerm] = useState("");
   const [copiedIndex, setCopiedIndex] = useState(null);
 
-  // Key to save index in localStorage per language
+  // Use environment variable or fallback
+  const API = process.env.REACT_APP_API_BASE || "https://devly-backend-r0xj.onrender.com";
   const STORAGE_KEY = `selectedTopicIndex_${selectedLanguage}`;
 
+  // Helper functions
   const getCompilerURL = (lang) => {
     const map = { c: "c", cpp: "cpp", java: "java", python: "python", py: "python" };
     return map[lang.toLowerCase()]
@@ -38,9 +40,14 @@ export default function TutorialTable() {
   useEffect(() => {
     const fetchTutorials = async () => {
       try {
-        const res = await fetch(`/api/tutorials/${selectedLanguage}`);
+        const res = await fetch(`${API}/api/tutorials/${selectedLanguage}`);
+        if (!res.ok) {
+          console.error("Tutorial fetch failed with status:", res.status);
+          setTutorials([]);
+          return;
+        }
         const data = await res.json();
-        if (data.ok && data.tutorials.length > 0) setTutorials(data.tutorials);
+        if (data.ok && data.tutorials?.length > 0) setTutorials(data.tutorials);
         else setTutorials([]);
       } catch (err) {
         console.error("Error fetching tutorials", err);
@@ -48,8 +55,9 @@ export default function TutorialTable() {
       }
     };
     fetchTutorials();
-  }, [selectedLanguage]);
+  }, [selectedLanguage, API]);
 
+  // Filter topics for selected tutorial
   useEffect(() => {
     if (tutorials.length === 0) {
       setFilteredTopics([]);
@@ -58,6 +66,7 @@ export default function TutorialTable() {
     setFilteredTopics(tutorials[0].topics || []);
   }, [tutorials]);
 
+  // Restore selected topic from localStorage
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored !== null) {
@@ -66,6 +75,7 @@ export default function TutorialTable() {
     }
   }, [filteredTopics.length, STORAGE_KEY]);
 
+  // Apply search filter
   useEffect(() => {
     if (tutorials.length === 0) return;
     const allTopics = tutorials[0].topics || [];
@@ -76,8 +86,9 @@ export default function TutorialTable() {
     if (selectedTopicIndex === null || selectedTopicIndex >= filtered.length) {
       setSelectedTopicIndex(filtered.length > 0 ? 0 : null);
     }
-  }, [searchTerm, tutorials]);
+  }, [searchTerm, tutorials, selectedTopicIndex]);
 
+  // Save selected topic index
   useEffect(() => {
     if (selectedTopicIndex !== null) {
       localStorage.setItem(STORAGE_KEY, selectedTopicIndex.toString());
@@ -100,46 +111,31 @@ export default function TutorialTable() {
   };
 
   const injectCodeToCompiler = (iframeId, code) => {
-  const iframe = document.getElementById(iframeId);
-  if (!iframe) return;
+    const iframe = document.getElementById(iframeId);
+    if (!iframe) return;
 
-  console.log("Injecting code into iframe:", iframeId);
-  console.log(code);
+    const lang = selectedLanguage.toLowerCase();
+    const fileName = getFileName(selectedLanguage);
 
-  const lang = selectedLanguage.toLowerCase();
-  const fileName = getFileName(selectedLanguage);
-
-  setTimeout(() => {
-    try {
-      const targetWindow = iframe.contentWindow;
-      if (!targetWindow) {
-        console.warn("Compiler iframe not ready yet:", iframeId);
-        return;
-      }
-      // First run
-      targetWindow.postMessage(
-        {
-          eventType: "populateCode",
-          language: lang,
-          files: [{ name: fileName, content: code }],
-        },
-        "*"
-      );
-      targetWindow.postMessage({ eventType: "triggerRun" }, "*");
-
-      // Second run after small delay
-      setTimeout(() => {
+    setTimeout(() => {
+      try {
+        const targetWindow = iframe.contentWindow;
+        if (!targetWindow) return;
+        targetWindow.postMessage(
+          { eventType: "populateCode", language: lang, files: [{ name: fileName, content: code }] },
+          "*"
+        );
         targetWindow.postMessage({ eventType: "triggerRun" }, "*");
-        console.log("Code injected and triggered run twice.");
-      }, 500);
-    } catch (err) {
-      console.error("Failed to postMessage to iframe:", err);
-    }
-  }, 1000);
-};
+        setTimeout(() => {
+          targetWindow.postMessage({ eventType: "triggerRun" }, "*");
+        }, 500);
+      } catch (err) {
+        console.error("Failed to postMessage to iframe:", err);
+      }
+    }, 1000);
+  };
 
-
-const handleNextTopic = () => {
+  const handleNextTopic = () => {
     if (selectedTopicIndex === null) return;
     const nextIndex = selectedTopicIndex + 1;
     if (nextIndex < filteredTopics.length) {
@@ -165,10 +161,7 @@ const handleNextTopic = () => {
         <ul>
           {filteredTopics.map((topic, idx) => (
             <li key={topic.slug || idx}>
-              <button
-                className={idx === selectedTopicIndex ? "active" : ""}
-                onClick={() => setSelectedTopicIndex(idx)}
-              >
+              <button className={idx === selectedTopicIndex ? "active" : ""} onClick={() => setSelectedTopicIndex(idx)}>
                 {topic.title}
               </button>
             </li>
@@ -190,30 +183,19 @@ const handleNextTopic = () => {
             <div className="topic-card">
               <div className="topic-header">{selectedTopic.title}</div>
               {selectedTopic.description && <div className="topic-body">{selectedTopic.description}</div>}
-              {selectedTopic.tables?.length > 0 && (
-                <div className="topic-tables">
-                  {selectedTopic.tables.map((table, i) => (
-                    <table key={i}>
-                      <thead>
-                        <tr>
-                          {table.headers?.map((h, idx) => (
-                            <th key={idx}>{h}</th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {table.rows?.map((row, rIdx) => (
-                          <tr key={rIdx}>
-                            {row.map((cell, cIdx) => (
-                              <td key={cIdx}>{cell}</td>
-                            ))}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  ))}
-                </div>
-              )}
+              {selectedTopic.tables?.length > 0 &&
+                selectedTopic.tables.map((table, i) => (
+                  <table key={i}>
+                    <thead>
+                      <tr>{table.headers?.map((h, idx) => <th key={idx}>{h}</th>)}</tr>
+                    </thead>
+                    <tbody>
+                      {table.rows?.map((row, rIdx) => (
+                        <tr key={rIdx}>{row.map((cell, cIdx) => <td key={cIdx}>{cell}</td>)}</tr>
+                      ))}
+                    </tbody>
+                  </table>
+                ))}
               {selectedTopic.examples?.map((ex, i) => {
                 const iframeId = `oc-editor-${selectedLanguage}-${i}`;
                 const copyKey = `${selectedLanguage}-${i}`;
@@ -221,58 +203,36 @@ const handleNextTopic = () => {
 
                 return (
                   <div key={i} className="example-block">
-                   {isFullProgram ? (
-  <iframe
-    key={`${selectedTopicIndex}-${i}`} // <--- force React to recreate iframe
-    id={`oc-editor-${selectedLanguage}-${i}`}
-    src={getCompilerURL(selectedLanguage)}
-    width="100%"
-    height="500"
-    frameBorder="0"
-    title={`Compiler-${i}`}
-    onLoad={() =>
-      injectCodeToCompiler(`oc-editor-${selectedLanguage}-${i}`, ex.code)
-    }
-  />
-) : (
-  <div className="code-wrapper">
-    <pre>{ex.code}</pre>
-    <button
-      className="copy-icon"
-      onClick={() => copyToClipboard(ex.code, copyKey)}
-      title="Copy code"
-    >
-      {copiedIndex === copyKey ? "Copied!" : "Copy"}
-    </button>
-  </div>
-)}
-
-
-                    {ex.output && (
-                      <p>
-                        <strong>Output:</strong> {ex.output}
-                      </p>
+                    {isFullProgram ? (
+                      <iframe
+                        key={`${selectedTopicIndex}-${i}`}
+                        id={iframeId}
+                        src={getCompilerURL(selectedLanguage)}
+                        width="100%"
+                        height="500"
+                        frameBorder="0"
+                        title={`Compiler-${i}`}
+                        onLoad={() => injectCodeToCompiler(iframeId, ex.code)}
+                      />
+                    ) : (
+                      <div className="code-wrapper">
+                        <pre>{ex.code}</pre>
+                        <button className="copy-icon" onClick={() => copyToClipboard(ex.code, copyKey)}>
+                          {copiedIndex === copyKey ? "Copied!" : "Copy"}
+                        </button>
+                      </div>
                     )}
-                    {ex.explanation && (
-                      <p>
-                        <em>{ex.explanation}</em>
-                      </p>
-                    )}
+                    {ex.output && <p><strong>Output:</strong> {ex.output}</p>}
+                    {ex.explanation && <p><em>{ex.explanation}</em></p>}
                   </div>
                 );
               })}
               {selectedTopic.extra?.length > 0 && (
                 <div className="extra-content">
                   <h4>Notes</h4>
-                  <ul>
-                    {selectedTopic.extra.map((extra, i) => (
-                      <li key={i}>{extra}</li>
-                    ))}
-                  </ul>
+                  <ul>{selectedTopic.extra.map((extra, i) => <li key={i}>{extra}</li>)}</ul>
                 </div>
               )}
-
-              {/* Mark as Read & Next */}
               <div className="mark-next-wrapper">
                 <button
                   className="back-button"
