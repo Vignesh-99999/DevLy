@@ -3,18 +3,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 
-axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com"
-
+axios.defaults.baseURL = "https://devly-backend-r0xj.onrender.com";
 
 export default function StudentList() {
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadingUser, setLoadingUser] = useState(null);
 
-
-  // -----------------------------
   // FETCH STUDENTS
-  // -----------------------------
   const fetchStudents = async () => {
     try {
       const res = await axios.get(`/api/admin/users`);
@@ -31,14 +27,10 @@ export default function StudentList() {
     fetchStudents();
   }, []);
 
-  // -----------------------------
   // SUSPEND USER
-  // -----------------------------
   const handleSuspend = async (id) => {
     try {
-      const res = await axios.patch(
-        `${API}/api/admin/users/${id}/toggle-suspend`
-      );
+      const res = await axios.patch(`/api/admin/users/${id}/toggle-suspend`);
       if (!res.data.success) return alert("Suspend failed");
 
       setStudents((prev) =>
@@ -52,18 +44,14 @@ export default function StudentList() {
     }
   };
 
-  // -----------------------------
   // BAN USER
-  // -----------------------------
   const handleBan = async (id) => {
     try {
-      const res = await axios.patch(`${API}/api/admin/users/${id}/toggle-ban`);
+      const res = await axios.patch(`/api/admin/users/${id}/toggle-ban`);
       if (!res.data.success) return alert("Ban failed");
 
       setStudents((prev) =>
-        prev.map((s) =>
-          s._id === id ? { ...s, isBanned: res.data.isBanned } : s
-        )
+        prev.map((s) => (s._id === id ? { ...s, isBanned: res.data.isBanned } : s))
       );
     } catch (err) {
       console.error(err);
@@ -71,9 +59,7 @@ export default function StudentList() {
     }
   };
 
-  // -----------------------------
   // PROMOTE USER
-  // -----------------------------
   const handlePromote = async (student) => {
     const { value: form } = await Swal.fire({
       title: "👨‍🏫 Promote to Professor",
@@ -127,36 +113,27 @@ export default function StudentList() {
     });
 
     try {
-      const res = await axios.post(
-        `${API}/api/admin/users/${student._id}/promote`,
-        form
-      );
+      const res = await axios.post(`/api/admin/users/${student._id}/promote`, form);
 
       setLoadingUser(null);
 
       if (!res.data.success)
         return Swal.fire({
-        icon: "warning",
-        title: "Already Promoted",
-        text: res.data.message || "This student is already a Professor.",
-      });
-          
+          icon: "warning",
+          title: "Already Promoted",
+          text: res.data.message || "This student is already a Professor.",
+        });
 
       setStudents((prev) =>
         prev.map((s) =>
-          s._id === student._id
-            ? { ...s, role: "professor", isProfessor: true }
-            : s
+          s._id === student._id ? { ...s, role: "professor", isProfessor: true } : s
         )
       );
 
       Swal.fire({
         icon: "success",
         title: "🎉 Promotion Successful!",
-        html: `
-          <b>${student.name}</b> has been promoted to Professor. <br><br>
-          📧 <b>Email sent successfully!</b>
-        `,
+        html: `<b>${student.name}</b> has been promoted to Professor. <br><br>📧 <b>Email sent successfully!</b>`,
       });
     } catch (err) {
       setLoadingUser(null);
@@ -164,7 +141,6 @@ export default function StudentList() {
       const status = err.response?.status;
       const message = err.response?.data?.message;
 
-      // ✅ Already promoted case
       if (status === 409) {
         return Swal.fire({
           icon: "info",
@@ -173,20 +149,16 @@ export default function StudentList() {
         });
       }
 
-      // ✅ Real email failure / server crash
       Swal.fire({
         icon: "error",
-        title: "Not Promote Again ❌",
-        text: " This Student is already Promoted.",
+        title: "Promotion Failed ❌",
+        text: "Server error or email failed.",
       });
     }
-  }
+  };
 
-  // -----------------------------
   // UI
-  // -----------------------------
-  if (loading)
-    return <p className="text-center mt-5">⏳ Loading Students...</p>;
+  if (loading) return <p className="text-center mt-5">⏳ Loading Students...</p>;
 
   return (
     <div className="container mt-4">
@@ -216,45 +188,33 @@ export default function StudentList() {
                 <tr key={s._id}>
                   <td>{s.name}</td>
                   <td>{s.email}</td>
-
                   <td>
                     {s.role === "professor" || s.isProfessor ? (
-                      <span className="badge bg-info text-dark">
-                        👨‍🏫 Professor
-                      </span>
+                      <span className="badge bg-info text-dark">👨‍🏫 Professor</span>
                     ) : s.isSuspended ? (
                       <span className="badge bg-danger">❗ Suspended</span>
                     ) : s.isBanned ? (
-                      <span className="badge bg-warning text-dark">
-                        ⚠️ Banned
-                      </span>
+                      <span className="badge bg-warning text-dark">⚠️ Banned</span>
                     ) : (
                       <span className="badge bg-success">✅ Active</span>
                     )}
                   </td>
-
                   <td>
                     <button
-                      className={`btn btn-sm ${
-                        s.isSuspended ? "btn-success" : "btn-danger"
-                      }`}
+                      className={`btn btn-sm ${s.isSuspended ? "btn-success" : "btn-danger"}`}
                       onClick={() => handleSuspend(s._id)}
                     >
                       {s.isSuspended ? "Unsuspend ✔" : "Suspend 🔒"}
                     </button>
                   </td>
-
                   <td>
                     <button
-                      className={`btn btn-sm ${
-                        s.isBanned ? "btn-success" : "btn-warning"
-                      }`}
+                      className={`btn btn-sm ${s.isBanned ? "btn-success" : "btn-warning"}`}
                       onClick={() => handleBan(s._id)}
                     >
                       {s.isBanned ? "Unban ✔" : "Ban 🚫"}
                     </button>
                   </td>
-
                   <td>
                     {s.role === "professor" || s.isProfessor ? (
                       <button className="btn btn-sm btn-secondary" disabled>
@@ -263,25 +223,19 @@ export default function StudentList() {
                     ) : (
                       <button
                         className="btn btn-sm btn-outline-primary"
-                        disabled={
-                          loadingUser === s._id ||
-                          s.isSuspended ||
-                          s.isBanned // ✅ NEW: DISABLE IF BANNED
-                        }
+                        disabled={loadingUser === s._id || s.isSuspended || s.isBanned}
                         onClick={() => handlePromote(s)}
                       >
-                        {loadingUser === s._id ? (
-                          <>
-                            <span className="spinner-border spinner-border-sm me-2"></span>
-                            Promoting...
-                          </>
-                        ) : s.isSuspended ? (
-                          "Suspended ❌"
-                        ) : s.isBanned ? (
-                          "Banned ❌" // NEW LABEL
-                        ) : (
-                          "Promote ⭐"
-                        )}
+                        {loadingUser === s._id
+                          ? <>
+                              <span className="spinner-border spinner-border-sm me-2"></span>
+                              Promoting...
+                            </>
+                          : s.isSuspended
+                          ? "Suspended ❌"
+                          : s.isBanned
+                          ? "Banned ❌"
+                          : "Promote ⭐"}
                       </button>
                     )}
                   </td>
