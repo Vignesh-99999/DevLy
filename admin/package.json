@@ -4,7 +4,7 @@
   "homepage": "http://bootstrapdash.com/demo/purple-react-free/template/demo_1/preview",
   "private": true,
 
-  "proxy": "https://devly.onrender.com",
+   "proxy": "https://devly-backend-r0xj.onrender.com",
 
   "dependencies": {
     "@mdi/font": "^4.2.95",
