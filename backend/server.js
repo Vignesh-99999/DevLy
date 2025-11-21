@@ -23,7 +23,8 @@ const PROJECT_NAME = "DevLy";
 // HARD-CODED CONFIG
 // -------------------------------
 const PORT = 5000; // or process.env.PORT if you prefer dynamic
-const MONGO_URI = "your-mongodb-atlas-uri-here";
+const MONGO_URI = "mongodb+srv://vigljku_db_user:wYS5YNCbFSpu8G2k@mernauth.ysoggzy.mongodb.net/mern_auth?retryWrites=true&w=majority";
+
 
 // Allowed frontend domains
 const allowedOrigins = [
